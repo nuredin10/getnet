@@ -1,0 +1,237 @@
+@use "./scss/" as *;
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: $primary-color;
+  margin: 0%;
+  // overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  overflow-y: hidden;
+
+}
+.front {
+
+  // border: 1px solid red;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mobile{
+    margin-right: auto;
+  }
+
+  @include mobile{
+    margin: 0;
+  }
+  
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+
+  .img {
+    
+    width: 85%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.5);
+  }
+}
+.hide {
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+
+.show {
+  position: absolute;
+}
+
+.titles {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  // @include flex('center','center');
+  // flex-direction: column;
+}
+
+.titles div{
+  margin: auto;
+  // border: 1px solid red;
+  height: 50%;
+  width: 75%;
+  
+}
+
+.hr-line{
+  margin: auto;
+  width: 60vw;
+  border-top: 1px solid hsla(0, 0%, 71%, 0.9);
+  position: absolute;
+  top: 10;
+  z-index: 10000000;
+}
+
+.titles hr {
+}
+
+.titles h1 {
+  color: $white-color;
+  // border: 1px solid red;
+  
+}
+
+
+
+.titles p{
+  color: $white-color;
+}
+
+.normalH1{
+  font-size: 5vw;
+  font-weight: 600;
+  width: 80%;
+  // margin-bottom: -3vw;
+  // border: 1px solid red;
+  line-height: 5vw;
+  @include mobile{
+    padding-top: 10%;
+    font-size: 10vw;
+    width: 100%;
+    line-height: 11vw;
+  }
+}
+
+.smallH1{
+  transition: 1s ease;
+  font-size: 3.5vw;
+  font-weight: 100;
+  @include mobile{
+    font-size: 5vw;
+    width: 100%;
+  }
+}
+
+.normalH3{
+  color: $white-color;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  font-weight: 300;
+
+  @include mobile{
+    line-height: 7vw;
+    font-size: 2rem;
+  }
+}
+.smallH3{
+  transition: 1s ease;
+  font-size: 1.5vw;
+  color: $white-color;
+  font-weight: 100;
+  @include mobile{
+    line-height:5vw;
+    font-size: 4vw;
+  }
+}
+
+.titles .hideP{
+  position: absolute;
+  // color: red;
+  display: none; 
+}
+
+.titles .showP{
+  
+  // color: blue;
+  display: flex;
+  transition: 3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blocks{
+  width: 100vw;
+  height: 65vh;
+  position: absolute;
+  bottom: 0;
+  // border: 1px solid red;
+
+
+  
+  
+  
+}
+
+.block{
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.one{
+  width: 100%;
+  background-color: $main-color;
+  height: 20%;
+}
+
+
+.two{
+  width: 96%;
+  background-color: $white-color;
+  height: 30%;
+  left: 2%;
+  @include mobile{
+    margin-left: -1%;
+  }
+}
+.three{
+  width: 92%;
+  background-color: $light-color;
+  height: 40%;
+  left: 4%;
+  // border: 1px solid red;
+  @include mobile{
+    margin-left: -3%;
+  }
+}
+
+.four{
+  width: 88%;
+  background-color: $secondary-color;
+  height: 50%;
+  left: 6%;
+  @include mobile{
+    margin-left: -5%;
+  }
+}
+
+
+
+
+
+
