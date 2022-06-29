@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { gsap } from "gsap";
 import Header from '../components/Header/Header'
-import { width } from '@mui/system';
+import AboutSection from '../components/AboutSection/AboutSection';
+// import { width } from '@mui/system';
 // import About from './About/About';
 
 function Home() {
@@ -128,9 +129,9 @@ function Home() {
             </div>
           </div>
 
-          {/* <About></About> */}
         </div>
       </div>
+          <AboutSection></AboutSection>
     </>
   )
 }
