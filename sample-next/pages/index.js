@@ -4,8 +4,10 @@ import Header from '../components/Header/Header'
 import AboutSection from '../components/AboutSection/AboutSection';
 // import { width } from '@mui/system';
 // import About from './About/About';
-
+import Qualifications from '../components/Qualification/Qualifications'
 function Home() {
+
+  var scrollCounter = 0;
 
   const [slide1, setSlide1] = useState("");
   const [slide2, setSlide2] = useState("");
@@ -19,6 +21,9 @@ function Home() {
   const [block, setBlock] = useState('')
   const [block1, setBlock1] = useState('')
   const [block2, setBlock2] = useState('')
+
+  const [aboutActiveSlide, setAboutActiveSlide] = useState(false);
+  const [qualActiveSlide, setqualActiveSlide] = useState(false);
 
   const images = {
     image1: "https://concertopr.com/app/uploads/2021/10/Paysage2_M.jpg",
@@ -75,19 +80,44 @@ function Home() {
 
 
   useEffect(() => {
-    gsap.to(".active", { duration: 1, y: "-70vh", display: "block" })
+    gsap.to(".active", { duration: 1.5, y: "-70vh", display: "block" })
     gsap.to(".remove", { duration: 1.5, y: "0vh" })
     gsap.to(".remove", { display: "none" })
     gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" })
     gsap.to(".longBlock1", { duration: 1, ease: "power2.out", height: "85%", width: "98%", left: "1%" })
     gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%", left: "3%" })
-    gsap.to(".shortBlock", { duration: 1.5, height: "20%" })
-    gsap.to(".shortBlock1", { duration: 1.5, height: "30%", width: "96%", left: "2%" })
-    gsap.to(".shortBlock2", { duration: 1.5, height: "40%", width: "92%", left: "4%" })
+    gsap.to(".shortBlock", { duration: 1, height: "20%" })
+    gsap.to(".shortBlock1", { duration: 1, height: "30%", width: "96%", left: "2%" })
+    gsap.to(".shortBlock2", { duration: 1, height: "40%", width: "92%", left: "4%" })
   }, [mouseEnter, mouseLeave])
 
+  const scrollHandler=()=>{
+    
+    if(window.scrollY > 0 && window.scrollY < 2000){
+      setAboutActiveSlide(true);
+      setqualActiveSlide(false)
+    }
+    else if(window.scrollY > 4000 && window.scrollY < 5000){
+      setAboutActiveSlide(false);
+      setqualActiveSlide(true)
+      
+    }
+    else{
+      setAboutActiveSlide(false);
+      setqualActiveSlide(false)
+    }
+  }
+  useEffect(()=>{
+    console.log(window.scrollY)
+
+  },[])
+
+  useEffect(()=>{
+    console.log(window.scrollY)
+    window.addEventListener("scroll",scrollHandler)
+  },[aboutActiveSlide])
   return (
-    <>
+    <div className='main-wrapper'>
       <div className='container'>
         <Header></Header>
         <div className='wrapper'>
@@ -130,9 +160,10 @@ function Home() {
           </div>
 
         </div>
+          <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
+          <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
       </div>
-          <AboutSection></AboutSection>
-    </>
+    </div>
   )
 }
 
