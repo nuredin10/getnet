@@ -237,31 +237,126 @@
   }
 }
 
-.about-section{
-  z-index: 10;
-  position: absolute;
-  top: 10vh;
-  right: -90%;
-  height: 90vh;
-  width: 90%;
+
+// .about-section{
+//   position: absolute;
+//   z-index: 10000;
+//   top: 10vh;
+//   // left: -90%;
+//   right: -90%;
+
+//   height: 90vh;
+//   width: 90%;
+//   border: 1px solid red;
+//   background-color: $white-color;
+//   // display: none;
+//   padding: 2% 3%;
+// }
+
+.about-section .about-wrapper{
+  display: flex;    
+  flex-direction: column;
+}
+
+.about-section h3{
+  font-size: 1.8rem;
+  // margin-left: 10%;
+}
+
+.about-section .about-main{
+    border: 1px solid red;
+    height: 60vh;
+    @include flex("space-between","center");
+    // padding-top: 2%;
+    @include mobile{
+      flex-direction: column;
+      height: auto;
+    }
+}
+.about-main p{
+  width: 40%;
+  height: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 0;
+  font-size: 1.3rem;
+
+  @include mobile{
+    font-size: 0.8rem;
+    margin-bottom: 10%;
+    width: 100%;
+    height: auto;
+  }
+
+  .highlight{
+    color: $light-color;
+  }
+}
+
+.about-main .image-button{
+  padding-right: 5%;
+  width: 70%;
+  height: 100%;
   border: 1px solid red;
-  background-color: $white-color;
+  @include flex("center","center");
+  flex-direction: column;
+  @include mobile{
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse
+  }
+}
+
+.image-button .image{
+  height: 450px;
+  width: 90%;
+  margin-left: auto;
+  border: 1px solid blue;
+  @include mobile{
+    height: 400px;
+  }
+}
+
+.image-button .button{
+  width: 170px;
+  height: 30px;
+  margin-left: auto;
+  @include mobile{
+    margin-bottom: 10%;
+  }
+}
+
+.image-button button{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  background-color: $light-color;
 }
 
 .qualifications{
   z-index: 10;
   position: absolute;
   top: 10vh;
-  left: -90%;
+  right: -90%;
   height: 90vh;
   width: 90%;
   background-color: $white-color;
   padding: 3% 5%;
+  background-image: url('../asset/background.svg');
   // padding-top: 3%;
   // padding
 
 }
 
+.about{
+  z-index: 10;
+  position: absolute;
+  top: 10vh;
+  right: -90%;
+  height: 90vh;
+  width: 90%;
+  background-color: $white-color;
+}
 
 .qualifications h2{
   font-size: 20px;
@@ -301,6 +396,87 @@
 }
 
 
+
+
+
+/******Practice Area*********/
+
+.practice-area{
+  position: absolute;
+  z-index: 1000000;
+  height: 90vh;
+  width: 90%;
+  background-color: $white-color;
+  background-image: url('../asset/background.svg');
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 5%;
+  justify-content: space-around;
+  @include mobile{
+    flex-direction: column;
+    flex-wrap: nowrap
+  }
+}
+
+.practice-area .practice{
+  // border: 1px solid red;
+  width: 45%;
+  height: 45%;
+  @include mobile{
+    width: 100%;
+    // margin-bottom: 5%;
+  }
+}
+
+.practice .title{
+  display: flex;
+  width: 100%;
+  h3{
+    margin-left: 5%;
+    font-weight: 300;
+    font-size: 1.5vw;
+    @include mobile{
+      font-weight: 400;
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.practice p{
+  font-size: 0.9vw;
+  line-height: 1.5vw;
+  font-weight: 400;
+  @include mobile{
+    line-height: 20px;
+    font-size: 3vw;
+  }
+}
+
+.practice .title .icon{
+  font-size: 5rem;
+}
+
+.practice-area .link{
+  display: flex;
+  // float: right;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  a{
+    color: $light-color;
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .arrow{
+    margin-bottom: -4%;
+    // font-size: 1.8rem;
+    font-size: 2.5vw;
+    font-weight: 300;
+  }
+  // border: 1px solid red;
+}
 
 
 

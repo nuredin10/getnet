@@ -5,6 +5,8 @@ import AboutSection from '../components/AboutSection/AboutSection';
 // import { width } from '@mui/system';
 // import About from './About/About';
 import Qualifications from '../components/Qualification/Qualifications'
+import { func } from 'prop-types';
+import PracticeArea from '../components/PracticeArea';
 function Home() {
 
   var scrollCounter = 0;
@@ -91,34 +93,52 @@ function Home() {
     gsap.to(".shortBlock2", { duration: 1, height: "40%", width: "92%", left: "4%" })
   }, [mouseEnter, mouseLeave])
 
-  const scrollHandler=()=>{
-    
-    if(window.scrollY > 0 && window.scrollY < 2000){
-      setAboutActiveSlide(true);
-      setqualActiveSlide(false)
-    }
-    else if(window.scrollY > 4000 && window.scrollY < 5000){
-      setAboutActiveSlide(false);
-      setqualActiveSlide(true)
+
+
+  const scrollHandler=(e)=>{
+    // console.log(e.deltaY)
+    // console.log(e.deltaY)
+    // if(window.scrollY > 0 && window.scrollY < 2000){
+    //   setAboutActiveSlide(true);
+
+    //   setqualActiveSlide(false)
+    // }
+    // else if(window.scrollY > 4000 && window.scrollY < 5000){
+    //   setAboutActiveSlide(false);
+    //   setqualActiveSlide(true)
       
-    }
-    else{
-      setAboutActiveSlide(false);
-      setqualActiveSlide(false)
-    }
+    // }
+    // else{
+    //   setAboutActiveSlide(false);
+    //   setqualActiveSlide(false)
+    // }
   }
-  useEffect(()=>{
-    console.log(window.scrollY)
 
-  },[])
 
+  const [count, setCount] = useState(0);
+
+  var scrollTimer = null;
+
+    function scrollFinished() {
+      scrollCount++;
+    }
   useEffect(()=>{
-    console.log(window.scrollY)
-    window.addEventListener("scroll",scrollHandler)
-  },[aboutActiveSlide])
+    window.addEventListener("scroll",function(){
+      if (scrollTimer !== null)
+        clearTimeout(scrollTimer);
+        
+        console.log(window.scrollY)
+      scrollTimer= setTimeout(()=>{
+        setCount(count=>++count)
+      },50)
+    },true)
+    
+    // window.addEventListener("wheel", event => console.info(event.offsetX));
+    },[])
   return (
     <div className='main-wrapper'>
       <div className='container'>
+        <h1>{count}</h1>
         <Header></Header>
         <div className='wrapper'>
           <div className='blocks'>
@@ -160,8 +180,9 @@ function Home() {
           </div>
 
         </div>
-          <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
-          <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
+          <Qualifications qualActiveSlide={true}></Qualifications>
+          <PracticeArea></PracticeArea>
+          {/* <AboutSection aboutActiveSlide={true}></AboutSection> */}
       </div>
     </div>
   )
