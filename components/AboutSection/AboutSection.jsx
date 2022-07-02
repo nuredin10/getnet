@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 // import './home/Home.scss'
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 
 function AboutSection({ aboutActiveSlide }) {
   useEffect(() => {
@@ -9,8 +11,9 @@ function AboutSection({ aboutActiveSlide }) {
   });
 
   return (
-    <div className="about">
-      {/* <div className="about-wrapper">
+    <div className={`
+    about-section ${aboutActiveSlide ? 'active-slide' : 'remove-slide'}`}>
+      <div className="about-wrapper">
         <h3>Who We Are</h3>
         <div className="about-main">
           <p>
@@ -30,14 +33,15 @@ function AboutSection({ aboutActiveSlide }) {
             We value our clients time and always strive in exceeding their
             expectations.
           </p>
-          <div className="image-button">
+          <div className="image-section">
             <div className="image"></div>
-            <div className="button">
-              <button>See More</button>
-            </div>
           </div>
+          
         </div>
-      </div> */}
+        <div className='link'>
+        <a>See more in Our Practice Areas <ChevronRightIcon className="arrow"/></a>
+      </div>
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@
   position: absolute;
   top: 0%;
   width: 100%;
-  z-index: 1000;
+  z-index: 100000;
   // overflow-x: hidden;
   // border: 1px solid red
   // box-shadow: 0 12px 12px -12px rgb(255, 0, 0);
@@ -33,6 +33,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  
   cursor: pointer;
   // border: 1px solid red;
   // width: 20%;
@@ -53,9 +54,10 @@ a {
 .nav-links a {
   color: #c5c5c5;
   text-decoration: none;
+  text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .nav-links a:hover {

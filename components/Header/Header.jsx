@@ -10,11 +10,11 @@ function Header() {
       path: "/",
     },
     {
-      dispay: "sector",
+      dispay: "practice area",
       path: "/",
     },
     {
-      dispay: "practice area",
+      dispay: "Principal Attorney",
       path: "/",
     },
     {

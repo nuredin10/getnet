@@ -7,6 +7,9 @@ import AboutSection from '../components/AboutSection/AboutSection';
 import Qualifications from '../components/Qualification/Qualifications'
 import { func } from 'prop-types';
 import PracticeArea from '../components/PracticeArea';
+import ContactUs from '../components/ContactUs/ContactUs';
+
+
 function Home() {
 
   var scrollCounter = 0;
@@ -26,7 +29,9 @@ function Home() {
 
   const [aboutActiveSlide, setAboutActiveSlide] = useState(false);
   const [qualActiveSlide, setqualActiveSlide] = useState(false);
-
+  const [practiceActiveSlide, setPracticeActiveSlide] = useState(false);
+  const [contactActiveSlide, setContactActiveSlide] = useState(false);
+  
   const images = {
     image1: "https://concertopr.com/app/uploads/2021/10/Paysage2_M.jpg",
     images2: 'https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg',
@@ -115,8 +120,8 @@ function Home() {
   }
 
 
-  const [count, setCount] = useState(0);
-
+  const [count, setCount] = useState([]);
+  
   var scrollTimer = null;
 
     function scrollFinished() {
@@ -180,8 +185,9 @@ function Home() {
           </div>
 
         </div>
-          <Qualifications qualActiveSlide={true}></Qualifications>
-          <PracticeArea></PracticeArea>
+        {/* <ContactUs></ContactUs> */}
+          {/* <Qualifications qualActiveSlide={true}></Qualifications> */}
+          {/* <PracticeArea></PracticeArea> */}
           {/* <AboutSection aboutActiveSlide={true}></AboutSection> */}
       </div>
     </div>

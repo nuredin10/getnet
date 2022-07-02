@@ -238,20 +238,21 @@
 }
 
 
-// .about-section{
-//   position: absolute;
-//   z-index: 10000;
-//   top: 10vh;
-//   // left: -90%;
-//   right: -90%;
+.about-section{
+  position: absolute;
+  z-index: 10000;
+  top: 10vh;
+  // left: -90%;
+  right: -90%;
 
-//   height: 90vh;
-//   width: 90%;
-//   border: 1px solid red;
-//   background-color: $white-color;
-//   // display: none;
-//   padding: 2% 3%;
-// }
+  height: 90vh;
+  width: 90%;
+  // border: 1px solid red;
+  background-color: $white-color;
+  background-image: url('../asset/background.svg');
+  // display: none;
+  padding: 2% 5%;
+}
 
 .about-section .about-wrapper{
   display: flex;    
@@ -259,79 +260,87 @@
 }
 
 .about-section h3{
-  font-size: 1.8rem;
+  font-size: 1.2vw;
+  margin-left: 5%;
   // margin-left: 10%;
+  @include mobile{
+    font-size: 5vw;
+  }
 }
 
 .about-section .about-main{
-    border: 1px solid red;
+    // border: 1px solid red;
     height: 60vh;
-    @include flex("space-between","center");
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     // padding-top: 2%;
     @include mobile{
       flex-direction: column;
-      height: auto;
+      height: 70vh;
+
     }
 }
+
 .about-main p{
-  width: 40%;
-  height: 100%;
-  border: 1px solid rgb(0, 0, 0);
-  margin-top: 0;
-  font-size: 1.3rem;
-
+  width: 45%;
+  font-size: 1.5vw;
+  font-weight: 400;
   @include mobile{
-    font-size: 0.8rem;
-    margin-bottom: 10%;
+    height: 50%;
+    font-size: 4vw;
     width: 100%;
-    height: auto;
   }
-
   .highlight{
     color: $light-color;
   }
 }
 
-.about-main .image-button{
-  padding-right: 5%;
-  width: 70%;
-  height: 100%;
-  border: 1px solid red;
-  @include flex("center","center");
-  flex-direction: column;
+.about-main .image-section{
+  height: 70%;
+  // border: 1px solid red;
+  width: 35%;
+  background-color: $light-color;
   @include mobile{
     width: 100%;
-    height: auto;
-    flex-direction: column-reverse
+    height: 60%;
   }
 }
 
-.image-button .image{
-  height: 450px;
-  width: 90%;
-  margin-left: auto;
-  border: 1px solid blue;
+
+  .about-section .link{
+    display: flex;
+    // border: 1px solid red;
+  // float: right;
+  margin-right: 4%;
+  justify-content: center;
+  align-items: center;
   @include mobile{
-    height: 400px;
+    margin-right: 0%;
   }
-}
-
-.image-button .button{
-  width: 170px;
-  height: 30px;
-  margin-left: auto;
-  @include mobile{
-    margin-bottom: 10%;
+  cursor: pointer;
+  a{
+    margin-left: auto;
+    color: $light-color;
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include mobile{
+      font-size: 4vw;
+    }
   }
-}
-
-.image-button button{
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: none;
-  background-color: $light-color;
-}
+  .arrow{
+    margin-bottom: -4%;
+    // font-size: 1.8rem;
+    font-size: 2.5vw;
+    font-weight: 300;
+    @include mobile{
+      margin-top: 5%;
+      font-size: 7vw;
+      margin-bottom:-2.5%;
+    }
+  }
+  }
 
 .qualifications{
   z-index: 10;
@@ -348,52 +357,87 @@
 
 }
 
-.about{
-  z-index: 10;
-  position: absolute;
-  top: 10vh;
-  right: -90%;
-  height: 90vh;
-  width: 90%;
-  background-color: $white-color;
-}
 
+.qualifications .principal{
+  width: 50%;
+  margin-bottom: 3%;
+  @include mobile{
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
 .qualifications h2{
-  font-size: 20px;
-  span{
-    color: $primary-color;
+  font-size: 1.1vw;
+  text-transform: uppercase;
+  display: inline;
+  font-weight: 500;
+
+  @include mobile{
+    font-size: 4vw;
   }
 }
 
-.qualifications h1{
-  font-weight: 400;
-  font-size: 40px;
-  width: 60%;
+.principal p{
+  color: $primary-color;
+  font-size: 1.2vw;
+  @include mobile{
+    font-size: 4.5vw;
+  }
 }
 
-.qualifications .text-image{
-  // border: 1px solid red;
-  display: flex;
-  height: 65%;
-}
-
-.text-image .texts{
+.qualifications .qual{
   width: 50%;
+  @include mobile{
+    width: 100%;
+  }
+
+}
+
+
+.qual span{
+  color: $primary-color;
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include mobile{
+    font-size: 4.5vw;
+  }
+}
+
+
+.qual .texts{
+  width: 100%;
   // border: 1px solid red;
   // margin-top: -2%;
   p{
-    font-size: 19px;
-    margin-bottom: 5%;
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
     color: $secondary-color;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 2vw;
+    cursor: pointer;
+
+    @include mobile{
+      font-size: 4vw;
+      line-height: 6vw;
+      // margin-bottom: 10vw;
+    }
   }
 }
 
-.text-image .image{
-  width: 50%;
-  // border: 1px solid red;
+.qual .texts p:hover{
+  font-size: 1.8vw;
+    width: 100%;
+    font-weight: 400;
+    color: #000;
+    transition: 1s ease;
+    @include mobile{
+      font-size: 4vw;
+    }
 }
+
+
+
 
 
 
@@ -408,14 +452,27 @@
   width: 90%;
   background-color: $white-color;
   background-image: url('../asset/background.svg');
+  
+  padding: 3% 5%;
+} 
+
+.practice-area .practice-title{
+    // border: 1px solid blue;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include mobile{
+      font-size: 4vw;
+    }
+  }
+
+.practice-area .practice-wrapper{
+  width: 100%;
+  height: 80%;
   display: flex;
   flex-wrap: wrap;
-  padding: 5% 5%;
-  justify-content: space-around;
-  @include mobile{
-    flex-direction: column;
-    flex-wrap: nowrap
-  }
+  justify-content: space-between;
+  // border: 1px solid red
 }
 
 .practice-area .practice{
@@ -424,59 +481,168 @@
   height: 45%;
   @include mobile{
     width: 100%;
+    // height: 25%;
     // margin-bottom: 5%;
+    height: auto;
   }
 }
 
 .practice .title{
   display: flex;
   width: 100%;
+  // border: 1p x solid red;
+  // height: 30%;
   h3{
     margin-left: 5%;
-    font-weight: 300;
-    font-size: 1.5vw;
+    font-weight: 350;
+    font-size: 1.4vw;
+    // height: fit-content;
     @include mobile{
-      font-weight: 400;
-      font-size: 1.75rem;
+      // font-weight: 400;
+      font-size: 4vw;
     }
   }
 }
 
 .practice p{
-  font-size: 0.9vw;
+  font-size: 1vw;
   line-height: 1.5vw;
-  font-weight: 400;
+  font-weight: 340;
   @include mobile{
     line-height: 20px;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    margin-top: -2%;
+    // border: 1px solid red;
   }
 }
 
 .practice .title .icon{
-  font-size: 5rem;
+  font-size: 4.5vw;
+  @include mobile{
+    margin-top: 4%;
+    font-size: 8vw;
+  }
 }
 
-.practice-area .link{
+.practice-area .link, .qualifications .link{
   display: flex;
   // float: right;
   margin-left: auto;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  @include mobile{
+    margin-top: 10%;
+  }
   cursor: pointer;
   a{
     color: $light-color;
     font-size: 1vw;
     font-weight: 500;
     text-transform: uppercase;
+    @include mobile{
+      font-size:3.5vw;
+    }
   }
   .arrow{
     margin-bottom: -4%;
     // font-size: 1.8rem;
     font-size: 2.5vw;
     font-weight: 300;
+    @include mobile{
+      font-size: 7vw;
+    }
   }
+  
   // border: 1px solid red;
+}
+.qualifications .link{
+  justify-content: flex-end;
+  a{
+    color: $primary-color;
+  }
+  @include mobile{
+    margin-top: 10%;
+  }
+
 }
 
 
+
+/*******CONTACT US**********/
+
+.contact{
+  position: absolute;
+  z-index: 1000000;
+  height: 100vh;
+  width: 100%;
+  
+  background-color: $main-color;
+  background-image: url('../asset/background.svg');
+  // opacity: 0.9;
+  padding: 3% 5%;
+}
+
+.contact-wrapper{
+  // border: 1px solid red;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-wrapper .title-info{
+  // border: 1px solid red;
+  width: 40%;
+  height: 70%;
+}
+
+.contact-wrapper .title-info h1{
+  color: $white-color;
+  font-size: 7vw;
+  margin-top: -2%;
+  margin-left: -1%;
+  text-transform: capitalize;
+}
+
+.contact-wrapper .title-info .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -10%;
+  p{
+    color: $white-color;
+  }
+  .social-media{
+    margin-left: -3%;
+  }
+  a{
+    cursor: pointer;
+  }
+  // align-items: center;
+}
+
+.contact-wrapper .map{
+  width: 40%;
+  height: 60%;
+  border: 1px solid blue;
+}
+
+.footer{
+  width: 100%;
+  height: 10vh;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 5%;
+  p{
+    color: $light-color;
+    font-size: 0.8vw;
+  }
+  .copyright{
+    margin-bottom:-3px;
+    font-size: 0.9vw;
+  }
+}
 
