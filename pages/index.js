@@ -32,6 +32,8 @@ function Home() {
   const [practiceActiveSlide, setPracticeActiveSlide] = useState(false);
   const [contactActiveSlide, setContactActiveSlide] = useState(false);
   
+  const [count, setCount] = useState([]);
+
   const images = {
     image1: "https://concertopr.com/app/uploads/2021/10/Paysage2_M.jpg",
     images2: 'https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg',
@@ -100,27 +102,40 @@ function Home() {
 
 
 
-  const scrollHandler=(e)=>{
-    // console.log(e.deltaY)
-    // console.log(e.deltaY)
-    // if(window.scrollY > 0 && window.scrollY < 2000){
-    //   setAboutActiveSlide(true);
-
-    //   setqualActiveSlide(false)
-    // }
-    // else if(window.scrollY > 4000 && window.scrollY < 5000){
-    //   setAboutActiveSlide(false);
-    //   setqualActiveSlide(true)
-      
-    // }
-    // else{
-    //   setAboutActiveSlide(false);
-    //   setqualActiveSlide(false)
-    // }
+ useEffect(()=>{
+  if(count == 1){
+    setAboutActiveSlide(true)
+    setqualActiveSlide(false)
+    setPracticeActiveSlide(false)
+    setContactActiveSlide(false)
+  }
+  else if(count == 2){
+    setAboutActiveSlide(false)
+    setqualActiveSlide(true)
+    setPracticeActiveSlide(false)
+    setContactActiveSlide(false)
+    
+  }
+  else if(count == 3){
+    setAboutActiveSlide(false)
+    setqualActiveSlide(false)
+    setPracticeActiveSlide(true)
+    setContactActiveSlide(false)
+    
+  }
+  else if(count == 4){
+    setAboutActiveSlide(false)
+    setqualActiveSlide(false)
+    setPracticeActiveSlide(false)
+    setContactActiveSlide(true)
+    
   }
 
 
-  const [count, setCount] = useState([]);
+
+ },[count])
+
+
   
   var scrollTimer = null;
 
@@ -128,13 +143,26 @@ function Home() {
       scrollCount++;
     }
   useEffect(()=>{
-    window.addEventListener("scroll",function(){
+    window.addEventListener("scroll",function(e){
+      let prev = 0;
       if (scrollTimer !== null)
         clearTimeout(scrollTimer);
         
         console.log(window.scrollY)
       scrollTimer= setTimeout(()=>{
-        setCount(count=>++count)
+        if(count === 6){
+          setCount(0)
+        }
+        else{
+          if(window.scrollY > prev){
+            setCount(count=>++count)
+            prev = window.scrollY
+          }
+          else if(window.scrollY < prev){
+            setCount(count=>--count)
+            prev = window.scrollY
+          }
+        }
       },50)
     },true)
     
@@ -185,10 +213,10 @@ function Home() {
           </div>
 
         </div>
-        {/* <ContactUs></ContactUs> */}
-          {/* <Qualifications qualActiveSlide={true}></Qualifications> */}
+          <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
+          <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
           {/* <PracticeArea></PracticeArea> */}
-          {/* <AboutSection aboutActiveSlide={true}></AboutSection> */}
+        {/* <ContactUs></ContactUs> */}
       </div>
     </div>
   )
