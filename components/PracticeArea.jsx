@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 import {gsap} from "gsap";
 // import { ReactComponent as Intellectual} from '../asset/intellectual-icon.svg'
 import { AiFillFacebook } from "react-icons/ai";
-// import Intellectual from "../asset/intellectual-icon.svg"
+import Intellectual from '../asset/intellectual-icon.'
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Background from '../asset/background.svg'
 
