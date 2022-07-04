@@ -186,13 +186,13 @@ function Home() {
         <Header></Header>
         <div className='wrapper'>
           <div className='blocks'>
-            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block`}></div>
-            <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block`}></div>
-            <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block`}></div>
-            <div className='four block'></div>
+            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block`} onClick={()=>setCount(7)}><p>CONTACT US</p></div>
+            <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block`} onClick={()=>setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div>
+            <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block`} onClick={()=>setCount(5)}><p>PRACTICE AREA</p></div>
+            <div className='four block' onClick={()=>setCount(1)}><p>WHO WE ARE</p></div>
           </div>
-          <div className='hr-line'></div>
-
+          {/* <div className='hr-line'></div> */}
+          
           <div className='front'>
 
             <div className='images'>
