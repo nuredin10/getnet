@@ -9,7 +9,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: $primary-color;
+  background-color: $white-color;
   margin: 0%;
   // overflow-y: hidden;
   // margin-bottom: 1px;
@@ -346,7 +346,7 @@
   z-index: 10;
   position: absolute;
   top: 10vh;
-  left: -90%;
+  right: -90%;
   height: 90vh;
   width: 90%;
   background-color: $white-color;
@@ -449,6 +449,7 @@
   position: absolute;
   z-index: 1000000;
   height: 90vh;
+  left: -90%;
   width: 90%;
   background-color: $white-color;
   background-image: url('../asset/background.svg');
@@ -573,9 +574,9 @@
 .contact{
   position: absolute;
   z-index: 1000000;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
-  
+  bottom: -90%;
   background-color: $main-color;
   background-image: url('../asset/background.svg');
   // opacity: 0.9;
