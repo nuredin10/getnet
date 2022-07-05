@@ -27,6 +27,7 @@ function Home() {
   const [block, setBlock] = useState('')
   const [block1, setBlock1] = useState('')
   const [block2, setBlock2] = useState('')
+  const [block3, setBlock3] = useState('')
 
   const [aboutActiveSlide, setAboutActiveSlide] = useState(false);
   const [qualActiveSlide, setqualActiveSlide] = useState(false);
@@ -94,11 +95,14 @@ function Home() {
     gsap.to(".remove", { duration: 1.5, y: "0vh" })
     gsap.to(".remove", { display: "none" })
     gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" })
-    gsap.to(".longBlock1", { duration: 1, ease: "power2.out", height: "85%", width: "98%", left: "1%" })
-    gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%", left: "3%" })
-    gsap.to(".shortBlock", { duration: 1, height: "20%" })
-    gsap.to(".shortBlock1", { duration: 1, height: "30%", width: "96%", left: "2%" })
-    gsap.to(".shortBlock2", { duration: 1, height: "40%", width: "92%", left: "4%" })
+    gsap.to(".longBlock1", { duration: 1, ease: "power2.out", height: "85%", width: "98%" })
+    gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%"})
+    gsap.to(".longBlock3", { duration: 1, ease: "power2.out", height: "95%", width: "90%" })
+    gsap.to(".shortBlock", { duration: 1, height: "25%" })
+    gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%"  })
+    gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%"})
+    gsap.to(".shortBlock3", { duration: 1, height: "70%", width: "88%" })
+
   }, [mouseEnter, mouseLeave])
 
 
@@ -148,12 +152,11 @@ function Home() {
 
   useEffect(() => {
     
-    window.addEventListener("scroll", (e)=>{
+    window.addEventListener("wheel", (e)=>{
       
   
      
-      console.log(window.delta)
-      console.log(e.delta)
+      // console.log(e.wheelDeltaY)
       if (window.scrollY > 500) {
           setCount(count => ++count)
           window.scrollTo(0, 0)
@@ -186,10 +189,10 @@ function Home() {
         <Header></Header>
         <div className='wrapper'>
           <div className='blocks'>
-            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block`} onClick={()=>setCount(7)}><p>CONTACT US</p></div>
-            <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block`} onClick={()=>setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div>
-            <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block`} onClick={()=>setCount(5)}><p>PRACTICE AREA</p></div>
-            <div className='four block' onClick={()=>setCount(1)}><p>WHO WE ARE</p></div>
+            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block ${count%2!=0 ? 'longBlock':'shortBlock'}`} onClick={()=>setCount(7)}><p>CONTACT US</p></div>
+            <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block ${count%2!=0 ? 'longBlock1':'shortBlock1'}`} onClick={()=>setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div>
+            <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block ${count%2!=0 ? 'longBlock2':'shortBlock2'}`} onClick={()=>setCount(5)}><p>PRACTICE AREA</p></div>
+            <div onClick={()=>setCount(1)} className={`four block ${count%2!=0 ? 'longBlock3':'shortBlock3'}`}><p>WHO WE ARE</p></div>
           </div>
           {/* <div className='hr-line'></div> */}
           
