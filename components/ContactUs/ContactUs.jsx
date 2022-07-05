@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import gsap from "gsap"
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -6,7 +6,7 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 
 import Background from '../../asset/background.svg'
 import CopyrightIcon from '@mui/icons-material/Copyright';
-function ContactUs({contactActiveSlide}) {
+function ContactUs({ contactActiveSlide }) {
   useEffect(() => {
     gsap.to(".activeContact-slide", { duration: 1.5, bottom: "0%" });
     gsap.to(".removeContact-slide", { duration: 1.5, bottom: "-90%" });
@@ -20,7 +20,7 @@ function ContactUs({contactActiveSlide}) {
           <div className="info">
             <p>
               <label>Email: </label>
-              <a href = "mailto: getnety@getnetyawkal.com">getnety@getnetyawkal.com</a>
+              <a href="mailto: getnety@getnetyawkal.com">getnety@getnetyawkal.com</a>
             </p>
             <p>
               <label>Mobile: </label>
@@ -39,7 +39,7 @@ function ContactUs({contactActiveSlide}) {
         <div className="map"></div>
       </div>
       <div className="footer">
-        <p>All Rights Reserved. <CopyrightIcon className="copyright"/>2022 </p>
+        <p>All Rights Reserved. <CopyrightIcon className="copyright" />2022 </p>
         <p>Web Design & Development by Versavvy Media PLC</p>
       </div>
     </div>

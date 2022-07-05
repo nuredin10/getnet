@@ -606,12 +606,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include mobile{
+    flex-direction: column;
+  }
 }
 
 .contact-wrapper .title-info{
   // border: 1px solid red;
   width: 40%;
   height: 70%;
+  @include mobile{
+    width: 90%;
+  }
 }
 
 .contact-wrapper .title-info h1{
@@ -620,6 +626,10 @@
   margin-top: -2%;
   margin-left: -1%;
   text-transform: capitalize;
+  @include mobile{
+    font-size: 15vw;
+    margin-top: 3%;
+  }
 }
 
 .contact-wrapper .title-info .info{
@@ -643,6 +653,10 @@
   width: 40%;
   height: 80%;
   border: 1px solid blue;
+  @include mobile{
+    margin-top: 5%;
+    width: 90%;
+  }
 }
 
 .footer{
