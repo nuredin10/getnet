@@ -215,7 +215,7 @@ function Home() {
         </div>
           <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
           <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
-          {/* <PracticeArea></PracticeArea> */}
+          <PracticeArea></PracticeArea>
         {/* <ContactUs></ContactUs> */}
       </div>
     </div>
