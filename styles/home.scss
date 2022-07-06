@@ -9,7 +9,8 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background-color: $primary-color;
+  background-color: $white-color;
+  background-image: url('../asset/background.svg');
   margin: 0%;
   // overflow-y: hidden;
   // margin-bottom: 1px;
@@ -22,11 +23,13 @@
   z-index: 10;
   overflow: hidden;
   padding-bottom: -15%;
+  display: flex;
+  justify-content: center;
 }
 .front {
 
   // border: 1px solid red;
-  width: 85%;
+  width: 83%;
   height: 100%;
   margin: auto;
   display: flex;
@@ -46,11 +49,12 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: black;
-
-  .img {
-    
-    width: 85%;
+  // background-color: black;
+  // border: 1px solid red;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;      .img {
+    display: flex;
+    justify-content: center;
+    width: 83%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -186,7 +190,8 @@
   position: absolute;
   bottom: 0;
   // border: 1px solid red;
-
+  display: flex;
+  justify-content: center;
 
   
   
@@ -197,21 +202,32 @@
   position: absolute;
   bottom: 0;
   margin: auto;
+  color: $white-color;
+  p{
+    float: left;
+    font-size: 0.8vw;
+    font-weight: 500;
+    margin-top: 1%;
+    writing-mode: vertical-rl; 
+    cursor: pointer;
+    // border: 1px solid red;
+    // transform: rotate(-90deg);
+  }
 }
 
 
 .one{
   width: 100%;
   background-color: $main-color;
-  height: 20%;
+  height: 25%;
 }
 
 
 .two{
   width: 96%;
-  background-color: $white-color;
-  height: 30%;
-  left: 2%;
+  background-color: $primary-color;
+  height: 40%;
+  // left: 2%;
   @include mobile{
     margin-left: -1%;
   }
@@ -219,8 +235,8 @@
 .three{
   width: 92%;
   background-color: $light-color;
-  height: 40%;
-  left: 4%;
+  height: 55%;
+
   // border: 1px solid red;
   @include mobile{
     margin-left: -3%;
@@ -230,8 +246,8 @@
 .four{
   width: 88%;
   background-color: $secondary-color;
-  height: 50%;
-  left: 6%;
+  height: 70%;
+  // left: 6%;
   @include mobile{
     margin-left: -5%;
   }
@@ -346,7 +362,7 @@
   z-index: 10;
   position: absolute;
   top: 10vh;
-  left: -90%;
+  right: -90%;
   height: 90vh;
   width: 90%;
   background-color: $white-color;
@@ -449,6 +465,7 @@
   position: absolute;
   z-index: 1000000;
   height: 90vh;
+  left: -90%;
   width: 90%;
   background-color: $white-color;
   background-image: url('../asset/background.svg');
@@ -573,9 +590,9 @@
 .contact{
   position: absolute;
   z-index: 1000000;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
-  
+  bottom: -90%;
   background-color: $main-color;
   background-image: url('../asset/background.svg');
   // opacity: 0.9;
@@ -589,12 +606,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @include mobile{
+    flex-direction: column;
+  }
 }
 
 .contact-wrapper .title-info{
   // border: 1px solid red;
   width: 40%;
   height: 70%;
+  @include mobile{
+    width: 90%;
+  }
 }
 
 .contact-wrapper .title-info h1{
@@ -603,6 +626,10 @@
   margin-top: -2%;
   margin-left: -1%;
   text-transform: capitalize;
+  @include mobile{
+    font-size: 15vw;
+    margin-top: 3%;
+  }
 }
 
 .contact-wrapper .title-info .info{
@@ -624,8 +651,12 @@
 
 .contact-wrapper .map{
   width: 40%;
-  height: 60%;
+  height: 80%;
   border: 1px solid blue;
+  @include mobile{
+    margin-top: 5%;
+    width: 90%;
+  }
 }
 
 .footer{

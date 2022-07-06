@@ -1,14 +1,19 @@
-import React from "react";
+import React,{useEffect} from "react";
+import {gsap} from "gsap";
 // import { ReactComponent as Intellectual} from '../asset/intellectual-icon.svg'
 import { AiFillFacebook } from "react-icons/ai";
-// import Intellectual from "../asset/intellectual-icon.svg"
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Background from '../asset/background.svg'
 
 
-function PracticeArea() {
+function PracticeArea({practiceActiveSlide}) {
+  useEffect(() => {
+    gsap.to(".active-slide", { duration: 1.5, left: "0%" });
+    gsap.to(".remove-slide", { duration: 1.5, left: "-90%" });
+  });
   return (
-    <div className="practice-area" >
+    <div className={`
+    practice-area ${practiceActiveSlide ? 'active-slide' : 'remove-slide'}`}>
       <h2 className="practice-title">Practice Area</h2>
       <div className="practice-wrapper">
         <div className="practice">

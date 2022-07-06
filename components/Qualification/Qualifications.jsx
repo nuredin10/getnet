@@ -5,8 +5,8 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 function Qualifications({ qualActiveSlide }) {
   useEffect(() => {
-    gsap.to(".qualActiveSlide", { duration: 1.5, left: "0%" });
-    gsap.to(".qualRemoveSlide", { duration: 1.5, left: "-90%" });
+    gsap.to(".qualActiveSlide", { duration: 1.5, right: "0%" });
+    gsap.to(".qualRemoveSlide", { duration: 1.5, right: "-90%" });
     // console.log(aboutActiveSlide)
   }, [qualActiveSlide]);
   return (
