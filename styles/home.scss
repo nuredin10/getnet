@@ -474,6 +474,7 @@
 .practice-area{
   position: absolute;
   z-index: 1000000;
+  top: 10vh;
   height: 90vh;
   left: -90%;
   width: 90%;
@@ -688,17 +689,19 @@
 }
 
 
-.explore{
 
-  cursor: pointer;
+
+.explore{
+  width: 8vw;
+  height: 50vh;
   // border: 1px solid red;
   z-index: 1000000000000000000000000;
   position: absolute;
-  bottom: 10vh;
-  right: 10vw;
+  bottom: 0%;
+  right: 9%;
 }
 
-.explore .scroll-down h3{
+.explore .scroll-down h3, .arrow-wrapper h3{
   color: $white-color;
   font-family: 'Mukta';
 font-style: normal;
@@ -708,15 +711,33 @@ text-transform: uppercase;
 text-align: center;
 }
 
+
+.explore .arrow-wrapper{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  margin-top: 200%;
+  // border: 1px solid rgb(255, 251, 0);
+}
+
 .scroll-down {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  // border: 1px solid blue;
 }
-
-.scroll-down .arrow-wrapper{
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  width: 20px;
+.timeline{
+  height: 5vw;
+  margin-top: 10%;
+  cursor: pointer;
+  p{
+    // transform: rotate(-90deg);
+    color: $main-color;
+    font-size: 0.6vw;
+  }
 }

@@ -10,9 +10,14 @@ import { func } from 'prop-types';
 import PracticeArea from '../components/PracticeArea';
 import ContactUs from '../components/ContactUs/ContactUs';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+// import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { SettingsAccessibilityOutlined } from '@mui/icons-material';
-import "react-vertical-timeline-component/style.min.css";
+// import "react-vertical-timeline-component/style.min.css";
+// import 'rsuite/dist/styles/rsuite-default.css';
+// import 'rsuite/dist/styles/rsuite-default.css';
+import 'rsuite/dist/rsuite.min.css';
+
+import { Timeline } from 'rsuite';
 
 
 
@@ -147,10 +152,14 @@ function Home() {
       setContactActiveSlide(false)
     }
 
-    if(count%2!=0)
-    setIsWhiteColor(false)
-  else
-    setIsWhiteColor(true)
+    if (count % 2 != 0) {
+      setVerticalTimeline(true)
+      setIsWhiteColor(false)
+    }
+    else {
+      setVerticalTimeline(false)
+      setIsWhiteColor(true)
+    }
 
   }, [count])
 
@@ -204,7 +213,7 @@ function Home() {
   //   }, 200);
   // };
   const [isWhiteColor, setIsWhiteColor] = useState(true)
-  const [verticalTimeline, setVerticalTimeline] = useState(true)
+  const [verticalTimeline, setVerticalTimeline] = useState(false)
 
   return (
     <>
@@ -224,30 +233,29 @@ function Home() {
         <div className='container'>
           <h1>{count}</h1>
           <Header></Header>
-              <div className='explore' onClick={() => setCount(count => ++count)}>
+          <div className='explore' >
+            {
+              verticalTimeline ? (
                 <div className='scroll-down'>
-                  <h3 style={{color: isWhiteColor ? '#F5F5F5' : '#7A431D'}}>explore</h3>
-                  {
-                    verticalTimeline ? (
-                      <VerticalTimeline>
-                        <VerticalTimelineElement className="vertical-timeline-element--work">
-                          {/* <h3>as</h3> */}
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement className="vertical-timeline-element--work">
-                          {/* <h3>as</h3> */}
-                        </VerticalTimelineElement>
-                        <VerticalTimelineElement className="vertical-timeline-element--work">
-                          {/* <h3>as</h3> */}
-                        </VerticalTimelineElement>
-                      </VerticalTimeline>
-                    ) : 
-                    null
-                  }
-                  <div className='arrow-wrapper'>
-                      <img className='arrow' src={'/arrow.svg'} ></img>
-                  </div>
+                  <h3 style={{ color : '#7A431D' }}>explore</h3>
+                  <Timeline className='timeline'>
+                    <Timeline.Item onClick={() =>setCount(count =>1)} className='timeline'><p>Who We Are</p></Timeline.Item>
+                    <Timeline.Item onClick={() =>setCount(count =>3)} className='timeline'><p>Practice Area</p></Timeline.Item>
+                    <Timeline.Item onClick={() =>setCount(count =>5)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
+                    <Timeline.Item onClick={() =>setCount(count =>7)} className='timeline'><p>Contact US</p></Timeline.Item>
+                  </Timeline>
                 </div>
-              </div>
+              ) : (
+                <div className='arrow-wrapper' onClick={() => setCount(count => ++count)}>
+                  <h3 >explore</h3>
+                  <img className='arrow' src={'/arrow.svg'} ></img>
+                </div>
+              )
+            }
+
+          </div>
+
+
           <div className='wrapper'>
             <div className='blocks'>
               <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block ${count % 2 != 0 ? 'longBlock' : 'shortBlock'}`} onClick={() => setCount(7)}><p>CONTACT US</p></div>
