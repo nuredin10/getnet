@@ -10,14 +10,14 @@
   width: 100%;
   height: 100vh;
   background-color: $white-color;
-  background-image: url('../asset/background.svg');
+  background-image: url('/background.svg');
   margin: 0%;
   // overflow-y: hidden;
   // margin-bottom: 1px;
 }
 .wrapper {
   width: 100%;
-  height: 70vh;
+  height: 77vh;
   position: absolute;
   bottom: 0;
   z-index: 10;
@@ -25,14 +25,15 @@
   padding-bottom: -15%;
   display: flex;
   justify-content: center;
+  // border: 1px solid red;
 }
 .front {
 
   // border: 1px solid red;
   width: 83%;
-  height: 100%;
+  height: 70vh;
   margin: auto;
-  display: flex;
+  display: flex;  
   align-items: center;
   justify-content: center;
   @include mobile{
@@ -47,11 +48,12 @@
 
 .images {
   width: 100%;
-  height: 100%;
+  height: 70vh  ;
   overflow: hidden;
   // background-color: black;
   // border: 1px solid red;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;      .img {
+  // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    .img {
     display: flex;
     justify-content: center;
     width: 83%;
@@ -91,16 +93,24 @@
 .hr-line{
   margin: auto;
   width: 60vw;
-  border-top: 1px solid hsla(0, 0%, 71%, 0.9);
+  height: 0;
+  border: 0.5px solid #746a6c;
   position: absolute;
-  top: 10;
   z-index: 10000000;
+}
+
+.line-two{
+  top: 35vh;
+}
+.line-three{
+  top: 70vh;
 }
 
 .titles hr {
 }
 
 .titles h1 {
+  
   color: $white-color;
   // border: 1px solid red;
   
@@ -111,7 +121,6 @@
 .titles p{
   color: $white-color;
 }
-
 .normalH1{
   font-size: 5vw;
   font-weight: 600;
@@ -126,7 +135,6 @@
     line-height: 11vw;
   }
 }
-
 .smallH1{
   transition: 1s ease;
   font-size: 3.5vw;
@@ -265,7 +273,7 @@
   width: 90%;
   // border: 1px solid red;
   background-color: $white-color;
-  background-image: url('../asset/background.svg');
+  background-image: url('/background.svg');
   // display: none;
   padding: 2% 5%;
 }
@@ -278,7 +286,7 @@
 .about-section h3{
   font-size: 1.2vw;
   margin-left: 5%;
-  // margin-left: 10%;
+  margin-left: 8%;
   @include mobile{
     font-size: 5vw;
   }
@@ -300,8 +308,10 @@
 
 .about-main p{
   width: 45%;
-  font-size: 1.5vw;
-  font-weight: 400;
+  font-size: 1.6vw;
+  font-weight: 350;
+  line-height: 2vw;
+  color: $main-color;
   @include mobile{
     height: 50%;
     font-size: 4vw;
@@ -315,7 +325,7 @@
 .about-main .image-section{
   height: 70%;
   // border: 1px solid red;
-  width: 35%;
+  width: 19.3vw;
   background-color: $light-color;
   @include mobile{
     width: 100%;
@@ -367,7 +377,7 @@
   width: 90%;
   background-color: $white-color;
   padding: 3% 5%;
-  background-image: url('../asset/background.svg');
+  background-image: url('/background.svg');
   // padding-top: 3%;
   // padding
 
@@ -468,7 +478,7 @@
   left: -90%;
   width: 90%;
   background-color: $white-color;
-  background-image: url('../asset/background.svg');
+  background-image: url('/background.svg');
   
   padding: 3% 5%;
 } 
@@ -594,7 +604,7 @@
   width: 100%;
   bottom: -90%;
   background-color: $main-color;
-  background-image: url('../asset/background.svg');
+  background-image: url('/background.svg');
   // opacity: 0.9;
   padding: 3% 5%;
 }
@@ -677,3 +687,36 @@
   }
 }
 
+
+.explore{
+
+  cursor: pointer;
+  // border: 1px solid red;
+  z-index: 1000000000000000000000000;
+  position: absolute;
+  bottom: 10vh;
+  right: 10vw;
+}
+
+.explore .scroll-down h3{
+  color: $white-color;
+  font-family: 'Mukta';
+font-style: normal;
+font-weight: 400;
+font-size: 0.9vw;
+text-transform: uppercase;
+text-align: center;
+}
+
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-down .arrow-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 20px;
+}

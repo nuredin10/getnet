@@ -4,7 +4,6 @@ import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
 
-import Background from '../../asset/background.svg'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 function ContactUs({ contactActiveSlide }) {
   useEffect(() => {

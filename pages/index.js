@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { gsap } from "gsap";
 import Header from '../components/Header/Header'
+import Head from 'next/head';
 import AboutSection from '../components/AboutSection/AboutSection';
 // import { width } from '@mui/system';
 // import About from './About/About';
@@ -8,7 +9,11 @@ import Qualifications from '../components/Qualification/Qualifications'
 import { func } from 'prop-types';
 import PracticeArea from '../components/PracticeArea';
 import ContactUs from '../components/ContactUs/ContactUs';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { SettingsAccessibilityOutlined } from '@mui/icons-material';
+import "react-vertical-timeline-component/style.min.css";
+
 
 
 function Home() {
@@ -96,11 +101,11 @@ function Home() {
     gsap.to(".remove", { display: "none" })
     gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" })
     gsap.to(".longBlock1", { duration: 1, ease: "power2.out", height: "85%", width: "98%" })
-    gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%"})
+    gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%" })
     gsap.to(".longBlock3", { duration: 1, ease: "power2.out", height: "95%", width: "90%" })
     gsap.to(".shortBlock", { duration: 1, height: "25%" })
-    gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%"  })
-    gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%"})
+    gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%" })
+    gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%" })
     gsap.to(".shortBlock3", { duration: 1, height: "70%", width: "88%" })
 
   }, [mouseEnter, mouseLeave])
@@ -135,14 +140,17 @@ function Home() {
       setContactActiveSlide(true)
     }
 
-    if(count%2==0){
+    if (count % 2 == 0) {
       setAboutActiveSlide(false)
       setqualActiveSlide(false)
       setPracticeActiveSlide(false)
-      setContactActiveSlide(false)   
-   }
+      setContactActiveSlide(false)
+    }
 
-
+    if(count%2!=0)
+    setIsWhiteColor(false)
+  else
+    setIsWhiteColor(true)
 
   }, [count])
 
@@ -151,27 +159,40 @@ function Home() {
 
 
   useEffect(() => {
-    
-    window.addEventListener("wheel", (e)=>{
-      
-  
-     
+
+    window.addEventListener("wheel", (e) => {
+
+
+
       // console.log(e.wheelDeltaY)
-      if (window.scrollY > 500) {
-          setCount(count => ++count)
-          window.scrollTo(0, 0)
+      if (window.scrollY > 1000) {
+        setCount(count => ++count)
+        window.scrollTo(0, 0)
       }
-  }, true)
+    }, true)
 
     // window.addEventListener("wheel", event => console.info(event.offsetX));
   }, [])
 
+  // window.addEventListener("wheel", (e) => {
+
+
+
+  //   // console.log(e.wheelDeltaY)
+  //   if (window.scrollY > 1000) {
+  //     setCount(count => ++count)
+  //     window.scrollTo(0, 0)
+  //   }
+  // }, true)
+
+  // window.addEventListener("wheel", event => console.info(event.offsetX));
+
   // const [isScrolling, setIsScrolling] = useState(false);
-  
+
   // const onScroll = () => {
   //   const timeout = null;
   //   clearTimeout(timeout);
-    
+
 
   //   if (!isScrolling) {
   //     setIsScrolling(true);
@@ -182,57 +203,100 @@ function Home() {
   //     setIsScrolling(false)
   //   }, 200);
   // };
+  const [isWhiteColor, setIsWhiteColor] = useState(true)
+  const [verticalTimeline, setVerticalTimeline] = useState(true)
+
   return (
-    <div className='main-wrapper'>
-      <div className='container'>
-        <h1>{count}</h1>
-        <Header></Header>
-        <div className='wrapper'>
-          <div className='blocks'>
-            <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block ${count%2!=0 ? 'longBlock':'shortBlock'}`} onClick={()=>setCount(7)}><p>CONTACT US</p></div>
-            <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block ${count%2!=0 ? 'longBlock1':'shortBlock1'}`} onClick={()=>setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div>
-            <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block ${count%2!=0 ? 'longBlock2':'shortBlock2'}`} onClick={()=>setCount(5)}><p>PRACTICE AREA</p></div>
-            <div onClick={()=>setCount(1)} className={`four block ${count%2!=0 ? 'longBlock3':'shortBlock3'}`}><p>WHO WE ARE</p></div>
-          </div>
-          {/* <div className='hr-line'></div> */}
-          
-          <div className='front'>
-
-            <div className='images'>
-              <div className="show img" style={{ backgroundImage: "url(" + images.image1 + ")" }}></div>
-              <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
-              <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
-              <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
-              {/* <img  src="https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg"></img> */}
-              {/* <img  src='https://concertopr.com/app/uploads/2021/10/Pilote-.jpeg'></img> */}
-              {/* <img  src='https://concertopr.com/app/uploads/2021/09/Homepage-option-2.jpg'></img> */}
-            </div>
-            <div className='titles'>
-              <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-
-                {/* <hr></hr> */}
-                <h1 className={h1} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */>Welcome to
-                  Getnet Yawkal Law Office!</h1>
-                <p className={p} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+    <>
+      <Head>
+        <title>Getnet Law Office</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
+      </Head>
+      <div className='main-wrapper'>
+        <div className='container'>
+          <h1>{count}</h1>
+          <Header></Header>
+              <div className='explore' onClick={() => setCount(count => ++count)}>
+                <div className='scroll-down'>
+                  <h3 style={{color: isWhiteColor ? '#F5F5F5' : '#7A431D'}}>explore</h3>
+                  {
+                    verticalTimeline ? (
+                      <VerticalTimeline>
+                        <VerticalTimelineElement className="vertical-timeline-element--work">
+                          {/* <h3>as</h3> */}
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement className="vertical-timeline-element--work">
+                          {/* <h3>as</h3> */}
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement className="vertical-timeline-element--work">
+                          {/* <h3>as</h3> */}
+                        </VerticalTimelineElement>
+                      </VerticalTimeline>
+                    ) : 
+                    null
+                  }
+                  <div className='arrow-wrapper'>
+                      <img className='arrow' src={'/arrow.svg'} ></img>
+                  </div>
+                </div>
               </div>
-              <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
-                {/* <div className='hr-line'></div> */}
-
-                {/* <hr></hr> */}
-                <h3 className={h3}/*  onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} */>We cater practical, strategically sound and result oriented first rate legal services in Ethiopia.</h3>
-                <p className={p1} /* onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} */>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
-              </div>
-
+          <div className='wrapper'>
+            <div className='blocks'>
+              <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block ${count % 2 != 0 ? 'longBlock' : 'shortBlock'}`} onClick={() => setCount(7)}><p>CONTACT US</p></div>
+              <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block ${count % 2 != 0 ? 'longBlock1' : 'shortBlock1'}`} onClick={() => setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div>
+              <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block ${count % 2 != 0 ? 'longBlock2' : 'shortBlock2'}`} onClick={() => setCount(5)}><p>PRACTICE AREA</p></div>
+              <div onClick={() => setCount(1)} className={`four block ${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}`}><p>WHO WE ARE</p></div>
             </div>
-          </div>
+            <div className='hr-line line-one'></div>
+            <div className='hr-line line-two'></div>
+            <div className='hr-line line-three'></div>
 
+            <div className='front'>
+
+              <div className='images'>
+                <div className="show img" style={{ backgroundImage: "url(" + images.image1 + ")" }}></div>
+                <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
+                <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
+                <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
+                {/* <img  src="https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg"></img> */}
+                {/* <img  src='https://concertopr.com/app/uploads/2021/10/Pilote-.jpeg'></img> */}
+                {/* <img  src='https://concertopr.com/app/uploads/2021/09/Homepage-option-2.jpg'></img> */}
+              </div>
+              <div className='titles'>
+                <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+
+                  {/* <hr></hr> */}
+                  <h1 className={h1} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */>Welcome to
+                    Getnet Yawkal Law Office!</h1>
+                  <p className={p} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+                </div>
+                <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
+                  {/* <div className='hr-line'></div> */}
+
+                  {/* <hr></hr> */}
+                  <h3 className={h3}/*  onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} */>We cater practical, strategically sound and result oriented first rate legal services in Ethiopia.</h3>
+                  <p className={p1} /* onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} */>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
+          <PracticeArea practiceActiveSlide={practiceActiveSlide}></PracticeArea>
+          <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
+          <ContactUs contactActiveSlide={contactActiveSlide}></ContactUs>
         </div>
-        <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
-        <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
-        <PracticeArea practiceActiveSlide={practiceActiveSlide}></PracticeArea>
-        <ContactUs contactActiveSlide={contactActiveSlide}></ContactUs>
       </div>
-    </div>
+    </>
   )
 }
 

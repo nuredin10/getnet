@@ -3,13 +3,12 @@ import {gsap} from "gsap";
 // import { ReactComponent as Intellectual} from '../asset/intellectual-icon.svg'
 import { AiFillFacebook } from "react-icons/ai";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import Background from '../asset/background.svg'
 
 
 function PracticeArea({practiceActiveSlide}) {
   useEffect(() => {
-    gsap.to(".active-slide", { duration: 1.5, left: "0%" });
-    gsap.to(".remove-slide", { duration: 1.5, left: "-90%" });
+    gsap.to(".active-slide", { duration: 1.5, right: "0%" });
+    gsap.to(".remove-slide", { duration: 1.5, right: "-90%" });
   });
   return (
     <div className={`
@@ -18,8 +17,8 @@ function PracticeArea({practiceActiveSlide}) {
       <div className="practice-wrapper">
         <div className="practice">
           <div className="title">
-            {/* <img src='../asset'></img> */}
-            <AiFillFacebook className="icon" />
+            <img src={'/intellectual-icon.svg'}></img>
+            {/* <AiFillFacebook className="icon" /> */}
             <h3>Intellectual Proprieties</h3>
           </div>
           <p>
@@ -31,7 +30,8 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <AiFillFacebook className="icon" />
+            <img src={'/labor-icon.svg'} className="icon"></img>
+            {/* <AiFillFacebook className="icon" /> */}
             <h3>Labor & Employment</h3>
           </div>
           <p>
@@ -43,7 +43,8 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <AiFillFacebook className="icon" />
+            <img src={'/charity-icon.svg'}></img>
+            {/* <AiFillFacebook className="icon" /> */}
             <h3>Charity</h3>
           </div>
           <p>
@@ -55,7 +56,8 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <AiFillFacebook className="icon" />
+            <img src={'corporate.svg'}></img>
+            {/* <AiFillFacebook className="icon" /> */}
             <h3>Corporate and Finance</h3>
           </div>
           <p>

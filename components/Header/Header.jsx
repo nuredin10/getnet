@@ -46,13 +46,14 @@ function Header() {
     <div className="header">
       <nav className="navbar">
         <a className="logo-wrapper" href="#home">
-          <h4 className="logo">LOGO</h4>
+          {/* <h4 className="logo">LOGO</h4> */}
+          <img src={'/logo_new.svg'} alt="logo" className="logo"></img>
         </a>
-
         <ul className={`nav-links ${isActive === true ? "nav-active" : ""}`}>
           <div className="links">
             {headerNav.map((e, i) => (
               <li key={i}>
+                
                 <a>{e.dispay}</a>
               </li>
             ))}
@@ -67,7 +68,7 @@ function Header() {
             <AiFillFacebook className="icon" />
             <AiFillLinkedin className="icon" />
             <AiFillTwitterSquare className="icon" />
-          </div>
+        </div>
         <div className={`burger ${toggle ? "toggle" : ""}`} onClick={navSlide}>
           <div className="line1"></div>
           {/* <div className="line2"></div> */}
