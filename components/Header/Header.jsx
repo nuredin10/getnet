@@ -7,7 +7,7 @@ function Header() {
   const headerNav = [
     {
       dispay: "who we are",
-      path: "/",
+      path: "whoweare",
     },
     {
       dispay: "practice area",
@@ -54,7 +54,7 @@ function Header() {
             {headerNav.map((e, i) => (
               <li key={i}>
                 
-                <a>{e.dispay}</a>
+                <a href={e.path}>{e.dispay}</a>
               </li>
             ))}
           </div>

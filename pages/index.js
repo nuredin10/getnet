@@ -169,18 +169,47 @@ function Home() {
 
   useEffect(() => {
 
-    window.addEventListener("wheel", (e) => {
+    // window.addEventListener("scroll", (e) => {
 
 
+    // setCount(e.wheelDeltaY)
+    // if(e.wheelDeltaY > 0)
+    //   setCount("scrolling down")
+    // else
+    //   setCount("scrolling up")
+    // console.log(e.wheelDeltaY)
+    // if (window.offsetHeight + window.scrollTop >= window.scrollHeight) {  
+    // setCount(count=>count++);
+    // window.scrollTo(0, 0)
+    // } 
+    // console.log("endd")
+    // if (window.scrollY > 100 && window.scrollY < 1500) {
+    //   setCount(count => ++count)
+    //   window.scrollTo(0, 0)
+    // }
+    // }, true)
+    var isScrolling;
 
-      // console.log(e.wheelDeltaY)
-      if (window.scrollY > 1000) {
-        setCount(count => ++count)
-        window.scrollTo(0, 0)
-      }
-    }, true)
 
-    // window.addEventListener("wheel", event => console.info(event.offsetX));
+    window.addEventListener('wheel', function (e) {
+      
+      // Clear our timeout throughout the scroll
+      window.clearTimeout(isScrolling);
+      window.innerHeight = 0
+      // Set a timeout to run after scrolling ends
+      isScrolling = setTimeout(function () {
+        console.log(window.innerHeight)
+        // if (window.scrollY  30) {
+          if (e.wheelDeltaY > 0){
+            setCount(--count)
+            // scrollTo(0,0)
+          }
+          else
+            setCount(++count)
+        // }  
+      }, 66);
+
+    }, false);
   }, [])
 
   // window.addEventListener("wheel", (e) => {
@@ -237,12 +266,12 @@ function Home() {
             {
               verticalTimeline ? (
                 <div className='scroll-down'>
-                  <h3 style={{ color : '#7A431D' }}>explore</h3>
+                  <h3 style={{ color: '#7A431D' }}>explore</h3>
                   <Timeline className='timeline'>
-                    <Timeline.Item onClick={() =>setCount(count =>1)} className='timeline'><p>Who We Are</p></Timeline.Item>
-                    <Timeline.Item onClick={() =>setCount(count =>3)} className='timeline'><p>Practice Area</p></Timeline.Item>
-                    <Timeline.Item onClick={() =>setCount(count =>5)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
-                    <Timeline.Item onClick={() =>setCount(count =>7)} className='timeline'><p>Contact US</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 1)} className='timeline'><p>Who We Are</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 3)} className='timeline'><p>Practice Area</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 5)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 7)} className='timeline'><p>Contact US</p></Timeline.Item>
                   </Timeline>
                 </div>
               ) : (
