@@ -7,7 +7,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 function AboutSection({ aboutActiveSlide }) {
   useEffect(() => {
     gsap.to(".active-slide", { duration: 1.5, left: "0%", ease: "power2.out" });
-    gsap.to(".remove-slide", { duration: 1.5, left: "-90%", ease: "power2.out" });
+    gsap.to(".remove-slide", { duration: 1.5, left: "-95%", ease: "power2.out" });
   });
 
   return (

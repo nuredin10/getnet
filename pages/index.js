@@ -28,6 +28,7 @@ function Home() {
   const [slide1, setSlide1] = useState("");
   const [slide2, setSlide2] = useState("");
   const [slide3, setSlide3] = useState("");
+  const [slide4, setSlide4] = useState("");
   const [h1, setH1] = useState("normalH1");
   const [p, setP] = useState("hideP");
   const [h3, setH3] = useState("normalH3");
@@ -97,11 +98,20 @@ function Home() {
     setBlock2("shortBlock2")
   }
 
+  const mouseEnter3 = () =>{
+    setSlide4("active")
+    setBlock3("longBlock3")
+  }
+
+  const mouseLeave3 = () =>{
+    setSlide4("remove")
+    setBlock3("shortBlock3")
+  }
+
 
   useEffect(() => {
     gsap.to(".active", { duration: 1.5, y: "-70vh", display: "block" })
     gsap.to(".remove", { duration: 1.5, y: "0vh" })
-    gsap.to(".remove", { display: "none" })
     gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" })
     gsap.to(".longBlock1", { duration: 1, ease: "power2.out", height: "85%", width: "98%" })
     gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%" })
@@ -290,7 +300,7 @@ function Home() {
               <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block `} onClick={() => setCount(7)}><p>CONTACT US</p></div>  {/*${count % 2 != 0 ? 'longBlock' : 'shortBlock'}*/}
               <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block `} onClick={() => setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div> {/*${count % 2 != 0 ? 'longBlock1' : 'shortBlock1'}*/}
               <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block `} onClick={() => setCount(5)}><p>PRACTICE AREA</p></div> {/*${count % 2 != 0 ? 'longBlock2' : 'shortBlock2'}*/}
-              <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} onClick={() => setCount(1)} className={`${block3} four block ${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}`}><p>WHO WE ARE</p></div>
+              <div onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3} onClick={() => setCount(1)} className={`${block3} four block `}><p>WHO WE ARE</p></div> {/*${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}*/}
             </div>
             {/* <div className='hr-line line-one'></div>
             <div className='hr-line line-two'></div>
@@ -303,6 +313,7 @@ function Home() {
                 <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
                 <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
                 <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
+                <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
               </div>
               <div className='titles'>
                 <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>

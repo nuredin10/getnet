@@ -1,5 +1,8 @@
 @use "./scss/" as *;
 
+h1,h2,h3,p,a{
+  font-family: "mukta";
+}
 .main-wrapper{
   // border: 1px solid red;
   // position: -webkit-sticky;
@@ -215,9 +218,10 @@
   margin: auto;
   color: $white-color;
   p{
+    // font-family: "mukta";
     float: left;
-    font-size: 0.8vw;
-    font-weight: 500;
+    font-size: 0.9vw;
+    font-weight: 550;
     margin-top: 1%;
     writing-mode: vertical-rl; 
     cursor: pointer;
@@ -269,11 +273,11 @@
   position: absolute;
   z-index: 10000;
   top: 10vh;
-  left: -90%;
+  left: -95%;
   // right: -90%;
 
   height: 90vh;
-  width: 90%;
+  width: 95%;
   // border: 1px solid red;
   background-color: $white-color;
   background-image: url('/background.svg');
@@ -284,6 +288,7 @@
 .about-section .about-wrapper{
   display: flex;    
   flex-direction: column;
+  border: none
 }
 
 .about-section h3{
@@ -701,7 +706,7 @@
   z-index: 1000000000000000000000000;
   position: absolute;
   bottom: 0%;
-  right: 9%;
+  right: 6%;
 }
 
 .explore .scroll-down h3, .arrow-wrapper h3{
@@ -732,7 +737,8 @@ text-align: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  // border: 1px solid blue;
+  border: 1px solid blue;
+  padding-left: 10%;
 }
 .timeline{
   height: 5vw;
