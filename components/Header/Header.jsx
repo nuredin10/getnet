@@ -11,15 +11,15 @@ function Header() {
     },
     {
       dispay: "practice area",
-      path: "/",
+      path: "practicearea",
     },
     {
       dispay: "Principal Attorney",
-      path: "/",
+      path: "principalattroney",
     },
     {
       dispay: "contact us",
-      path: "/",
+      path: "contactus",
     },
   ];
 

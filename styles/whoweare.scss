@@ -1,5 +1,8 @@
 @use '../scss/' as *;
 
+h1,h2,h3,a,p{
+    font-family: "mukta";
+}
 .about-wrapper {
     width: 100%;
     height: auto; //temp
@@ -34,7 +37,7 @@
 
     width: 50%;
     // height: 46%;
-    border: 1px solid red
+    // border: 1px solid red
 }
 
 .about-main .text h1 {
@@ -51,13 +54,14 @@
 
 .about-main .text p {
     width: 100%;
-    font-family: 'Mukta';
     font-style: normal;
     font-weight: 700;
     font-size: 1.17vw;
     line-height: 1.9vw;
-    color: #372C2E;
-
+    color: $main-color;
+    .highlight{
+        color: $secondary-color;
+    }
     @include mobile {
         line-height: 5vw;
         font-size: 4vw;
@@ -71,5 +75,6 @@
 
     width: 30%;
     height: 55%;
+    margin-top: 6%;
     border: 1px solid blue;
 }

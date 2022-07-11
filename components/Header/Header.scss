@@ -88,6 +88,7 @@ color: $main-color;
 .nav-links a:hover {
   color: #000000;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .burger {
@@ -218,6 +219,7 @@ color: $main-color;
   height: 100%;
   font-size: 1.5vw;
   margin-right: -5%;
+  margin-bottom: 1%;
   @include flex(space-around, center);
   // border: 1px solid red;
   color: $main-color;
