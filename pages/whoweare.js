@@ -2,8 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
 const WhoWeAre = () => {
+    
     return (
         <div className='about-wrapper'>
+            
             <Head>
                 <title>Getnet Law Office</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />

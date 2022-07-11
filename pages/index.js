@@ -69,7 +69,7 @@ function Home() {
   const mouseEnter1 = () => {
     setSlide2("active");
     setH3("smallH3")
-    setP1("showP")
+    setP1("showP1")
     setBlock1('longBlock1')
 
 
@@ -77,7 +77,7 @@ function Home() {
   const mouseLeave1 = () => {
     setSlide2("remove");
     setH3("normalH3")
-    setP1("hideP")
+    setP1("hideP1")
     setBlock1("shortBlock1")
 
 
@@ -88,15 +88,13 @@ function Home() {
     setH12("smallH1")
     setP2("showP")
     setBlock2('longBlock2')
-
   }
+  
   const mouseLeave2 = () => {
     setSlide3("remove");
     setH12("normalH1")
     setP2("hideP")
     setBlock2("shortBlock2")
-
-
   }
 
 
@@ -112,6 +110,8 @@ function Home() {
     gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%" })
     gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%" })
     gsap.to(".shortBlock3", { duration: 1, height: "70%", width: "88%" })
+    gsap.to(".showP1", {duration: 1.5, paddingTop: "0%"})
+    gsap.to(".hideP1", {duration: 0.1, paddingTop: "5%"})
 
   }, [mouseEnter, mouseLeave])
 
@@ -287,14 +287,14 @@ function Home() {
 
           <div className='wrapper'>
             <div className='blocks'>
-              <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block ${count % 2 != 0 ? 'longBlock' : 'shortBlock'}`} onClick={() => setCount(7)}><p>CONTACT US</p></div>
-              <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block ${count % 2 != 0 ? 'longBlock1' : 'shortBlock1'}`} onClick={() => setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div>
-              <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block ${count % 2 != 0 ? 'longBlock2' : 'shortBlock2'}`} onClick={() => setCount(5)}><p>PRACTICE AREA</p></div>
-              <div onClick={() => setCount(1)} className={`four block ${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}`}><p>WHO WE ARE</p></div>
+              <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block `} onClick={() => setCount(7)}><p>CONTACT US</p></div>  {/*${count % 2 != 0 ? 'longBlock' : 'shortBlock'}*/}
+              <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block `} onClick={() => setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div> {/*${count % 2 != 0 ? 'longBlock1' : 'shortBlock1'}*/}
+              <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block `} onClick={() => setCount(5)}><p>PRACTICE AREA</p></div> {/*${count % 2 != 0 ? 'longBlock2' : 'shortBlock2'}*/}
+              <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} onClick={() => setCount(1)} className={`${block3} four block ${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}`}><p>WHO WE ARE</p></div>
             </div>
-            <div className='hr-line line-one'></div>
+            {/* <div className='hr-line line-one'></div>
             <div className='hr-line line-two'></div>
-            <div className='hr-line line-three'></div>
+            <div className='hr-line line-three'></div> */}
 
             <div className='front'>
 
@@ -303,24 +303,19 @@ function Home() {
                 <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
                 <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
                 <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
-                {/* <img  src="https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg"></img> */}
-                {/* <img  src='https://concertopr.com/app/uploads/2021/10/Pilote-.jpeg'></img> */}
-                {/* <img  src='https://concertopr.com/app/uploads/2021/09/Homepage-option-2.jpg'></img> */}
               </div>
               <div className='titles'>
                 <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
 
                   {/* <hr></hr> */}
-                  <h1 className={h1} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */>Welcome to
-                    Getnet Yawkal Law Office!</h1>
-                  <p className={p} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+                  <h1 className={h1} >Welcome to
+                    <br></br>Getnet Yawkal Law Office!</h1>
+                  <p className={p} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
                 </div>
                 <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
-                  {/* <div className='hr-line'></div> */}
-
-                  {/* <hr></hr> */}
-                  <h3 className={h3}/*  onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} */>We cater practical, strategically sound and result oriented first rate legal services in Ethiopia.</h3>
-                  <p className={p1} /* onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} */>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+                  <h3 className={h3}>We cater practical, strategically sound and result oriented <br></br>first rate legal services in Ethiopia.</h3>
+                  <p className='smallText'>Local Expertise, International Depth, Business Acumen.</p>
+                  <p className={`${p1} showUp`} >We take Integrity, accountability, accessibility and timely delivery of our quality legal services as our core value of establishment. We value our client's time and always in exceeding their expectations.</p>
                 </div>
 
               </div>
