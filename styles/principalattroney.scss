@@ -1,0 +1,101 @@
+@use '../scss/' as *;
+
+.principal-wrapper{
+    // border: 1px solid red;
+    width: 100%;
+    background-color: $white-color;
+    background-image: url('/background.svg');
+    padding-top: 15vh;
+    
+}
+
+.principal-wrapper .principal-main{
+    width: 100%;
+    height: 85vh;
+    // border: 1px solid blue;
+}
+
+.principal-main .principal-front{
+    padding: 0 5%;
+    // border: 1px solid red;
+    width: 100%;
+    height: 75%;
+}
+
+.principal-front .principal-text-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    // border: 1px solid red
+}
+
+.principal-text-image .principal-text{
+    width: 50%;
+    height: 100%;
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+}
+
+.principal-text .text{
+    height: 50%;
+    width: 60%;
+    // border: 1px springgreen solid;
+}
+
+.principal-text button{
+    width: 30%;
+    height: 10%;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 10px;
+    color: $white-color;
+    font-size: 1.2vw;
+    font-weight: 200;
+    // margin-top: 10%;
+}
+
+.principal-text .text h3{
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: $primary-color;
+    line-height: 3vw;
+}
+
+
+.principal-text .text p{
+    color: $primary-color;
+    font-size: 1.5vw;
+    margin-top: -5%;
+    font-weight: 300;
+}
+.principal-text-image .principal-image{
+    width: 40%;
+    height: 80%;
+    border: 1px solid blue;
+}
+
+.principal-bottom-block{
+    background-color: $primary-color;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+
+    p{
+        color: $white-color;
+        font-size: 2.2vw;
+        text-transform: uppercase;
+    }
+}
+
+.principal-text-wrapper{
+    border: 1px solid red;
+    // padding: 0 5%;
+    height: 100vh;
+}
+

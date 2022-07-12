@@ -1,7 +1,109 @@
 @use '../../scss/' as *;
 
-.footer{
-    border: 1px solid red;
+h1,h2,h3,a,p{
+    font-family: "mukta";
+}
+
+.footer-wrapper{
+    background-color: $main-color;
     width: 100%;
-    height: 100vh;
+    height: 78vh;
+    padding: 0% 5%;
+    padding-top: 5%
+}
+
+.footer-wrapper .footer-main{
+    width: 100%;
+    height: 85%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-main .links-wrapper{
+    // border: 1px solid red;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+}
+.links-wrapper .links{
+    border-top: 2px solid #F5F5F5;
+
+}
+.links-wrapper .links a{
+    display: block;
+    color: $light-color;
+    margin: 2% 0; 
+    margin-bottom: 7%;
+}
+
+.links h3{
+    font-size: 1.3vw;
+    color: $white-color;
+    margin-top: 4%;
+}
+
+.middle-links a{
+    color: $light-color;
+    margin-bottom: 7%;
+    display: block;
+}
+
+.footer-main .middle-links{
+    width: 20%;
+    height: 100%;
+}
+
+.footer-main .quick-links{
+    // border: 1px solid red;
+    height: 60%;
+}
+
+.footer-main .footer-info-wrapper{
+    height: 100%;
+    width: 45%;
+    // border: 1px solid red;
+
+    h1{
+        color: $white-color;
+        font-size: 5vw;
+        // border: 1px solid red;
+        margin-top: -4%;
+    }
+}
+.footer-info-wrapper .footer-info{
+    // border: 1px solid red;
+    margin-top: -5%;
+    p{
+        color: $white-color;
+    }
+}
+
+.footer-info .footer-social-media{
+    color: $light-color;
+    font-size: 2vw;
+    
+}
+
+
+
+.footer-credit{
+    width: 100%;
+  height: 10vh;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 5%;
+  p{
+    color: $light-color;
+    font-size: 0.8vw;
+  }
+  .copyright{
+    margin-bottom:-3px;
+    font-size: 0.9vw;
+  }
 }

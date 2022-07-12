@@ -71,7 +71,7 @@ const practiceArea = () => {
                                     <h1>{e.title}</h1>
                                     <p>{e.text}</p>
                                 </div>
-                                <img src={'/rightArrow.svg'}></img>
+                                <h3 className='discover'>DISCOVER MORE</h3>
                             </div>
                         ))
                     }
