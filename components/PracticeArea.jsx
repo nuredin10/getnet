@@ -8,8 +8,9 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 function PracticeArea({practiceActiveSlide}) {
   useEffect(() => {
     gsap.to(".active-slide", { duration: 1.5, right: "0%" });
-    gsap.to(".remove-slide", { duration: 1.5, right: "-90%" });
+    gsap.to(".remove-slide", { duration: 1.5, right: "-95%" });
   });
+  
   return (
     <div className={`
     practice-area ${practiceActiveSlide ? 'active-slide' : 'remove-slide'}`}>

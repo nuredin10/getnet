@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+
 const WhoWeAre = () => {
     
     return (
@@ -33,6 +35,7 @@ const WhoWeAre = () => {
                     <img></img>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }
