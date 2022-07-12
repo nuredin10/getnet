@@ -55,7 +55,13 @@
     color: $white-color;
     font-size: 1.2vw;
     font-weight: 200;
+    cursor: pointer;
     // margin-top: 10%;
+}
+
+.principal-text button:hover{
+    background-color: $main-color;
+    transition: 0.3s ease-in;
 }
 
 .principal-text .text h3{
@@ -81,6 +87,8 @@
 .principal-bottom-block{
     background-color: $primary-color;
     // border: 1px solid red;
+    width: 92%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,8 +102,66 @@
 }
 
 .principal-text-wrapper{
-    border: 1px solid red;
+    // border: 1px solid red;
     // padding: 0 5%;
-    height: 100vh;
+    // height: 100vh;
+    padding: 3% 4%;
 }
 
+.principal-text-wrapper .big-text-wrapper{
+    width: 100%;
+    h3{
+        font-size: 1.3vw;
+        color: $main-color;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.5vw;
+        color: $main-color;
+        line-height: 2.2vw;
+    }
+}
+
+.principal-text-wrapper .principal-qualification{
+    margin-top: 5%;
+    h3{
+        color: $main-color;
+        font-size: 1.3vw;
+        font-weight: 700;
+        span{
+            color: $primary-color;
+        }
+    }
+}
+.principal-text-wrapper .principal-qualification div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p{
+        width: 45%;
+        color: $primary-color;
+        font-size: 1.3vw;
+        line-height: 2vw;
+
+    }
+}
+
+
+.principal-text-wrapper .principal-membership{
+    margin-top: 5%;
+    h3{
+        color: $main-color;
+        font-size: 1.3vw;
+        font-weight: 700;
+        span{
+            color: $primary-color;
+        }
+    }
+    p{
+        color: $main-color;
+        font-size: 1.3vw;
+    }
+    div{
+        margin-top: 5%;
+    }
+}

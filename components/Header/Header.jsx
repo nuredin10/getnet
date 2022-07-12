@@ -45,7 +45,7 @@ function Header() {
   return (
     <div className="header">
       <nav className="navbar">
-        <a className="logo-wrapper" href="#home">
+        <a className="logo-wrapper" href="/">
           {/* <h4 className="logo">LOGO</h4> */}
           <img src={'/logo_new.svg'} alt="logo" className="logo"></img>
         </a>
