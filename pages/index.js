@@ -46,6 +46,8 @@ function Home() {
 
   const [count, setCount] = useState([]);
 
+  const [homeVisible, setHomeVisible] = useState(true)
+
   const images = {
     image1: "https://concertopr.com/app/uploads/2021/10/Paysage2_M.jpg",
     images2: 'https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg',
@@ -118,48 +120,49 @@ function Home() {
 
 
   useEffect(() => {
-    if (count == 1) {
+    if (count === 1) {
       setAboutActiveSlide(true)
       setqualActiveSlide(false)
       setPracticeActiveSlide(false)
       setContactActiveSlide(false)
     }
-    else if (count == 3) {
+    else if (count === 2) {
       setAboutActiveSlide(false)
       setqualActiveSlide(true)
       setPracticeActiveSlide(false)
       setContactActiveSlide(false)
 
     }
-    else if (count == 5) {
+    else if (count === 3) {
       setAboutActiveSlide(false)
       setqualActiveSlide(false)
       setPracticeActiveSlide(true)
       setContactActiveSlide(false)
 
     }
-    else if (count == 7) {
+    else if (count === 4) {
       setAboutActiveSlide(false)
       setqualActiveSlide(false)
       setPracticeActiveSlide(false)
       setContactActiveSlide(true)
     }
 
-    if (count % 2 == 0) {
+    if (count ===0) {
       setAboutActiveSlide(false)
       setqualActiveSlide(false)
       setPracticeActiveSlide(false)
       setContactActiveSlide(false)
     }
 
-    if (count % 2 != 0) {
+    if (count != 0) {
       setVerticalTimeline(true)
-      setIsWhiteColor(false)
+      setHomeVisible(false)
     }
     else {
+      setHomeVisible(true)
       setVerticalTimeline(false)
-      setIsWhiteColor(true)
     }
+    
 
   }, [count])
 
@@ -240,13 +243,13 @@ function Home() {
                   <h3 style={{ color : '#7A431D' }}>explore</h3>
                   <Timeline className='timeline'>
                     <Timeline.Item onClick={() =>setCount(count =>1)} className='timeline'><p>Who We Are</p></Timeline.Item>
-                    <Timeline.Item onClick={() =>setCount(count =>3)} className='timeline'><p>Practice Area</p></Timeline.Item>
-                    <Timeline.Item onClick={() =>setCount(count =>5)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
-                    <Timeline.Item onClick={() =>setCount(count =>7)} className='timeline'><p>Contact US</p></Timeline.Item>
+                    <Timeline.Item onClick={() =>setCount(count =>2)} className='timeline'><p>Practice Area</p></Timeline.Item>
+                    <Timeline.Item onClick={() =>setCount(count =>3)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
+                    <Timeline.Item onClick={() =>setCount(count =>4)} className='timeline'><p>Contact US</p></Timeline.Item>
                   </Timeline>
                 </div>
               ) : (
-                <div className='arrow-wrapper' onClick={() => setCount(count => ++count)}>
+                <div className='arrow-wrapper' onClick={() => setCount(count => 1)}>
                   <h3 >explore</h3>
                   <img className='arrow' src={'/arrow.svg'} ></img>
                 </div>
