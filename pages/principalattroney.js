@@ -1,10 +1,26 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 function PrincipalAttroney() {
+  const [isShadow, setIsShadow] = useState(false)
+
+  const changeNavbar = () => {
+      console.log("scrolling")
+      if (window.scrollY >= 80) {
+          setIsShadow(true);
+      } else {
+          setIsShadow(false);
+      }
+  };
+
+  useEffect(() => {
+      window.addEventListener("scroll", changeNavbar);
+  }, [])
+
+
   return (
     <div className='principal-wrapper'>
-      <Header></Header>
+      <Header isDark={false} isShadow={isShadow}></Header>
       <div className='principal-main'>
         <div className='principal-front'>
           <div className='principal-text-image'>

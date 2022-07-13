@@ -1,10 +1,24 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 
 const WhoWeAre = () => {
-    
+    const [isShadow, setIsShadow] = useState(false)
+
+    const changeNavbar = () => {
+        console.log("scrolling")
+        if (window.scrollY >= 80) {
+            setIsShadow(true);
+        } else {
+            setIsShadow(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeNavbar);
+    }, [])
+
     return (
         <div className='about-wrapper'>
             
@@ -20,7 +34,7 @@ const WhoWeAre = () => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
             </Head>
-            <Header></Header>
+            <Header isDark={false} isShadow={isShadow}></Header>
             <div className='about-main'>
                 <div className='text'>
                     <h1>Who We Are</h1>

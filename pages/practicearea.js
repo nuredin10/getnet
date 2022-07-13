@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
@@ -35,6 +35,21 @@ const practiceArea = () => {
     ]
 
     const [isOpen, setIsOpen] = useState(false)
+
+    const [isShadow, setIsShadow] = useState(false)
+
+    const changeNavbar = () => {
+        console.log("scrolling")
+        if (window.scrollY >= 80) {
+            setIsShadow(true);
+        } else {
+            setIsShadow(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", changeNavbar);
+    }, [])
     
     // console.log(isOpen)
     return (
@@ -51,7 +66,7 @@ const practiceArea = () => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
             </Head>
-            <Header isDark={false}></Header>
+            <Header isDark={false} isShadow={isShadow}></Header>
             <div className='practice-wrapper'>
                 <div className="practice-front">
                     <div className="practice-main">

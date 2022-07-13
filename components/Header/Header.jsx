@@ -36,7 +36,7 @@ function Header({isDark, isShadow}) {
 
 
   return (
-    <div className={`header ${isDark ? 'dark-header' : 'white-header'}`}>
+    <div className={`header ${isDark ? 'dark-header' : 'white-header'} ${isShadow ? 'shadow-header' : ''}`}>
       <nav className="navbar">
         <a className="logo-wrapper" href="/">
           {/* <h4 className="logo">LOGO</h4> */}

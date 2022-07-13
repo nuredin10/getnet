@@ -20,7 +20,10 @@
 .dark-header{
   background-color: $main-color;
   transition: 0.3s ease-in;
+}
 
+.shadow-header {
+  box-shadow: 0 0 15px 0 rgb(196, 195, 195);
 }
 nav {
   padding: 0 7%;
@@ -104,8 +107,14 @@ text-transform: uppercase;
   color: $main-color;
 }
 
+.nav-links .white-link:hover{
+  color: #ffffff;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
 
-.nav-links a:hover {
+
+.nav-links .dark-link:hover {
   color: #000000;
   transition: 0.3s ease;
   text-decoration: none;
