@@ -1,8 +1,13 @@
 @use "./scss/" as *;
 
+h1,h2,h3,p,a{
+  font-family: "mukta";
+}
+
 .main-wrapper{
   // border: 1px solid red;
   // position: -webkit-sticky;
+  height: 100vh;
   top: 0;
 }
 .container{
@@ -29,17 +34,13 @@
 }
 .front {
 
-  // border: 1px solid red;
+  border: 1px solid red;
   width: 83%;
-  height: 70vh;
+  height: 63vh;
   margin: auto;
   display: flex;  
   align-items: center;
   justify-content: center;
-  @include mobile{
-    margin-right: auto;
-  }
-
   @include mobile{
     margin: 0;
   }
@@ -48,7 +49,7 @@
 
 .images {
   width: 100%;
-  height: 70vh  ;
+  height: 63vh  ;
   overflow: hidden;
   // background-color: black;
   // border: 1px solid red;
@@ -76,8 +77,9 @@
 
 .titles {
   position: absolute;
-  width: 80%;
+  width: 70%;
   height: 100%;
+  // border: 1px solid blue;
   // @include flex('center','center');
   // flex-direction: column;
 }
@@ -85,46 +87,31 @@
 .titles div{
   margin: auto;
   // border: 1px solid red;
-  height: 50%;
-  width: 75%;
-  
+  height: 45%;
+  width: 100%;
+  border-top: 1px solid #746a6c;
 }
 
-.hr-line{
-  margin: auto;
-  width: 60vw;
-  height: 0;
-  border: 0.5px solid #746a6c;
-  position: absolute;
-  z-index: 10000000;
-}
+.titles div:nth-child(2){
+  border-bottom: 1px solid #746a6c;
 
-.line-two{
-  top: 35vh;
-}
-.line-three{
-  top: 70vh;
-}
-
-.titles hr {
 }
 
 .titles h1 {
   
-  color: $white-color;
+  color: $main-color;
   // border: 1px solid red;
   
 }
 
-
-
 .titles p{
   color: $white-color;
 }
+
 .normalH1{
   font-size: 5vw;
   font-weight: 600;
-  width: 80%;
+  // width: 80%;
   // margin-bottom: -3vw;
   // border: 1px solid red;
   line-height: 5vw;
@@ -147,9 +134,9 @@
 
 .normalH3{
   color: $white-color;
-  font-size: 2vw;
+  font-size: 1.7vw;
   line-height: 2.5vw;
-  font-weight: 300;
+  font-weight: 200;
 
   @include mobile{
     line-height: 7vw;
@@ -161,6 +148,7 @@
   font-size: 1.5vw;
   color: $white-color;
   font-weight: 100;
+  line-height: 2.5vw;
   @include mobile{
     line-height:5vw;
     font-size: 4vw;
@@ -178,6 +166,25 @@
   // color: blue;
   display: flex;
   transition: 3s ease-in-out;
+}
+.titles .hideP1{
+  // padding-top: 5%;
+  padding-top: 5%;
+  display: none;
+}
+.title .showP1{
+  transition: 3s ease-in-out;
+  display: block;
+  // padding-top: 0%;
+}
+
+.titles .showUp{
+  height: 40%;
+  // border: 1px solid red;
+}
+
+.titles .smallText{
+  margin-top: 2%;
 }
 
 
@@ -212,9 +219,10 @@
   margin: auto;
   color: $white-color;
   p{
+    // font-family: "mukta";
     float: left;
-    font-size: 0.8vw;
-    font-weight: 500;
+    font-size: 0.9vw;
+    font-weight: 550;
     margin-top: 1%;
     writing-mode: vertical-rl; 
     cursor: pointer;
@@ -266,11 +274,11 @@
   position: absolute;
   z-index: 10000;
   top: 10vh;
-  left: -90%;
+  left: -95%;
   // right: -90%;
 
   height: 90vh;
-  width: 90%;
+  width: 95%;
   // border: 1px solid red;
   background-color: $white-color;
   background-image: url('/background.svg');
@@ -279,14 +287,16 @@
 }
 
 .about-section .about-wrapper{
+  height: 100%;
   display: flex;    
   flex-direction: column;
+  border: none
 }
 
 .about-section h3{
-  font-size: 1.2vw;
-  margin-left: 5%;
-  margin-left: 8%;
+  font-size: 1.17vw;
+  font-weight: 700;
+  margin-left: 3.5%;
   @include mobile{
     font-size: 5vw;
   }
@@ -307,15 +317,17 @@
 }
 
 .about-main p{
-  width: 45%;
-  font-size: 1.6vw;
+  width: 55%;
+  font-size: 2.3vw;
   font-weight: 350;
-  line-height: 2vw;
+  line-height: 2.8vw;
   color: $main-color;
+  // border: 1px solid red;
   @include mobile{
     height: 50%;
-    font-size: 4vw;
+    font-size: 4.5vw;
     width: 100%;
+    line-height: 6vw;
   }
   .highlight{
     color: $light-color;
@@ -323,9 +335,9 @@
 }
 
 .about-main .image-section{
-  height: 70%;
+  height: 75%;
   // border: 1px solid red;
-  width: 19.3vw;
+  width: 30%;
   background-color: $light-color;
   @include mobile{
     width: 100%;
@@ -347,9 +359,9 @@
   cursor: pointer;
   a{
     margin-left: auto;
-    color: $light-color;
-    font-size: 1vw;
-    font-weight: 500;
+    color: $primary-color;
+    font-size: 1.46vw;
+    font-weight: 700;
     text-transform: uppercase;
     @include mobile{
       font-size: 4vw;
@@ -374,7 +386,7 @@
   top: 10vh;
   right: -90%;
   height: 90vh;
-  width: 90%;
+  width: 95%;
   background-color: $white-color;
   padding: 3% 5%;
   background-image: url('/background.svg');
@@ -477,7 +489,7 @@
   top: 10vh;
   height: 90vh;
   left: -90%;
-  width: 90%;
+  width: 95%;
   background-color: $white-color;
   background-image: url('/background.svg');
   
@@ -520,6 +532,9 @@
   width: 100%;
   // border: 1p x solid red;
   // height: 30%;
+  @include mobile{
+    margin-bottom: 5%;
+  }
   h3{
     margin-left: 5%;
     font-weight: 350;
@@ -527,6 +542,7 @@
     // height: fit-content;
     @include mobile{
       // font-weight: 400;
+      margin-top: 5%;
       font-size: 4vw;
     }
   }
@@ -647,7 +663,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -10%;
+  margin-top: 10%;
   p{
     color: $white-color;
   }
@@ -692,13 +708,13 @@
 
 
 .explore{
-  width: 8vw;
-  height: 50vh;
+  width: 10vw;
+  height: 45vh;
   // border: 1px solid red;
   z-index: 1000000000000000000000000;
   position: absolute;
   bottom: 0%;
-  right: 9%;
+  right: 6%;
 }
 
 .explore .scroll-down h3, .arrow-wrapper h3{
@@ -717,9 +733,9 @@ text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 40%;
+  height: 10vw;
   width: 100%;
-  margin-top: 200%;
+  margin-top: 10vw;
   // border: 1px solid rgb(255, 251, 0);
 }
 
@@ -730,6 +746,8 @@ text-align: center;
   width: 100%;
   height: 100%;
   // border: 1px solid blue;
+  // padding-left: 10%;
+  margin-left: 20%;
 }
 .timeline{
   height: 5vw;
@@ -738,6 +756,6 @@ text-align: center;
   p{
     // transform: rotate(-90deg);
     color: $main-color;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
   }
 }

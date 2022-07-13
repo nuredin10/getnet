@@ -1,21 +1,33 @@
 @use "./scss/" as *;
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0%;
   width: 100%;
-  background-color: transparent;
+  
   // overflow-x: hidden;
   // border: 1px solid red
   z-index: 100000000;
   // box-shadow: 0 12px 12px -12px rgb(255, 0, 0);
+}
+
+.white-header{
+  background-color: $white-color;
+  transition: 0.3s ease-in;
+
+}
+
+.dark-header{
+  background-color: $main-color;
+  transition: 0.3s ease-in;
+
 }
 nav {
   padding: 0 7%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 12vh;
   // background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
 }
@@ -76,7 +88,7 @@ line-height: 2.50rem;
 text-align: center;
 text-transform: uppercase;
 
-color: $main-color;
+
 
   
   @include mobile{
@@ -84,10 +96,19 @@ color: $main-color;
   }
 }
 
+.nav-links .white-link{
+  color: $white-color;
+}
+
+.nav-links .dark-link{
+  color: $main-color;
+}
+
 
 .nav-links a:hover {
   color: #000000;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .burger {
@@ -218,15 +239,23 @@ color: $main-color;
   height: 100%;
   font-size: 1.5vw;
   margin-right: -5%;
+  margin-bottom: 1%;
   @include flex(space-around, center);
   // border: 1px solid red;
-  color: $main-color;
+
   cursor: pointer;
   @include mobile {
     display: none;
   }
 }
 
+
+.white-social-media{
+  color: $white-color;
+}
+.dark-social-media{
+  color: $main-color;
+}
 
 
 
