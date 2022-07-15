@@ -19,7 +19,7 @@
     padding: 0 5%;
     // border: 1px solid red;
     width: 100%;
-    height: 75%;
+    height: 95%;
 }
 
 .principal-front .principal-text-image{
@@ -27,6 +27,9 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    @include mobile{
+        flex-direction: column;
+    }
     // border: 1px solid red
 }
 
@@ -38,24 +41,37 @@
     flex-direction: column;
     // align-items: center;
     justify-content: center;
+    @include mobile{
+        width: 100%;
+    }
 }
 
 .principal-text .text{
     height: 50%;
     width: 60%;
+    @include mobile{
+        width: 90%;
+        height: 80%;
+    }
     // border: 1px springgreen solid;
 }
 
 .principal-text button{
     width: 30%;
     height: 10%;
-    background-color: $primary-color;
+    background-color: $light-color;
     border: none;
     border-radius: 10px;
     color: $white-color;
     font-size: 1.2vw;
     font-weight: 200;
     cursor: pointer;
+
+    @include mobile{
+        width: 70%;
+        height: 15%;
+        font-size: 4vw;
+    }
     // margin-top: 10%;
 }
 
@@ -67,21 +83,35 @@
 .principal-text .text h3{
     font-size: 2.5vw;
     font-weight: 700;
-    color: $primary-color;
+    color: $main-color;
     line-height: 3vw;
+    @include mobile{
+        font-size: 10vw;
+        font-weight: 900;
+        line-height: 13vw;
+    }
 }
 
 
 .principal-text .text p{
-    color: $primary-color;
+    color: $main-color;
     font-size: 1.5vw;
     margin-top: -5%;
     font-weight: 300;
+
+    @include mobile{
+        font-size: 6vw;
+        margin-top: -10%;
+    }
 }
 .principal-text-image .principal-image{
     width: 40%;
     height: 80%;
     border: 1px solid blue;
+    @include mobile{
+        width: 100%;
+        margin: 5% 0;
+    }
 }
 
 .principal-bottom-block{
@@ -93,11 +123,17 @@
     justify-content: center;
     align-items: center;
     height: 25%;
-
+    @include mobile{
+        height: 15%;
+    }
     p{
         color: $white-color;
         font-size: 2.2vw;
         text-transform: uppercase;
+        @include mobile{
+            font-size: 6vw;
+            text-align: center;
+        }
     }
 }
 
@@ -105,63 +141,84 @@
     // border: 1px solid red;
     // padding: 0 5%;
     // height: 100vh;
-    padding: 3% 4%;
+    padding: 3% 10%;
+    @include mobile{
+        padding: 25% 10%;
+    }
 }
 
 .principal-text-wrapper .big-text-wrapper{
     width: 100%;
     h3{
-        font-size: 1.3vw;
+        font-size: 2.5vw;
         color: $main-color;
         font-weight: 700;
+        @include mobile{
+            font-size: 7vw;
+        }
     }
     p{
         font-size: 1.5vw;
         color: $main-color;
-        line-height: 2.2vw;
+        line-height: 3vw;
+        @include mobile{
+            font-size: 4vw;
+            line-height: 7vw;
+        }
     }
 }
 
 .principal-text-wrapper .principal-qualification{
-    margin-top: 5%;
+    // margin-top: 5%;
     h3{
         color: $main-color;
-        font-size: 1.3vw;
+        font-size: 2.5vw;
         font-weight: 700;
-        span{
-            color: $primary-color;
+        @include mobile{
+            font-size: 7vw;
         }
     }
 }
 .principal-text-wrapper .principal-qualification div{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
     p{
         width: 45%;
-        color: $primary-color;
+        color: $main-color;
         font-size: 1.3vw;
-        line-height: 2vw;
-
+        margin: 0 0;
+        font-weight: 500;
+        // border: 1px solid red;
+        // line-height: 2vw;
+        @include mobile{
+            width: 100%;
+            font-size: 4vw;
+            line-height: 7vw;
+        }
     }
 }
 
 
 .principal-text-wrapper .principal-membership{
-    margin-top: 5%;
+    // margin-top: 5    %;
     h3{
         color: $main-color;
-        font-size: 1.3vw;
+        font-size: 2.5vw;
         font-weight: 700;
-        span{
-            color: $primary-color;
+        @include mobile{
+            font-size: 7vw;
         }
     }
     p{
         color: $main-color;
+        font-weight: 500;
         font-size: 1.3vw;
+        margin-top: -1%;
+        @include mobile{
+            font-size: 4vw;
+            line-height: 7vw;
+        }
     }
-    div{
-        margin-top: 5%;
-    }
+
 }

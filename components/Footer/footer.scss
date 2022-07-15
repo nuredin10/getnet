@@ -9,16 +9,22 @@ h1,h2,h3,a,p{
     width: 100%;
     height: 78vh;
     padding: 0% 5%;
-    padding-top: 5%
+    padding-top: 5%;
+    @include mobile{
+        height: 100vh;
+    }
 }
 
 .footer-wrapper .footer-main{
     width: 100%;
-    height: 85%;
+    height: 90%;
     // border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mobile{
+        flex-direction: column;
+    }
 }
 
 .footer-main .links-wrapper{
@@ -27,52 +33,98 @@ h1,h2,h3,a,p{
     height: 100%;
     display: flex;
     flex-direction: column;
+    @include mobile{
+        width: 100%;
+        
+    }
     // flex-wrap: wrap;
 }
-.links-wrapper .links{
-    border-top: 2px solid #F5F5F5;
 
+ .border-top{
+    border-top: 2px solid $white-color;
 }
-.links-wrapper .links a{
+
+.links-wrapper .links a, .middle-links .links a{
     display: block;
-    color: $light-color;
-    margin: 2% 0; 
-    margin-bottom: 7%;
+    color: #E1C196;
+    font-weight: 300;
+    @include mobile{
+        margin: 2% 0;
+    }
+    margin: 4% 0;
 }
 
-.links h3{
+.links-wrapper h3, .middle-links h3{
     font-size: 1.3vw;
     color: $white-color;
     margin-top: 4%;
+    @include mobile{
+        font-size: 5vw;
+        margin-top: 2%;
+    }
 }
 
-.middle-links a{
-    color: $light-color;
-    margin-bottom: 7%;
-    display: block;
-}
 
 .footer-main .middle-links{
     width: 20%;
     height: 100%;
+    @include mobile{
+        width: 100%;
+        margin-top: 5%;
+    }
 }
 
-.footer-main .quick-links{
+.footer-main .quick-links .links{
     // border: 1px solid red;
     height: 60%;
+    @include mobile{
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    a{
+        @include mobile {
+            width: 50%;
+        // border: 1px solid red;
+        }
+    }
+}
+
+.footer-principal-attorney{
+    margin-top: 5%;
 }
 
 .footer-main .footer-info-wrapper{
     height: 100%;
     width: 45%;
     // border: 1px solid red;
-
+    @include mobile{
+        width: 100%;
+    }
     h1{
         color: $white-color;
         font-size: 5vw;
         // border: 1px solid red;
         margin-top: -4%;
+        @include mobile{
+            font-size: 9vw;
+        }
     }
+}
+
+.middle-links .links{
+    @include mobile{
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+    }
+    a{
+        @include mobile{
+            width: 50%;
+            // border: 1px solid red;
+        }
+    }
+    // border: 1px solid red;
 }
 .footer-info-wrapper .footer-info{
     // border: 1px solid red;
@@ -85,22 +137,30 @@ h1,h2,h3,a,p{
 .footer-info .footer-social-media{
     color: $light-color;
     font-size: 2vw;
-    
+    @include mobile{
+        font-size: 5vw;
+    }
 }
 
 
 
 .footer-credit{
     width: 100%;
-  height: 10vh;
+  height: 5vh;
   // border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0% 5%;
+  @include mobile{
+    height: 10vh;
+  }
   p{
     color: $light-color;
     font-size: 0.8vw;
+    @include mobile{
+        font-size: 2.2vw;
+    }
   }
   .copyright{
     margin-bottom:-3px;

@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
@@ -38,6 +38,11 @@ const practiceArea = () => {
 
     const [isShadow, setIsShadow] = useState(false)
 
+    const popUpOnClickHandler = (event, key) => {
+        console.log(event.target);
+        console.log('key index: ', key);
+    }
+
     const changeNavbar = () => {
         console.log("scrolling")
         if (window.scrollY >= 80) {
@@ -50,7 +55,7 @@ const practiceArea = () => {
     useEffect(() => {
         window.addEventListener("scroll", changeNavbar);
     }, [])
-    
+
     // console.log(isOpen)
     return (
         <div className='practice-page'>
@@ -85,7 +90,7 @@ const practiceArea = () => {
                 <div className='practice-content'>
                     {
                         practiceContent.map((e, i) => (
-                            <div key={i} className='single-practice' onClick={(e)=>setIsOpen(!isOpen)}>
+                            <div key={i} className='single-practice' onClick={event => popUpOnClickHandler(event, key)} >
                                 {isOpen ? (
                                     <PopUp title={e.title} desc={e.desc} icon={e.icon}></PopUp>
                                 ) : null}
@@ -97,7 +102,7 @@ const practiceArea = () => {
                             </div>
                         ))
                     }
-                    
+
                 </div>
                 <Footer></Footer>
             </div>
@@ -105,13 +110,13 @@ const practiceArea = () => {
     )
 }
 
-const PopUp =({title,desc,icon})=>{
-    return(
+const PopUp = ({ title, desc, icon }) => {
+    return (
         <div className='popup'>
             <h1>{title}</h1>
             <h1>{desc}</h1>
             <img src={icon}></img>
-            <button onClick={()=>setIsOpen(!isOpen)}>Cancel</button>
+            <button onClick={() => setIsOpen(!isOpen)}>Cancel</button>
         </div>
     )
 }

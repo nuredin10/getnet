@@ -31,7 +31,7 @@ h1,h2,h3,a,p{
 
 .about-main .text {
     @include mobile {
-        width: 100%;
+        width: 85%;
         height: 50%;
     }
 
@@ -70,7 +70,9 @@ h1,h2,h3,a,p{
 
 .about-main .image-wrapper {
     @include mobile {
-        width: 100%;
+        width: 85%;
+        height: 30%;
+        margin-top: -15%;
     }
 
     width: 30%;
@@ -83,6 +85,9 @@ h1,h2,h3,a,p{
     // border: 1px solid red;
     height: 30vh;
     padding: 0% 5%;
+    @include mobile{
+        height: 15vh;
+    }
 }
 .next-page-links div{
     display: flex;
@@ -94,5 +99,8 @@ h1,h2,h3,a,p{
         font-size: 2vw;
         font-weight: 700;
         text-transform: uppercase;
+        @include mobile{
+            font-size: 4.5vw;
+        }
     }
 }
