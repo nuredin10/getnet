@@ -49,7 +49,7 @@ function PrincipalAttroney() {
             Getnet is a very personable, goal-focused and versatile person accustomed to a fast-paced environment where deadlines are a priority and handling multiple jobs simultaneously is a requirement.</p>
         </div>
         <div className='principal-qualification'>
-          <h3>Principal Attorney - <span>qualifications</span></h3>
+          <h3>qualifications</h3>
           <div>
             <p>Consultant and Attorney at Law-All Federal Courts Advocacy License</p>
             <p>Certified Intellectual Property Agent- Ethiopian Intellectual Property Authority (EIPA)</p>
@@ -62,7 +62,7 @@ function PrincipalAttroney() {
           </div>
         </div>
         <div className='principal-membership'>
-          <h3>Principal Attorney - <span>Membership</span></h3>
+          <h3>Membership</h3>
           <div>
             <p>Ethiopian Lawyers’ Association</p>
             <p>Ethiopian Federal Advocates’ Association</p>

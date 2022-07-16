@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
@@ -55,7 +55,7 @@ const practiceArea = () => {
     useEffect(() => {
         window.addEventListener("scroll", changeNavbar);
     }, [])
-    
+
     // console.log(isOpen)
     return (
         <div className='practice-page'>
@@ -102,7 +102,7 @@ const practiceArea = () => {
                             </div>
                         ))
                     }
-                    
+
                 </div>
                 <Footer></Footer>
             </div>
@@ -110,13 +110,13 @@ const practiceArea = () => {
     )
 }
 
-const PopUp =({title,desc,icon})=>{
-    return(
+const PopUp = ({ title, desc, icon }) => {
+    return (
         <div className='popup'>
             <h1>{title}</h1>
             <h1>{desc}</h1>
             <img src={icon}></img>
-            <button onClick={()=>setIsOpen(!isOpen)}>Cancel</button>
+            <button onClick={() => setIsOpen(!isOpen)}>Cancel</button>
         </div>
     )
 }
