@@ -9,6 +9,7 @@ h1,h2,h3,a,p{
     padding-top: 12vh;
     background-image: url('/background.svg');
     background-color: $white-color;
+    
 }
 
 .practice-wrapper .practice-front{
@@ -24,20 +25,33 @@ h1,h2,h3,a,p{
     justify-content: space-between;
     align-items: center;
     height: 70vh;
+    @include mobile{
+        flex-direction: column;
+    }
 }
 
-.practice-text{
+.practice-main .practice-text{
     width: 40%;
     height: 70%;
     // border: 1px solid red;
-
+    @include mobile{
+        width: 100%;
+    }
     h1{
+        @include mobile{
+            font-weight: 700;
+            font-size: 10vw;
+        }
         font-size: 3vw;
         color: $main-color;
         font-weight: 500;
     }
 
     p{
+        @include mobile{
+            font-size: 5vw;
+            line-height: 6vw;
+        }
         font-size: 1.7vw;
         font-weight: 300;
         line-height: 2.5vw;

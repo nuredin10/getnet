@@ -4,6 +4,11 @@ import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
 const practiceArea = () => {
 
+    const popUpOnClickHandler=(e,data)=>{
+        console.log(e)
+        setIsOpen(!isOpen);
+    }
+
     const practiceContent = [
         {
             title: "Intellectual Properties",
@@ -85,7 +90,7 @@ const practiceArea = () => {
                 <div className='practice-content'>
                     {
                         practiceContent.map((e, i) => (
-                            <div key={i} className='single-practice' onClick={(e)=>setIsOpen(!isOpen)}>
+                            <div key={i} className='single-practice' onClick={()=>popUpOnClickHandler(e)}>
                                 {isOpen ? (
                                     <PopUp title={e.title} desc={e.desc} icon={e.icon}></PopUp>
                                 ) : null}
