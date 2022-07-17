@@ -50,10 +50,10 @@ function Home() {
   const [homeVisible, setHomeVisible] = useState(true)
 
   const images = {
-    image1: "https://concertopr.com/app/uploads/2021/10/Paysage2_M.jpg",
-    images2: 'https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg',
-    images3: 'https://concertopr.com/app/uploads/2021/10/Pilote-.jpeg',
-    images4: 'https://concertopr.com/app/uploads/2021/09/Homepage-option-2.jpg',
+    image1: "/front-image.svg",
+    images2: '/front-image1.svg',
+    images3: 'front-image2.svg',
+    images4: '/front-image4.svg',
   }
 
   const mouseEnter = () => {
@@ -324,7 +324,7 @@ function Home() {
                 <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
                 <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
                 <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
-                <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
+                <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images5 + ")" }}></div>
               </div>
               <div className='titles'>
                 <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>

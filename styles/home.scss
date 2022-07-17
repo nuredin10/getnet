@@ -99,13 +99,13 @@ h1,h2,h3,p,a{
 
 .titles h1 {
   
-  color: $main-color;
+  color: $light-color;
   // border: 1px solid red;
   
 }
 
 .titles p{
-  color: $white-color;
+  color: $light-color;
 }
 
 .normalH1{
@@ -133,7 +133,7 @@ h1,h2,h3,p,a{
 }
 
 .normalH3{
-  color: $white-color;
+  color: $light-color;
   font-size: 1.7vw;
   line-height: 2.5vw;
   font-weight: 200;
