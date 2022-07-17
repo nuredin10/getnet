@@ -51,9 +51,10 @@ function Home() {
 
   const images = {
     image1: "/front-image.svg",
-    images2: '/front-image1.svg',
-    images3: 'front-image2.svg',
+    images2: '/front-image4.svg',
+    images3: '/front-image2.svg',
     images4: '/front-image4.svg',
+    images5: '/front-image5.svg',
   }
 
   const mouseEnter = () => {

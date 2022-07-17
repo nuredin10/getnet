@@ -8,12 +8,15 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 function contactus() {
 
     const [isDark, setIsDark] = useState(true)
+    const [isBurgerDark, setIsBurgerDark] = useState(true)
 
     const changeNavbar = () => {
         console.log("scrolling")
         if (window.scrollY >= 80) {
             setIsDark(false);
+            setIsBurgerDark(false);
         } else {
+            setIsBurgerDark(true);
             setIsDark(true);
         }
     };
@@ -24,7 +27,7 @@ function contactus() {
 
     return (
         <div className='contact-page-wrapper'>
-            <Header isDark={isDark}></Header>
+            <Header isDark={isDark} isBurgerDark={isBurgerDark}></Header>
             <div className='contact-main'>
                 <div className='contact-form'>
                     <h1>Contact Form</h1>
@@ -65,6 +68,9 @@ function contactus() {
                         </div>
                     </div>
                 </div>
+
+            </div>
+            <div className='map-section'>
 
             </div>
             <Footer></Footer>

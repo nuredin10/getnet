@@ -136,7 +136,7 @@ h1,h2,h3,p,a{
   color: $light-color;
   font-size: 1.7vw;
   line-height: 2.5vw;
-  font-weight: 200;
+  font-weight: 100;
 
   @include mobile{
     line-height: 7vw;
@@ -146,7 +146,7 @@ h1,h2,h3,p,a{
 .smallH3{
   transition: 1s ease;
   font-size: 1.5vw;
-  color: $white-color;
+  color: $light-color;
   font-weight: 100;
   line-height: 2.5vw;
   @include mobile{

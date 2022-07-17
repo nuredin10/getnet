@@ -3,7 +3,7 @@ import {AiFillFacebook} from "react-icons/ai";
 import {AiFillLinkedin} from "react-icons/ai";
 import {AiFillTwitterSquare} from "react-icons/ai";
 
-function Header({isDark, isShadow}) {
+function Header({isDark, isShadow, isBurgerDark}) {
   const headerNav = [
     {
       dispay: "who we are",
@@ -62,7 +62,7 @@ function Header({isDark, isShadow}) {
             <AiFillLinkedin className="icon" />
             <AiFillTwitterSquare className="icon" />
         </div>
-        <div className={`burger ${toggle ? "toggle" : ""}`} onClick={navSlide}>
+        <div className={`burger ${toggle ? "toggle" : ""} ${isBurgerDark ? "dark-burger" : "white-burger"}`} onClick={navSlide}>
           <div className="line1"></div>
           {/* <div className="line2"></div> */}
           <div className="line3"></div>
