@@ -11,8 +11,10 @@ function AboutSection({ aboutActiveSlide }) {
   });
 
   return (
+  
     <div className={`
-    about-section ${aboutActiveSlide ? 'active-slide' : 'remove-slide'}`}>
+    about-section slide-background ${aboutActiveSlide ? 'active-slide'  : 'remove-slide'}`}>
+       
       <div className="about-wrapper">
         <h3>Who We Are</h3>
         <div className="about-main">
@@ -32,7 +34,10 @@ function AboutSection({ aboutActiveSlide }) {
 
           </p>
           <div className="image-section">
-            <div className="image"></div>
+            <div className="image">
+            <img className='who-we-are-image' src={'logo_new.svg'} ></img>
+
+            </div>
           </div>
           
         </div>
