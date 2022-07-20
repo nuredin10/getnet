@@ -50,11 +50,10 @@ function Home() {
   const [homeVisible, setHomeVisible] = useState(true)
 
   const images = {
-    image1: "/front-image.svg",
-    images2: '/front-image4.svg',
-    images3: '/front-image2.svg',
-    images4: '/front-image4.svg',
-    images5: '/front-image5.svg',
+    image1: "https://concertopr.com/app/uploads/2021/10/Paysage2_M.jpg",
+    images2: 'https://concertopr.com/app/uploads/2021/10/Homepage-option-1.jpg',
+    images3: 'https://concertopr.com/app/uploads/2021/10/Pilote-.jpeg',
+    images4: 'https://concertopr.com/app/uploads/2021/09/Homepage-option-2.jpg',
   }
 
   const mouseEnter = () => {
@@ -305,27 +304,24 @@ function Home() {
 
 
           <div className='wrapper'>
-            {homeVisible ? (
-              <div className='blocks'>
+            <div className='blocks'>
               <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block `} onClick={() => setCount(7)}><p>CONTACT US</p></div>  {/*${count % 2 != 0 ? 'longBlock' : 'shortBlock'}*/}
               <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block `} onClick={() => setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div> {/*${count % 2 != 0 ? 'longBlock1' : 'shortBlock1'}*/}
               <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block `} onClick={() => setCount(5)}><p>PRACTICE AREA</p></div> {/*${count % 2 != 0 ? 'longBlock2' : 'shortBlock2'}*/}
               <div onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3} onClick={() => setCount(1)} className={`${block3} four block `}><p>WHO WE ARE</p></div> {/*${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}*/}
             </div>
-            ) : null}
             {/* <div className='hr-line line-one'></div>
             <div className='hr-line line-two'></div>
             <div className='hr-line line-three'></div> */}
 
-            {homeVisible ? (
-              <div className='front'>
+            <div className='front'>
 
               <div className='images'>
                 <div className="show img" style={{ backgroundImage: "url(" + images.image1 + ")" }}></div>
                 <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
                 <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
                 <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
-                <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images5 + ")" }}></div>
+                <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
               </div>
               <div className='titles'>
                 <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
@@ -343,7 +339,6 @@ function Home() {
 
               </div>
             </div>
-            ): null}
 
           </div>
           <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
