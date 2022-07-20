@@ -50,11 +50,11 @@ function Home() {
   const [homeVisible, setHomeVisible] = useState(true)
 
   const images = {
-    image1: "/front-image.svg",
-    images2: '/front-image4.svg',
-    images3: '/front-image2.svg',
-    images4: '/front-image4.svg',
-    images5: '/front-image5.svg',
+    image1: "/front-image1.JPG",
+    images2: '/front-image2.JPG',
+    images3: '/front-image3.JPG',
+    images4: '/front-image4.JPG',
+    images5: '/front-image5.JPG',
   }
 
   const mouseEnter = () => {
@@ -68,23 +68,18 @@ function Home() {
     setH1("normalH1")
     setP("hideP")
     setBlock("shortBlock")
-
   }
   const mouseEnter1 = () => {
     setSlide2("active");
     setH3("smallH3")
     setP1("showP1")
     setBlock1('longBlock1')
-
-
   }
   const mouseLeave1 = () => {
     setSlide2("remove");
     setH3("normalH3")
     setP1("hideP1")
     setBlock1("shortBlock1")
-
-
 
   }
   const mouseEnter2 = () => {
@@ -281,11 +276,18 @@ function Home() {
         <div className='container'>
           <Header isDark={headerDark}></Header>
           <h1>{count}</h1>
+         
           <div className='explore' >
             {
               verticalTimeline ? (
                 <div className='scroll-down'>
-                  <h3 style={{ color: '#7A431D' }}>explore</h3>
+                 {/* <div class="box">
+                 <div class="brown-box"></div>
+                  <div class="lightbrown-box"></div>
+                  <div class="yellowbrown-box"></div>
+                 </div> */}
+  
+                  <h3>explore</h3>
                   <Timeline className='timeline'>
                     <Timeline.Item onClick={() => setCount(count => 1)} className='timeline'><p>Who We Are</p></Timeline.Item>
                     <Timeline.Item onClick={() => setCount(count => 3)} className='timeline'><p>Practice Area</p></Timeline.Item>
@@ -332,7 +334,7 @@ function Home() {
 
                   {/* <hr></hr> */}
                   <h1 className={h1} >Welcome to
-                    <br></br>Getnet Yawkal Law Office!</h1>
+                    <br></br>Getnet Yawkal Law Office.</h1>
                   <p className={p} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
                 </div>
                 <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>

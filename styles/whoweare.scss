@@ -16,13 +16,13 @@ h1,h2,h3,a,p{
 
 .about-wrapper .about-main {
     width: 100%;
-    height: 90vh;
+    // height: 90vh;
+    margin-top: 2rem;
     // padding: 10vh 7%;
     // border: 1px solid blue;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-
+    align-items: flex-start;
     @include mobile {
         height: 120vh;
         flex-direction: column;
