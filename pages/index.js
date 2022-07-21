@@ -281,21 +281,23 @@ function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
       </Head>
+      
       <div className='main-wrapper'>
           {/* <h1>{count}</h1> */}
         <div className='container'>
           <Header isDark={headerDark}></Header>
-
+          <h1>{count}</h1>
+         
           <div className='explore' >
             {
               verticalTimeline ? (
                 <div className='scroll-down'>
-                  {/* <div class="box">
+                 {/* <div class="box">
                  <div class="brown-box"></div>
                   <div class="lightbrown-box"></div>
                   <div class="yellowbrown-box"></div>
                  </div> */}
-
+  
                   <h3>explore</h3>
                   <Timeline className='timeline'>
                     <Timeline.Item onClick={() => setCount(count => 1)} className='timeline'><p>Who We Are</p></Timeline.Item>
@@ -328,12 +330,26 @@ function Home() {
 
             {homeVisible ? (
               <div className='front'>
-                <div className='images'>
-                  <div className="show img" style={{ backgroundImage: "url(" + images.image1 + ")" }}></div>
-                  <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
-                  <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
-                  <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
-                  <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
+
+              <div className='images'>
+                <div className="show img" style={{ backgroundImage: "url(" + images.image1 + ")" }}></div>
+                <div className={`${slide1} hide img`} style={{ backgroundImage: "url(" + images.images2 + ")" }}></div>
+                <div className={`${slide2} hide img`} style={{ backgroundImage: "url(" + images.images3 + ")" }}></div>
+                <div className={`${slide3} hide img`} style={{ backgroundImage: "url(" + images.images4 + ")" }}></div>
+                <div className={`${slide4} hide img`} style={{ backgroundImage: "url(" + images.images5 + ")" }}></div>
+              </div>
+              <div className='titles'>
+                <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+
+                  {/* <hr></hr> */}
+                  <h1 className={h1} >Welcome to
+                    <br></br>Getnet Yawkal Law Office.</h1>
+                  <p className={p} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+                </div>
+                <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
+                  <h3 className={h3}>We cater practical, strategically sound and result oriented <br></br>first rate legal services in Ethiopia.</h3>
+                  <p className='smallText'>Local Expertise, International Depth, Business Acumen.</p>
+                  <p className={`${p1} showUp`} >We take Integrity, accountability, accessibility and timely delivery of our quality legal services as our core value of establishment. We value our client's time and always in exceeding their expectations.</p>
                 </div>
                 <div className='titles'>
                   <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
@@ -351,16 +367,18 @@ function Home() {
 
                 </div>
               </div>
-            ) : null}
+              </div>)
+             : null}
 
 
-          </div>
+         
           <AboutSection aboutActiveSlide={aboutActiveSlide}></AboutSection>
           <PracticeArea practiceActiveSlide={practiceActiveSlide}></PracticeArea>
           <Qualifications qualActiveSlide={qualActiveSlide}></Qualifications>
           <ContactUs contactActiveSlide={contactActiveSlide}></ContactUs>
         </div>
       </div>
+    </div>
     </>
   )
 }
