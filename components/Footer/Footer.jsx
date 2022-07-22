@@ -68,6 +68,10 @@ function Footer() {
               Connect on LinkedIn 
               <br></br>Located in Bole Mega, Addis Ababa, Ethiopia
             </p>
+            <div className="middle-links border-top">
+          <h3>Social Media Links</h3>
+        
+        </div>
             <div className="footer-social-media">
               <AiFillFacebook className="icon" />
               <AiFillLinkedin className="icon" />

@@ -56,7 +56,7 @@ a {
   width: 100%;
   // border: 1px solid blue;
   @include mobile{
-    width: 70vw;
+    width: 60vw;
   }
   cursor: pointer;
   // border: 1px solid red;
@@ -70,15 +70,22 @@ a {
   list-style: none;
   width: 40vw;
   margin-left: auto;
+  @include mobile{
+    font-size: 2vw;
+
+  }
   .links {
  
     @include flex(space-around, center);
     width: 100%;
+    @include mobile{
+      width: 80%;
+    }
   }
 }
 
 .nav-links a {
-  z-index: 10002000000000000000;
+  z-index: 99999999;
   /* Principal Attorney */
 
 width: 7.31rem;
@@ -157,14 +164,15 @@ text-transform: uppercase;
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 11vh;
+    opacity:.92;
     background-color: $main-color;
     // @include flex("", "");
     // flex-direction: row;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     .links {
-      height: 70%;
+      height: 80%;
 
       // border: 1px solid red;
       border-bottom: 2px solid $white-color;
@@ -176,13 +184,14 @@ text-transform: uppercase;
       // @include flex("center","center")
       li {
         height: 20%;
-        width: 100%;
+        width: 80%;
         // border: 1px solid red;
         margin-bottom: -5rem;
         
         a {
           // border: 1  px solid red;
           font-size: 2rem;
+          z-index: 9999999;
           font-weight: 500;
         }
       }
@@ -204,13 +213,22 @@ text-transform: uppercase;
   width: 100%;
   height: 40%;
   display: none;
+
   // border: 1px solid red;
   @include mobile{
     display: block;
   }
+  svg{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    color: $light-color;
+    border-radius: 2vw;
+    width: 8vw;
+
+  }
   .icon{
     font-size: 3rem;
-    margin: 10%;
+    margin: 1%;
   }
 }
 

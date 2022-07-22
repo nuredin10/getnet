@@ -26,13 +26,14 @@ function PrincipalAttroney() {
           <div className='principal-text-image'>
             <div className='principal-text'>
               <div className='text'>
-                <h3>Principal Attorney and Key Contact Person</h3>
+                <h3>Our Principal Attorney
+</h3>
                 <p>Getnet Yawkal Mebratu</p>
               </div>
               <button>Contact Us</button>
             </div>
             <div className='principal-image'>
-              <img></img>
+            <img className='who-we-are-image1' src={'genet.svg'} ></img>
             </div>
           </div>
         </div>
@@ -48,8 +49,12 @@ function PrincipalAttroney() {
             Throughout his career, Getnet has consistently exemplified integrity while maintaining quality and professionalism to provide first-rate legal services in Ethiopia, and his record is one of great responsibility, dedication, and solid achievements.
             Getnet is a very personable, goal-focused and versatile person accustomed to a fast-paced environment where deadlines are a priority and handling multiple jobs simultaneously is a requirement.</p>
         </div>
+        <div className="all-quali ">
+      <div className="golden">
+
+ 
         <div className='principal-qualification'>
-          <h3>qualifications</h3>
+          <h3>Qualifications</h3>
           <div>
             <p>Consultant and Attorney at Law-All Federal Courts Advocacy License</p>
             <p>Certified Intellectual Property Agent- Ethiopian Intellectual Property Authority (EIPA)</p>
@@ -67,6 +72,8 @@ function PrincipalAttroney() {
             <p>Ethiopian Lawyers’ Association</p>
             <p>Ethiopian Federal Advocates’ Association</p>
           </div>
+        </div>
+      </div>
         </div>
       </div>
       <Footer></Footer>

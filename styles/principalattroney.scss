@@ -8,18 +8,27 @@
     padding-top: 15vh;
     
 }
+.golden{
+margin: 2vw;
 
+border: 1px solid #E1C196;
+
+
+}
 .principal-wrapper .principal-main{
     width: 100%;
-    height: 85vh;
+    // height: 85vh;
     // border: 1px solid blue;
 }
 
 .principal-main .principal-front{
-    padding: 0 5%;
+    padding: 0 7%;
     // border: 1px solid red;
     width: 100%;
-    height: 95%;
+    // height: 95%;
+    @include mobile{
+          height: 95%;  
+    }
 }
 
 .principal-front .principal-text-image{
@@ -47,7 +56,7 @@
 }
 
 .principal-text .text{
-    height: 50%;
+    height: 30%;
     width: 60%;
     @include mobile{
         width: 90%;
@@ -58,10 +67,11 @@
 
 .principal-text button{
     width: 30%;
-    height: 10%;
+    height: 2.5rem;
+    margin-top: 5rem;
     background-color: $light-color;
     border: none;
-    border-radius: 10px;
+    border-radius: 1vw;
     color: $white-color;
     font-size: 1.2vw;
     font-weight: 200;
@@ -69,7 +79,8 @@
 
     @include mobile{
         width: 70%;
-        height: 15%;
+        height: 2rem;
+        // margin-top: 5rem;
         font-size: 4vw;
     }
     // margin-top: 10%;
@@ -86,6 +97,7 @@
     color: $main-color;
     line-height: 3vw;
     @include mobile{
+        margin-bottom: 2rem;
         font-size: 10vw;
         font-weight: 900;
         line-height: 13vw;
@@ -101,14 +113,30 @@
 
     @include mobile{
         font-size: 6vw;
-        margin-top: -10%;
+        margin-top: 0%;
     }
 }
-.principal-text-image .principal-image{
-    width: 40%;
-    height: 80%;
-    border: 1px solid blue;
+
+.who-we-are-image1{
+    margin-top: 7rem;
+    width: 28rem;
+    margin-bottom: -.3rem;
     @include mobile{
+      margin-bottom: -1.3rem;
+      width: 18rem;
+    }
+  }
+  
+.principal-text-image .principal-image{
+    // width: 40%;
+    // height: 80%;
+margin-top: 2rem;
+margin-bottom: -.3rem;
+    @include mobile{
+            width: 40%;
+    height: 80%;
+margin-top: 0rem;
+margin-bottom: 0rem;
         width: 100%;
         margin: 5% 0;
     }
@@ -117,12 +145,12 @@
 .principal-bottom-block{
     background-color: $primary-color;
     // border: 1px solid red;
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    height: 15%;
     @include mobile{
         height: 15%;
     }
@@ -141,19 +169,27 @@
     // border: 1px solid red;
     // padding: 0 5%;
     // height: 100vh;
-    padding: 3% 10%;
+    padding: 3% .5%;
     @include mobile{
-        padding: 25% 10%;
+        margin-top: 10%;
+        padding: 15% 7%;
     }
 }
 
 .principal-text-wrapper .big-text-wrapper{
+       padding: 3% 7%;
+       @include mobile{
+        padding: 0% 0%;
+       }
+      
     width: 100%;
     h3{
         font-size: 2.5vw;
         color: $main-color;
         font-weight: 700;
+        margin-top: 0vw;
         @include mobile{
+
             font-size: 7vw;
         }
     }
@@ -167,7 +203,20 @@
         }
     }
 }
+.principal-qualification
+,.principal-membership{
+    padding: 1% 5%;   
 
+}
+.all-quali{
+    padding: 1% 1%;
+   
+background: #F5F5F5;
+box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+@include mobile{
+    padding: 1% 1%;
+   }
+}
 .principal-text-wrapper .principal-qualification{
     // margin-top: 5%;
     h3{

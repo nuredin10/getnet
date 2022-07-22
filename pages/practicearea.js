@@ -82,7 +82,8 @@ const practiceArea = () => {
                             </p>
                         </div>
                         <div className='practice-image'>
-                            <img></img>
+                        <img className='pra-img' src={'practice.svg'} ></img>
+           
                         </div>
                     </div>
                 </div>

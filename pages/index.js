@@ -307,18 +307,17 @@ function Home() {
 
 
           <div className='wrapper'>
-            {homeVisible ? (
+           
               <div className='blocks'>
               <div onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} className={`${block} one block `} onClick={() => setCount(7)}><p>CONTACT US</p></div>  {/*${count % 2 != 0 ? 'longBlock' : 'shortBlock'}*/}
               <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1} className={`${block1} two block `} onClick={() => setCount(3)}><p>PRINCIPAL ATTORNEY</p> </div> {/*${count % 2 != 0 ? 'longBlock1' : 'shortBlock1'}*/}
               <div onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2} className={`${block2} three block `} onClick={() => setCount(5)}><p>PRACTICE AREA</p></div> {/*${count % 2 != 0 ? 'longBlock2' : 'shortBlock2'}*/}
               <div onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3} onClick={() => setCount(1)} className={`${block3} four block `}><p>WHO WE ARE</p></div> {/*${count % 2 != 0 ? 'longBlock3' : 'shortBlock3'}*/}
             </div>
-            ) : null}
+        
             {/* <div className='hr-line line-one'></div>
             <div className='hr-line line-two'></div>
             <div className='hr-line line-three'></div> */}
-
             {homeVisible ? (
               <div className='front'>
 
@@ -335,7 +334,7 @@ function Home() {
                   {/* <hr></hr> */}
                   <h1 className={h1} >Welcome to
                     <br></br>Getnet Yawkal Law Office.</h1>
-                  <p className={p} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. Morbi cursus maximus erat, ac euismod elit suscipit eget. Integer vulputate lacus vel vehicula iaculis.</p>
+                  <p className={p} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. </p>
                 </div>
                 <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
                   <h3 className={h3}>We cater practical, strategically sound and result oriented <br></br>first rate legal services in Ethiopia.</h3>

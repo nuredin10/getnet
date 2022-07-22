@@ -12,7 +12,7 @@ function Qualifications({ qualActiveSlide }) {
   return (
     <div
       className={`
-        qualifications ${
+        qualifications slide-background1 ${
           qualActiveSlide ? "qualActiveSlide" : "qualRemoveSlide"
         }`}
     >
@@ -30,30 +30,27 @@ function Qualifications({ qualActiveSlide }) {
         <h2>Principal Attorney </h2> <span>- qualifications</span>
         <div className="texts">
           <p>
-            Certificate in Arbitration Law, International Court of Arbitration
+          Consultant and Attorney at Law-All Federal Courts Advocacy License
           </p>
           <p>
-            Certificate in IP Law, WIPO, Japan Patent Office (JPO) and Kenya
-            Industrial Property Institute (KIPI)
+          Certified Intellectual Property Agent- Ethiopian Intellectual Property Authority (EIPA)
           </p>
           <p>
-            Certificate in IP Law, WIPO, Ethiopian Ministry of Science and
-            Technology and EIPA
+          LL.B degree, Bahir Dar University Faculty of Law
           </p>
           <p>
-            Certificate in IP Law, World Intellectual Property
-            Organization(WIPO)
+          Certificate in IP Law, World Intellectual Property Organization(WIPO)
           </p>
           <p>
-            Consultant and Attorney at Law-All Federal Courts Advocacy License
+          Certificate in IP Law, WIPO, Japan Patent Office (JPO) and Kenya Industrial Property Institute (KIPI)
           </p>
         </div>
       </div>
-      <div className="link">
+      {/* <div className="link">
         <a>
-          See more in Our Practice Areas <ChevronRightIcon className="arrow" />
+          See more in Principal Attorney<ChevronRightIcon className="arrow" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

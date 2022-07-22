@@ -13,7 +13,7 @@ function PracticeArea({practiceActiveSlide}) {
   
   return (
     <div className={`
-    practice-area ${practiceActiveSlide ? 'active-slide' : 'remove-slide'}`}>
+    practice-area slide-background ${practiceActiveSlide ? 'active-slide' : 'remove-slide'}`}>
       <h2 className="practice-title">Practice Area</h2>
       <div className="practice-wrapper">
         <div className="practice">
@@ -69,11 +69,11 @@ function PracticeArea({practiceActiveSlide}) {
           </p>
         </div>
       </div>
-      <div className="link">
+      {/* <div className="link">
         <a>
           See more in Our Practice Areas <ChevronRightIcon className="arrow" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

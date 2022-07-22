@@ -71,7 +71,14 @@ function contactus() {
 
             </div>
             <div className='map-section'>
-
+            <div class="map1">
+    <div class="location">
+      <div class="map-responsive">
+     
+        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Makush%20Art%20gallery%20%7C%20Bole%20%7C%20%E1%88%9B%E1%8A%A9%E1%88%BD%20%E1%8A%A0%E1%88%AD%E1%89%B5%20%E1%8C%8B%E1%88%88%E1%88%AA%20%7C%20%E1%89%A6%E1%88%8C&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+    </div>
+  </div>
             </div>
             <Footer></Footer>
         </div>
