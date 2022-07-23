@@ -919,10 +919,10 @@ display: none;
         width: 100%;
         object-fit: cover;
         position: absolute;
-        @include desktop{
-          height: 60%;
+        // @include desktop{
+        //   height: 60%;
 
-        }
+        // }
       }
     }
   }
@@ -931,12 +931,12 @@ display: none;
 @include desktop{
   .map1 {
     .location {
-      height: 30rem;
+      height:100%;
     
-      .map-responsive {
-        height: 100%;
-        padding: 0;
-      }
+      // .map-responsive {
+      //   height: 100%;
+      //   padding: 0;
+      // }
     }
   }
 }
