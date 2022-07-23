@@ -286,7 +286,7 @@ function Home() {
           {/* <h1>{count}</h1> */}
         <div className='container'>
           <Header isDark={headerDark}></Header>
-          <h1>{count}</h1>
+          {/* <h1>{count}</h1> */}
          
           <div className='explore' >
             {
