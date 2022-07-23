@@ -3,17 +3,25 @@ import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
 const practiceArea = () => {
-
+    const [selectedContent, setSelectedContent] = useState();
     const popUpOnClickHandler=(e,data)=>{
-        console.log(e)
+        setSelectedContent((selectedContent=>e));
         setIsOpen(!isOpen);
     }
+    // useEffect(()=>{
+    //     console.log(selectedContent)
+
+    // },[selectedContent])
 
     const practiceContent = [
         {
             title: "Intellectual Properties",
             text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
-            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae viverra neque. Vivamus urna erat, lacinia nec erat id, egestas ultrices lectus. Nullam vitae odio at arcu eleifend volutpat. Vestibulum malesuada libero non laoreet rutrum. Nam est arcu, iaculis sit amet semper ut, euismod eu quam. Nulla facilisi. Integer tincidunt, tortor eu lobortis facilisis, metus enim imperdiet metus, sagittis semper mi orci ut enim. Aenean volutpat eros vel sollicitudin venenatis. Phasellus at dignissim risus, non porttitor massa. Aliquam massa elit, elementum quis est et, ornare finibus sapien. Phasellus in malesuada risus, accumsan viverra urna. Aliquam finibus velit non libero porttitor interdum. Duis faucibus rhoncus metus. Suspendisse auctor tincidunt odio vel tincidunt.'
+            desc: 'Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia. Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority “EIPA”, Getnet Yawkal Law office, offers the legal skills and expertise, training and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your Intellectual Properties in Ethiopia. Though-out the years we engaged ourselves in the IP industry we have become a reliable strategic partners for local clients as well as well-known international IP firms and foreign based businesses who wishes to register and enforce intellectual properties rights in Ethiopia. We give a great value to creation of the mind and understand your business and IP needs. We use a very cost effective and client focused service and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.',
+            services: {
+                ser1: "Trademark availability search",
+                ser2: "Brand development advise",
+            }
         },
         {
             title: "Labor & Employment",
