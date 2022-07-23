@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
-import {AiOutlineClose} from 'react-icons/ai'
+import { IoMdClose } from 'react-icons/io'
 const practiceArea = () => {
     const [selectedContent, setSelectedContent] = useState({});
     const popUpOnClickHandler = (e, data) => {
@@ -33,8 +33,8 @@ const practiceArea = () => {
                 "Reply to office actions or oppositions",
                 "Conduct due diligence of the IP portfolio of a targeted company dealing merger or acquisition",
             ],
-            icon: '/intellectual-icon.svg'
-            
+            icon: '/intellectual-icon.svg',
+            image: '/IP.jpg',
         },
         {
             title: "Labor & Employment",
@@ -56,7 +56,9 @@ const practiceArea = () => {
                 "Preparing legal advises, opinions and memos on employment and/or immigration issues",
                 "Legalizing police clearance certificates for expatriates",
                 "Preparing legal and regulatory compliance checklists",
-            ]
+            ],
+            icon: '/labor-icon.svg',
+            image: '/LE.jpg',
         },
         {
             title: "Corporate and Finance",
@@ -92,7 +94,9 @@ const practiceArea = () => {
                 "Authenticating and filing legal documents sourced from abroad",
                 "Negotiating",
                 "Representation/ Litigation",
-            ]
+            ],
+            icon: '/corporate.svg',
+            image: '/CF.jpg',
 
 
         },
@@ -110,7 +114,8 @@ const practiceArea = () => {
                 "Advising on legal issues",
                 "Representation/ Litigating",
             ],
-            icon: '/charity-icon.svg'
+            icon: '/charity-icon.svg',
+            image: '/CH.jpg',
         },
         {
             title: "Alternative Dispute Resolution",
@@ -127,6 +132,8 @@ const practiceArea = () => {
                 "Review claims",
                 "Representation",
             ],
+            icon: '/charity-icon.svg',
+            image: '/ADR.jpg',
         },
 
     ]
@@ -147,10 +154,10 @@ const practiceArea = () => {
     useEffect(() => {
         window.addEventListener("scroll", changeNavbar);
     }, [])
-
+    
     // console.log(isOpen)
     return (
-        <div className='practice-page'>
+        <div className='practice-page' >
             <Head>
                 <title>Getnet Law Office</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -164,7 +171,7 @@ const practiceArea = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
             </Head>
             <Header isDark={false} isShadow={isShadow}></Header>
-            <div className='practice-wrapper'>
+            <div className='practice-wrapper' >
                 <div className="practice-front">
                     <div className="practice-main">
                         <div className='practice-text'>
@@ -203,8 +210,8 @@ const practiceArea = () => {
     )
 }
 
-const PopUp = ({ selectedContent,setIsOpen,isOpen}) => {
-    
+const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
+
 
     return (
         <div className='popup-wrapper'>
@@ -227,12 +234,12 @@ const PopUp = ({ selectedContent,setIsOpen,isOpen}) => {
                     </div>
                 </div>
                 <div className='popup-goback'>
-                        <p> <img src='/back.svg'></img>BACK TO PRACTICE AREA</p>                      
+                    <p> <img src='/back.svg'></img>BACK TO PRACTICE AREA</p>
                 </div>
             </div>
             <div className='popup-side-block'>
                 <div className='close-button'>
-                    <AiOutlineClose/>
+                    <IoMdClose className='close-icon'/>
                 </div>
 
                 {/* <button onClick={() => setIsOpen(!isOpen)}>Cancel</button> */}
