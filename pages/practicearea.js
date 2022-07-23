@@ -32,7 +32,9 @@ const practiceArea = () => {
                 "Handling infringement cases",
                "Reply to office actions or oppositions",
                 "Conduct due diligence of the IP portfolio of a targeted company dealing merger or acquisition",
-            ]
+            ],
+            icon: '/intellectual-icon.svg',
+            image: '/IP.jpg',
         },
         {
             title: "Labor & Employment",
@@ -56,7 +58,9 @@ const practiceArea = () => {
                 "Preparing legal advises, opinions and memos on employment and/or immigration issues",
                  "Legalizing police clearance certificates for expatriates",
               "Preparing legal and regulatory compliance checklists",
-            ]
+            ],
+            icon: '/labor-icon.svg',
+            image: '/LE.jpg',
         },
         {
             title: "Corporate and Finance",
@@ -92,7 +96,9 @@ const practiceArea = () => {
          "Authenticating and filing legal documents sourced from abroad",
                 "Negotiating",
             "Representation/ Litigation",
-            ]
+            ],
+            icon: '/corporate.svg',
+            image: '/CF.jpg',
 
 
         },
@@ -110,7 +116,8 @@ const practiceArea = () => {
                "Advising on legal issues",
                 "Representation/ Litigating",
                   ],
-            icon: '/charity-icon.svg'
+            icon: '/charity-icon.svg',
+            image: '/CH.jpg',
         },
         {
             title: "Alternative Dispute Resolution",
@@ -127,6 +134,8 @@ const practiceArea = () => {
                 "Review claims",
                 "Representation",
                   ],
+                  icon: '/charity-icon.svg',
+                  image: '/ADR.jpg',
         },
 
     ]
