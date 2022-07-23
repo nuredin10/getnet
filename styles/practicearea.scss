@@ -68,8 +68,8 @@ h1,h2,h3,a,p{
     }
 .pra-img{
  
-    width: 50rem;
-    margin-top: 23rem;
+    width: 30rem;
+    margin-top: 19.2vw;
     object-fit: cover;
     @include mobile{
         margin-top: 10.9rem;
@@ -161,6 +161,7 @@ h1,h2,h3,a,p{
 }
 
 .popup-wrapper{
+    // overflow-y: scroll;
     width: 100vw;
     height: 88vh;
     z-index: 100000000;
@@ -174,18 +175,79 @@ h1,h2,h3,a,p{
 }
 
 .popup-wrapper .popup-main{
-    width: 80%;
+    width: 85%;
     height: 100%;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .popup-wrapper .popup-side-block{
     height: 100%;
-    width: 20%;
-    border: 1px solid blue;
+    width: 15%;
+    background-color: $light-color;
+    // border: 1px solid blue;
 }
 
+.popup-goback{
+    height: 4vh;
+    float: right;
+    width: 15%;
+    // text-align: right;
+    p{
+        color: $main-color;
+        font-size: 1vw;
+        // border: 1px solid red;
+        @include flex("center","center")
+    }
+}
 .popup-main .popup-text{
-    border: 1px solid red;
-    padding: 3% 5%;
+    // border: 1px solid red;
+    padding: 0% 3%;
+}
+
+.popup-text .popup-title{
+    @include flex('center','center');
+    // border: 1px solid blue;
+    width: 50%
+}
+
+.popup-title img{
+    width: 3.5vw;
+}
+
+.popup-title h1{
+    text-transform: uppercase;
+    font-size: 2vw;
+    margin-left: 3%;
+    color: $main-color;
+}
+
+.popup-text p{
+    color: $main-color;
+    font-size: 1.2vw;
+    font-weight: 400;
+    width: 80%;
+}
+
+.popup-main .popup-service{
+    @include flex('center','center');
+    background-color: $primary-color;
+    // border: 1px solid rgb(97, 17, 17);
+    padding-top: 3%;
+}
+.popup-service h1{
+    width: 15%;
+    font-weight: 300;
+    font-size: 2.3vw;
+    text-align: center;
+    color: $white-color;
+    text-transform: uppercase;
+}
+
+.popup-service .services{
+    color: $white-color;
+    line-height: 1.5vw;
+}
+
+.popup-side-block .close-button{
+    
 }
