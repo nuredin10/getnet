@@ -66,9 +66,9 @@ border: 1px solid #E1C196;
 }
 
 .principal-text button{
-    width: 30%;
-    height: 2.5rem;
-    margin-top: 5rem;
+    width: 35%;
+    height: 3vw;
+    margin-top: 10vw;
     background-color: $light-color;
     border: none;
     border-radius: 1vw;
@@ -78,9 +78,10 @@ border: 1px solid #E1C196;
     cursor: pointer;
 
     @include mobile{
-        width: 70%;
-        height: 2rem;
-        // margin-top: 5rem;
+        width: 50%;
+        border-radius: 3vw;
+        height: 9vw;
+  
         font-size: 4vw;
     }
     // margin-top: 10%;
@@ -95,9 +96,9 @@ border: 1px solid #E1C196;
     font-size: 2.5vw;
     font-weight: 700;
     color: $main-color;
-    line-height: 3vw;
+    line-height: 2vw;
     @include mobile{
-        margin-bottom: 2rem;
+        margin-bottom: 2vw;
         font-size: 10vw;
         font-weight: 900;
         line-height: 13vw;
@@ -118,25 +119,25 @@ border: 1px solid #E1C196;
 }
 
 .who-we-are-image1{
-    margin-top: 7rem;
-    width: 28rem;
-    margin-bottom: -.3rem;
+    width: 28vw;
+    margin-bottom: -.3vw;
     @include mobile{
-      margin-bottom: -1.3rem;
-      width: 18rem;
+        margin-top: 13vw;
+      margin-bottom: -5.3vw;
+      width: 88vw;
     }
   }
   
 .principal-text-image .principal-image{
     // width: 40%;
     // height: 80%;
-margin-top: 2rem;
-margin-bottom: -.3rem;
+margin-top: 4vw;
+margin-bottom: -.3vw;
     @include mobile{
             width: 40%;
     height: 80%;
-margin-top: 0rem;
-margin-bottom: 0rem;
+margin-top: 0vw;
+margin-bottom: 0vw;
         width: 100%;
         margin: 5% 0;
     }
@@ -214,6 +215,7 @@ margin-bottom: 0rem;
 background: #F5F5F5;
 box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
 @include mobile{
+ 
     padding: 1% 1%;
    }
 }
@@ -233,9 +235,10 @@ box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
     justify-content: space-between;
     flex-direction: column;
     p{
-        width: 45%;
+        width: 85%;
         color: $main-color;
         font-size: 1.3vw;
+       line-height: 2vw;
         margin: 0 0;
         font-weight: 500;
         // border: 1px solid red;

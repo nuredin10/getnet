@@ -281,11 +281,7 @@ function Home() {
             {
               verticalTimeline ? (
                 <div className='scroll-down'>
-                 {/* <div class="box">
-                 <div class="brown-box"></div>
-                  <div class="lightbrown-box"></div>
-                  <div class="yellowbrown-box"></div>
-                 </div> */}
+              
   
                   <h3>explore</h3>
                   <Timeline className='timeline'>
