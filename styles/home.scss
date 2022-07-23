@@ -120,12 +120,10 @@ h1,h2,h3,p,a{
 }
 
 .normalH1{
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 600;
   text-transform: uppercase;
-  // width: 80%;
-  // margin-bottom: -3vw;
-  // border: 1px solid red;
+  margin-top: -1vw;
   line-height: 5vw;
   
   @include mobile{
@@ -133,6 +131,9 @@ h1,h2,h3,p,a{
     font-size: 10vw;
     width: 100%;
     line-height: 11vw;
+  }
+  @include desktop{
+    margin-top: 0vw;
   }
 }
 .smallH1{
@@ -313,6 +314,34 @@ box-shadow: -10px 10px 15px  rgba(86, 55, 39, 0.06);
 
 }
 
+.select-link{
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+align-items: center;
+margin-top: 2vw;
+@include mobile{
+  margin-right: 0%;
+}
+a{
+  font-weight: 600;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  color: $light-color;
+}
+.arrow{
+
+  margin-bottom: -3%;
+ 
+  font-size: 2vw;
+  font-weight: 300;
+  @include mobile{
+    // margin-top: 5%;
+    font-size: 7vw;
+    margin-bottom:-2.5%;
+  } 
+}
+}
 .about-section{
   position: absolute;
   z-index: 10000;
@@ -486,9 +515,13 @@ padding-top: 2vh;
 
 .principal p{
   color: $primary-color;
-  font-size: 1.3vw;
+
   margin-top: 2vw;  
   font-family: 'mukta';
+  @include huge{
+    margin-top: 1vw;  
+    font-size: 1vw;
+  }
   @include mobile{
     font-size: 3.5vw;
   }

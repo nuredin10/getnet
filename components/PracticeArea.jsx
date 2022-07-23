@@ -69,11 +69,11 @@ function PracticeArea({practiceActiveSlide}) {
           </p>
         </div>
       </div>
-      {/* <div className="link">
-        <a>
+      <div className="select-link">
+        <a href="">
           See more in Our Practice Areas <ChevronRightIcon className="arrow" />
         </a>
-      </div> */}
+      </div>
     </div>
   );
 }
