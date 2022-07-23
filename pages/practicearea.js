@@ -3,25 +3,25 @@ import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
 const practiceArea = () => {
-    const [selectedContent, setSelectedContent] = useState();
-    const popUpOnClickHandler=(e,data)=>{
-        setSelectedContent((selectedContent=>e));
+    const [selectedContent, setSelectedContent] = useState({});
+    const popUpOnClickHandler = (e, data) => {
+        setSelectedContent((selectedContent => e));
         setIsOpen(!isOpen);
     }
-    // useEffect(()=>{
-    //     console.log(selectedContent)
+    useEffect(() => {
+        console.log(selectedContent.services)
 
-    // },[selectedContent])
+    }, [selectedContent])
 
     const practiceContent = [
         {
             title: "Intellectual Properties",
             text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
             desc: 'Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia. Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority “EIPA”, Getnet Yawkal Law office, offers the legal skills and expertise, training and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your Intellectual Properties in Ethiopia. Though-out the years we engaged ourselves in the IP industry we have become a reliable strategic partners for local clients as well as well-known international IP firms and foreign based businesses who wishes to register and enforce intellectual properties rights in Ethiopia. We give a great value to creation of the mind and understand your business and IP needs. We use a very cost effective and client focused service and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.',
-            services: {
-                ser1: "Trademark availability search",
-                ser2: "Brand development advise",
-            }
+            services: [
+               "Trademark availability search",
+                "Brand development advise",
+            ]
         },
         {
             title: "Labor & Employment",
@@ -90,8 +90,8 @@ const practiceArea = () => {
                             </p>
                         </div>
                         <div className='practice-image'>
-                        <img className='pra-img' src={'practice.svg'} ></img>
-           
+                            <img className='pra-img' src={'practice.svg'} ></img>
+
                         </div>
                     </div>
                 </div>
@@ -99,9 +99,9 @@ const practiceArea = () => {
                 <div className='practice-content'>
                     {
                         practiceContent.map((e, i) => (
-                            <div key={i} className='single-practice' onClick={()=>popUpOnClickHandler(e)}>
+                            <div key={i} className='single-practice' onClick={() => popUpOnClickHandler(e)}>
                                 {isOpen ? (
-                                    <PopUp title={e.title} desc={e.desc} icon={e.icon}></PopUp>
+                                    <PopUp selectedContent={selectedContent}></PopUp>
                                 ) : null}
                                 <div className='title-text'>
                                     <h1>{e.title}</h1>
@@ -119,13 +119,31 @@ const practiceArea = () => {
     )
 }
 
-const PopUp = ({ title, desc, icon }) => {
+const PopUp = ({ selectedContent }) => {
     return (
-        <div className='popup'>
-            <h1>{title}</h1>
-            <h1>{desc}</h1>
-            <img src={icon}></img>
-            <button onClick={() => setIsOpen(!isOpen)}>Cancel</button>
+        <div className='popup-wrapper'>
+            <div className='popup-main'>
+                <div className='popup-text'>
+                    <div className='popup-title'>
+                        <img className='popup-icon' src=''></img>
+                        <h1>{selectedContent.title}</h1>
+                    </div>
+                    <p>{selectedContent.desc}</p>
+                </div>
+                <div className='popup-service'>
+                    <h1>Some of Our Services</h1>
+                    <div className='services'>
+                        <ul>
+                            {selectedContent.services.map((service, i) => (
+                                <li key={i}>{service}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className='popup-side-block'>
+                <button onClick={() => setIsOpen(!isOpen)}>Cancel</button>
+            </div>
         </div>
     )
 }
