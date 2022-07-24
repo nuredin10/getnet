@@ -35,6 +35,8 @@ const practiceArea = () => {
             ],
             icon: '/intellectual-icon.svg',
             image: '/IP.jpg',
+            height: '125vh'
+
         },
         {
             title: "Labor & Employment",
@@ -59,6 +61,7 @@ const practiceArea = () => {
             ],
             icon: '/labor-icon.svg',
             image: '/LE.jpg',
+            height: '133vh'
         },
         {
             title: "Corporate and Finance",
@@ -97,6 +100,7 @@ const practiceArea = () => {
             ],
             icon: '/corporate.svg',
             image: '/CF.jpg',
+            height: '176vh'
 
 
         },
@@ -116,6 +120,7 @@ const practiceArea = () => {
             ],
             icon: '/charity-icon.svg',
             image: '/CH.jpg',
+            height: '97vh'
         },
         {
             title: "Alternative Dispute Resolution",
@@ -134,6 +139,7 @@ const practiceArea = () => {
             ],
             icon: '/charity-icon.svg',
             image: '/ADR.jpg',
+            height: '105vh'
         },
 
     ]
@@ -144,7 +150,7 @@ const practiceArea = () => {
 
     const changeNavbar = () => {
         console.log("scrolling")
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 10) {
             setIsShadow(true);
         } else {
             setIsShadow(false);
@@ -154,7 +160,7 @@ const practiceArea = () => {
     useEffect(() => {
         window.addEventListener("scroll", changeNavbar);
     }, [])
-    
+
     // console.log(isOpen)
     return (
         <div className='practice-page' >
@@ -171,7 +177,9 @@ const practiceArea = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
             </Head>
             <Header isDark={false} isShadow={isShadow}></Header>
-            <div className='practice-wrapper' >
+            {isOpen ? (
+                <PopUp selectedContent={selectedContent} isOpen={isOpen} setIsOpen={setIsOpen}></PopUp>
+            ) : <div className='practice-wrapper' >
                 <div className="practice-front">
                     <div className="practice-main">
                         <div className='practice-text'>
@@ -191,9 +199,7 @@ const practiceArea = () => {
                     {
                         practiceContent.map((e, i) => (
                             <div key={i} className='single-practice' onClick={() => popUpOnClickHandler(e)}>
-                                {isOpen ? (
-                                    <PopUp selectedContent={selectedContent} isOpen={isOpen} setIsOpen={setIsOpen}></PopUp>
-                                ) : null}
+
                                 <div className='title-text'>
                                     <h1>{e.title}</h1>
                                     <p>{e.text}</p>
@@ -205,7 +211,8 @@ const practiceArea = () => {
 
                 </div>
                 <Footer></Footer>
-            </div>
+            </div>}
+
         </div>
     )
 }
@@ -214,7 +221,7 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
 
 
     return (
-        <div className='popup-wrapper'>
+        <div className='popup-wrapper' style={{height: selectedContent.height}}>
             <div className='popup-main'>
                 <div className='popup-text'>
                     <div className='popup-title'>
@@ -233,14 +240,16 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
                         </ul>
                     </div>
                 </div>
-                <div className='popup-goback'>
-                    <p> <img src='/back.svg'></img>BACK TO PRACTICE AREA</p>
+                <div className='popup-goback' onClick={() => setIsOpen(!isOpen)}>
+                    <img src='/back.svg'></img><p>BACK TO PRACTICE AREA</p>
                 </div>
             </div>
             <div className='popup-side-block'>
                 <div className='close-button'>
-                    <IoMdClose className='close-icon'/>
+                    <IoMdClose className='close-icon' onClick={() => setIsOpen(!isOpen)} />
                 </div>
+                <div className='service-image' style={{ backgroundImage: "url(" + selectedContent.image + ")" }}></div>
+                {/* <img  src={selectedContent.image}></img> */}
 
                 {/* <button onClick={() => setIsOpen(!isOpen)}>Cancel</button> */}
             </div>
