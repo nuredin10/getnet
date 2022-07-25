@@ -69,12 +69,12 @@ border: 1px solid #E1C196;
     width: 35%;
     height: 3vw;
     margin-top: 10vw;
-    background-color: $light-color;
+    background-color: $primary-color;
     border: none;
     border-radius: 1vw;
     color: $white-color;
     font-size: 1.2vw;
-    font-weight: 200;
+    font-weight: 300;
     cursor: pointer;
 
     @include mobile{

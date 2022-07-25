@@ -124,7 +124,7 @@ h1,h2,h3,p,a{
   font-size: 4vw;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: -1vw;
+  margin-top: -1.5vw;
   line-height: 5vw;
   
   @include mobile{
@@ -133,11 +133,12 @@ h1,h2,h3,p,a{
     width: 100%;
     line-height: 11vw;
   }
-  @include desktop{
-    margin-top: 0vw;
-  }
+  // @include desktop{
+  //   margin-top: 0vw;
+  // }
 }
 .smallH1{
+  margin-top: -1.5vw;
   transition: 1s ease;
   font-size: 3.5vw;
   font-weight: 600;
@@ -159,7 +160,6 @@ h1,h2,h3,p,a{
   @include mobile{
     line-height: 7vw;
     font-size: 5vw;
-
   }
 }
 .smallH3{

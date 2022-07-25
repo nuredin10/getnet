@@ -233,14 +233,14 @@ function Home() {
       // Set a timeout to run after scrolling ends
       isScrolling = setTimeout(function () {
         console.log(window.innerHeight)
-        // if (window.scrollY  30) {
         if (e.wheelDeltaY > 0) {
-          setCount(--count)
-          // scrollTo(0,0)
+          if (count != 0)
+            setCount(--count)
         }
-        else
-          setCount(++count)
-        // }  
+        else {
+          if (count != 4)
+            setCount(++count)
+        }
       }, 66);
 
     }, false);
