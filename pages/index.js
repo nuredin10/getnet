@@ -350,7 +350,7 @@ function Home() {
                     {/* <hr></hr> */}
                     <h1 className={h1} >Welcome to
                       <br></br>Getnet Yawkal Law Office.</h1>
-                    <p className={p} >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sem dui, aliquet in dictum at, mattis ac tellus. Aliquam maximus purus ipsum, quis facilisis ante mollis a. Curabitur sed commodo lectus. Integer gravida imperdiet odio sit amet mattis. </p>
+                    <p className={p} >Getnet Yawkal Law Office is a leading commercial law office in Ethiopia providing practical, strategically sound and result oriented first rate legal services for local and international clients.  </p>
                   </div>
                   <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
                     <h3 className={h3}>We cater practical, strategically sound and result oriented <br></br>first rate legal services in Ethiopia.</h3>

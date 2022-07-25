@@ -69,6 +69,7 @@ h1,h2,h3,p,a{
   position: absolute;
   top: 100%;
   display: none;
+
   @include mobile{
     margin-left: -14%;
   }
@@ -196,6 +197,7 @@ h1,h2,h3,p,a{
 .titles .hideP1{
   // padding-top: 5%;
   margin-top: 4vw;
+  
   padding-top: 5%;
   display: none;
 }
@@ -203,6 +205,10 @@ h1,h2,h3,p,a{
   transition: 3s ease-in-out;
   display: block;
   // padding-top: 0%;
+  font-size: 1.3vw;
+  @include mobile{
+    font-size: 1vw;
+    }
 }
 
 .titles .showUp{
@@ -212,6 +218,7 @@ h1,h2,h3,p,a{
 
 .titles .smallText{
   margin-top: 2vw;
+font-size: 1.3vw;
   @include mobile{
   margin-top:2vw ;
   }
@@ -320,7 +327,7 @@ box-shadow: -10px 10px 15px  rgba(86, 55, 39, 0.06);
 align-items: center;
 margin-top: 20vw;
 @include mobile{
- 
+  margin-top: 1vw;
   margin-right: 0%;
 }
 a{
@@ -384,7 +391,7 @@ a{
 align-items: center;
 margin-top: 15vw;
 @include mobile{
-  margin-top: 20vw;
+  margin-top: 15vw;
   margin-right: 0%;
 }
 a{
@@ -883,8 +890,8 @@ padding-top: 2vh;
     height: 50%;
   }
   @include mobile{
-    margin-top: 5%;
-    width: 00%;
+height: 90%;
+    width: 100%;
   }
 }
 
@@ -1010,9 +1017,11 @@ display: none;
     }
     .map-responsive {
       overflow: hidden;
-      padding-bottom: 46.25%;
+      padding-bottom: 76.25%;
       position: relative;
-      // height: 100%;
+      @include mobile{
+        padding-bottom: 66.25%;
+      }
       iframe {
         left: 0;
         top: 0;
@@ -1037,10 +1046,7 @@ display: none;
     .location {
       height:80%;
     
-      // .map-responsive {
-      //   height: 100%;
-      //   padding: 0;
-      // }
+
     }
   }
 }

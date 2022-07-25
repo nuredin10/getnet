@@ -42,7 +42,7 @@ function AboutSection({ aboutActiveSlide }) {
           
         </div>
         <div className="select-link1">
-        <a>
+        <a href="whoweare">
           See more in Who We Are<ChevronRightIcon className="arrow" />
         </a>
       </div>

@@ -47,7 +47,7 @@ function Header({isDark, isShadow, isBurgerDark}) {
             {headerNav.map((e, i) => (
               <li key={i}>
                 
-                <a className={`${isDark ? 'white-link' : 'dark-link'}`} href={e.path}>{e.dispay}</a>
+                <a className={`${isDark ? 'white-link' : 'brown-link'}`} href={e.path}>{e.dispay}</a>
               </li>
             ))}
           </div>
