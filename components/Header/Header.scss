@@ -116,6 +116,11 @@ text-transform: uppercase;
   color: $main-color;
 }
 
+.nav-links .brown-link{
+  font-size: .9vw;
+  color: $light-color;
+}
+
 .nav-links .white-link:hover{
   color: #ffffff;
   transition: 0.3s ease;

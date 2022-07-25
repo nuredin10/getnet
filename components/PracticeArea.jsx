@@ -70,7 +70,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
       </div>
       <div className="select-link">
-        <a href="">
+        <a href="practicearea">
           See more in Our Practice Areas <ChevronRightIcon className="arrow" />
         </a>
       </div>

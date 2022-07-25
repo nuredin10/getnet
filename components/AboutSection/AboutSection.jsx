@@ -41,9 +41,11 @@ function AboutSection({ aboutActiveSlide }) {
           </div>
           
         </div>
-        {/* <div className='link'>
-        <a>See more in Our Practice Areas <ChevronRightIcon className="arrow"/></a>
-      </div> */}
+        <div className="select-link1">
+        <a href="whoweare">
+          See more in Who We Are<ChevronRightIcon className="arrow" />
+        </a>
+      </div>
       </div>
     </div>
   );

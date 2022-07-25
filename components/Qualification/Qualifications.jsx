@@ -46,8 +46,8 @@ function Qualifications({ qualActiveSlide }) {
           </p>
         </div>
       </div>
-      <div className="select-link">
-        <a>
+      <div className="select-link2">
+        <a href="principalattroney">
           See more in Principal Attorney<ChevronRightIcon className="arrow" />
         </a>
       </div>
