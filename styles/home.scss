@@ -325,7 +325,7 @@ box-shadow: -10px 10px 15px  rgba(86, 55, 39, 0.06);
   margin-left: auto;
   justify-content: flex-end;
 align-items: center;
-margin-top: 20vw;
+margin-top: 15vw;
 @include mobile{
   margin-top: 1vw;
   margin-right: 0%;
@@ -357,7 +357,7 @@ a{
   margin-left: auto;
   justify-content: flex-end;
 align-items: center;
-margin-top: 2vw;
+margin-top: 10vw;
 @include mobile{
   margin-top: 20vw;
   margin-right: 0%;
@@ -389,7 +389,7 @@ a{
   margin-left: auto;
   justify-content: flex-end;
 align-items: center;
-margin-top: 15vw;
+margin-top: 5vw;
 @include mobile{
   margin-top: 15vw;
   margin-right: 0%;
@@ -589,12 +589,12 @@ padding-top: 2vh;
 
 .principal p{
   color: $primary-color;
-
+  font-size: 1.2vw;
   margin-top: 2vw;  
   font-family: 'mukta';
   @include huge{
     margin-top: 1vw;  
-    font-size: 1vw;
+    font-size: 1.3vw;
   }
   @include mobile{
     font-size: 3.5vw;
