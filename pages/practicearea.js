@@ -2,103 +2,105 @@ import React, { useState, useEffect } from 'react'
 import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
+import { IoMdClose } from 'react-icons/io'
 const practiceArea = () => {
-    const [selectedContent, setSelectedContent] = useState();
-    const popUpOnClickHandler=(e,data)=>{
-        setSelectedContent((selectedContent=>e));
+    const [selectedContent, setSelectedContent] = useState({});
+    const popUpOnClickHandler = (e, data) => {
+        setSelectedContent((selectedContent => e));
         setIsOpen(!isOpen);
     }
-    // useEffect(()=>{
-    //     console.log(selectedContent)
+    useEffect(() => {
+        console.log(selectedContent.services)
 
-    // },[selectedContent])
+    }, [selectedContent])
 
     const practiceContent = [
         {
             title: "Intellectual Properties",
             text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
-            desc: 'Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia. Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority “EIPA”, Getnet Yawkal Law office, offers the legal skills and expertise, training and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your Intellectual Properties in Ethiopia. Though-out the years we engaged ourselves in the IP industry we have become a reliable strategic partners for local clients as well as well-known international IP firms and foreign based businesses who wishes to register and enforce intellectual properties rights in Ethiopia. We give a great value to creation of the mind and understand your business and IP needs. We use a very cost effective and client focused service and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.',
+            desc: 'Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.                  Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority “EIPA”, Getnet Yawkal Law office, offers the legal skills and expertise, training and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your Intellectual Properties in Ethiopia. Though-out the years we engaged ourselves in the IP industry we have become a reliable strategic partners for local clients as well as well-known international IP firms and foreign based businesses who wishes to register and enforce intellectual properties rights in Ethiopia. We give a great value to creation of the mind and understand your business and IP needs. We use a very cost effective and client focused service and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.',
             services: [
-                            
-                 "Trademark availability search",
+                "Trademark availability search",
                 "Brand development advise",
-               "Filling trademark, patent, industrial design and utility model applications including claiming priority right",
+                "Filling trademark, patent, industrial design and utility model applications including claiming priority right",
                 "Amending applications and registrations",
-                 "In licensing, out licensing and cross licensing of rights",
-                 "Negotiating, vetting or drafting license assignment or franchise agreements",
-                 "Representing before the EIPA tribunal and/or competent federal courts",
+                "In licensing, out licensing and cross licensing of rights",
+                "Negotiating, vetting or drafting license assignment or franchise agreements",
+                "Representing before the EIPA tribunal and/or competent federal courts",
                 "Handling prosecution, maintenance, and enforcement of active registrations.",
-               "Handling cancellation and/or invalidation cases",
+                "Handling cancellation and/or invalidation cases",
                 "Handling infringement cases",
-               "Reply to office actions or oppositions",
+                "Reply to office actions or oppositions",
                 "Conduct due diligence of the IP portfolio of a targeted company dealing merger or acquisition",
             ],
             icon: '/intellectual-icon.svg',
             image: '/IP.jpg',
+            height: '125vh'
+
         },
         {
             title: "Labor & Employment",
             text: "With the coming of many investors and expatriates in to Ethiopia, and with the issuance of different laws to regulate the employee and employee.",
             desc: 'With the coming of many investors and expatriates in to Ethiopia, and with the issuance of different laws to regulate the employee and employee relationship and immigration issues, the need for best law firms equipped with top rated lawyers in the labor and employment sector; having the right information, technical knowledge and eloquence at their finger tips has become an imminent demand. Getnet Yawkal Law office with extensive experience on labor and employment, and immigration issues, has assisted clients with sound legal advises, superb utterance and negotiation skills and by successfully deafening their interest before court of laws. We aspire to remain hot commodity in the employment sector and for that we commit out selves in helping you find the best possible way outs by drafting quality legal documents, rendering prudent legal advises, assisting you in negotiation processes and representing you before competent authorities.We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case. ',
-
             services: [
-                 "Drafting employment contracts ",
-                 "Drafting collective agreements",
-                 "Drafting  independent contractor agreements",
+                "Drafting employment contracts ",
+                "Drafting collective agreements",
+                "Drafting  independent contractor agreements",
                 "Drafting  employment benefit plans",
-               "Drafting Human resource manuals or work rules",
-                 "Drafting  settlement and release agreements",
+                "Drafting Human resource manuals or work rules",
+                "Drafting  settlement and release agreements",
                 "Negotiating",
-                 "Representation/ Litigating",
-                 "Processing resident permit",
-               "Processing work permits",
-                 "Advising on foreign salary remittance laws",
-               "Advising on employment related tax laws ",
-        
+                "Representation/ Litigating",
+                "Processing resident permit",
+                "Processing work permits",
+                "Advising on foreign salary remittance laws",
+                "Advising on employment related tax laws ",
                 "Preparing legal advises, opinions and memos on employment and/or immigration issues",
-                 "Legalizing police clearance certificates for expatriates",
-              "Preparing legal and regulatory compliance checklists",
+                "Legalizing police clearance certificates for expatriates",
+                "Preparing legal and regulatory compliance checklists",
             ],
             icon: '/labor-icon.svg',
             image: '/LE.jpg',
+            height: '133vh'
         },
         {
             title: "Corporate and Finance",
             text: "The booming economy, luring incentive packages, infrastructural developments, abandoned and inexpensive labor, the large population number the country.",
             desc: 'The booming economy, luring incentive packages, infrastructural developments, abandoned and inexpensive labor, the large population number the country has are some of the many factors why investors are choosing Ethiopia as their ideal destination for investment.For years Getnet Yawkal Law Office has helped foreign investors and international law firms by rendering sound legal advises, preparing due diligence reports, processing merger & acquisition of target companies, facilitating licensing and registrations and preparing various legal documents in accordance with clients’ business strategies.Our knowledgeable and resource-full resources in commercial, competition, tax, finance and foreign exchange laws of Ethiopia, has helped our clients to update them selves from time to time and coup up with dynamic changes the corporate and finance sector has introduced over the years.With extensive experience in rendering sound legal advises, drafting quality legal documents and representing clients interest, we strive in helping you with a proper legal guidance, with the target of putting you in the most advantageous position possible. We maintain a full service corporate and finance capability and strive to add unmatched value to your commercial strategies.',
             services: [
-               "Drafting  institutional documents i.e. Memorandum and Article of Association",
-               "Incorporating subsidiary companies",
-                 "Registering commercial representative/ liaison offices",
+                "Drafting  institutional documents i.e. Memorandum and Article of Association",
+                "Incorporating subsidiary companies",
+                "Registering commercial representative/ liaison offices",
                 "Registering holding companies",
                 "Registering branch offices of foreign business organization",
-               "Registering branch offices of foreign chamber of commerce",
+                "Registering branch offices of foreign chamber of commerce",
                 "Drafting and reviewing share purchase agreements",
-             "Drafting and registering franchise agreement",
-              "Drafting and reviewing promise of sale agreements",
-                 "Registering project offices",
-               "Drafting and reviewing technology transfer agreements (TTA)",
-               "Drafting and reviewing security documents",
-        
+                "Drafting and registering franchise agreement",
+                "Drafting and reviewing promise of sale agreements",
+                "Registering project offices",
+                "Drafting and reviewing technology transfer agreements (TTA)",
+                "Drafting and reviewing security documents",
+
                 "Drafting and reviewing loan agreements",
-               "Drafting and reviewing Investment Shareholders Agreements",
+                "Drafting and reviewing Investment Shareholders Agreements",
                 "Preparing due diligence reports",
-               "Processing Merger & Acquisition of a target company and selling or acquisition of shares & takeovers",
+                "Processing Merger & Acquisition of a target company and selling or acquisition of shares & takeovers",
                 "Advising and assisting with the issuance of investment permits, commercial registration certificates and business licenses",
-               "Advising on retention and utilization of export earnings and inward remittances",
-              "Advising on local and foreign currency holding laws",
-         "Advising on foreign salary remittance laws",
-        
+                "Advising on retention and utilization of export earnings and inward remittances",
+                "Advising on local and foreign currency holding laws",
+                "Advising on foreign salary remittance laws",
+
                 "Advising in foreign exchange laws",
-               "Advising in legal and regulatory framework of financial institutions",
-              "Advising on double taxation and investment treaties",
+                "Advising in legal and regulatory framework of financial institutions",
+                "Advising on double taxation and investment treaties",
                 "Preparing legal and regulatory compliance checklists",
-         "Authenticating and filing legal documents sourced from abroad",
+                "Authenticating and filing legal documents sourced from abroad",
                 "Negotiating",
-            "Representation/ Litigation",
+                "Representation/ Litigation",
             ],
             icon: '/corporate.svg',
             image: '/CF.jpg',
+            height: '176vh'
 
 
         },
@@ -110,14 +112,15 @@ const practiceArea = () => {
                 "Assisting in incorporating charitable organizations",
                 "Advising on legal and regulatory framework",
                 "Drafting & reviewing agreements",
-               "Advising and issuing legal opinions and memorandums",
-              "Assisting in the preparation of general assembly and board minutes",
+                "Advising and issuing legal opinions and memorandums",
+                "Assisting in the preparation of general assembly and board minutes",
                 "Preparing legal & regulatory compliance checklists",
-               "Advising on legal issues",
+                "Advising on legal issues",
                 "Representation/ Litigating",
-                  ],
+            ],
             icon: '/charity-icon.svg',
             image: '/CH.jpg',
+            height: '97vh'
         },
         {
             title: "Alternative Dispute Resolution",
@@ -127,15 +130,16 @@ const practiceArea = () => {
                 "Drafting and vetting Documents",
                 "Negotiating",
                 "Prepare legal advise, legal opinion and legal memorandum",
-               "Prepare expert report on domestic laws",
-              "Execution of arbitral awards",
+                "Prepare expert report on domestic laws",
+                "Execution of arbitral awards",
                 "Filing or defence of application for interim measures before courts",
-               "Perform early case assessment ",
+                "Perform early case assessment ",
                 "Review claims",
                 "Representation",
-                  ],
-                  icon: '/charity-icon.svg',
-                  image: '/ADR.jpg',
+            ],
+            icon: '/charity-icon.svg',
+            image: '/ADR.jpg',
+            height: '105vh'
         },
 
     ]
@@ -146,7 +150,7 @@ const practiceArea = () => {
 
     const changeNavbar = () => {
         console.log("scrolling")
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 10) {
             setIsShadow(true);
         } else {
             setIsShadow(false);
@@ -159,7 +163,7 @@ const practiceArea = () => {
 
     // console.log(isOpen)
     return (
-        <div className='practice-page'>
+        <div className='practice-page' >
             <Head>
                 <title>Getnet Law Office</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -173,7 +177,9 @@ const practiceArea = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
             </Head>
             <Header isDark={false} isShadow={isShadow}></Header>
-            <div className='practice-wrapper'>
+            {isOpen ? (
+                <PopUp selectedContent={selectedContent} isOpen={isOpen} setIsOpen={setIsOpen}></PopUp>
+            ) : <div className='practice-wrapper' >
                 <div className="practice-front">
                     <div className="practice-main">
                         <div className='practice-text'>
@@ -183,8 +189,8 @@ const practiceArea = () => {
                             </p>
                         </div>
                         <div className='practice-image'>
-                        <img className='pra-img' src={'practice.svg'} ></img>
-           
+                            <img className='pra-img' src={'practice.svg'} ></img>
+
                         </div>
                     </div>
                 </div>
@@ -192,10 +198,8 @@ const practiceArea = () => {
                 <div className='practice-content'>
                     {
                         practiceContent.map((e, i) => (
-                            <div key={i} className='single-practice' onClick={()=>popUpOnClickHandler(e)}>
-                                {isOpen ? (
-                                    <PopUp title={e.title} desc={e.desc} icon={e.icon}></PopUp>
-                                ) : null}
+                            <div key={i} className='single-practice' onClick={() => popUpOnClickHandler(e)}>
+
                                 <div className='title-text'>
                                     <h1>{e.title}</h1>
                                     <p>{e.text}</p>
@@ -207,18 +211,48 @@ const practiceArea = () => {
 
                 </div>
                 <Footer></Footer>
-            </div>
+            </div>}
+
         </div>
     )
 }
 
-const PopUp = ({ title, desc, icon }) => {
+const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
+
+
     return (
-        <div className='popup'>
-            <h1>{title}</h1>
-            <h1>{desc}</h1>
-            <img src={icon}></img>
-            <button onClick={() => setIsOpen(!isOpen)}>Cancel</button>
+        <div className='popup-wrapper' style={{height: selectedContent.height}}>
+            <div className='popup-main'>
+                <div className='popup-text'>
+                    <div className='popup-title'>
+                        <img className='popup-icon' src={selectedContent.icon}></img>
+                        <h1>{selectedContent.title}</h1>
+                    </div>
+                    <p>{selectedContent.desc}</p>
+                </div>
+                <div className='popup-service'>
+                    <h1>Some of Our Services</h1>
+                    <div className='services'>
+                        <ul>
+                            {selectedContent.services.map((service, i) => (
+                                <li key={i}>{service}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div className='popup-goback' onClick={() => setIsOpen(!isOpen)}>
+                    <img src='/back.svg'></img><p>BACK TO PRACTICE AREA</p>
+                </div>
+            </div>
+            <div className='popup-side-block'>
+                <div className='close-button'>
+                    <IoMdClose className='close-icon' onClick={() => setIsOpen(!isOpen)} />
+                </div>
+                <div className='service-image' style={{ backgroundImage: "url(" + selectedContent.image + ")" }}></div>
+                {/* <img  src={selectedContent.image}></img> */}
+
+                {/* <button onClick={() => setIsOpen(!isOpen)}>Cancel</button> */}
+            </div>
         </div>
     )
 }

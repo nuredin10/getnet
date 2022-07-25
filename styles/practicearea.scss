@@ -1,177 +1,284 @@
-@use '../scss/' as *;
+@use "../scss/" as *;
 
-h1,h2,h3,a,p{
-    font-family: "mukta";
+h1,
+h2,
+h3,
+a,
+p {
+  font-family: "mukta";
 }
 
-.practice-page .practice-wrapper{
+
+.practice-page .practice-wrapper {
+  width: 100%;
+  padding-top: 12vh;
+  background-image: url("/background.svg");
+  background-color: $white-color;
+  
+}
+
+.practice-wrapper .practice-front {
+  width: 100%;
+  padding-left: 7%;
+}
+
+.practice-wrapper .practice-main {
+  // border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70vh;
+  @include mobile {
+    height: 80vh;
+    flex-direction: column;
+  }
+}
+
+.practice-main .practice-text {
+  width: 40%;
+  height: 60%;
+  // border: 1px solid red;
+  @include mobile {
     width: 100%;
-    padding-top: 12vh;
-    background-image: url('/background.svg');
-    background-color: $white-color;
-    
+  }
+  h1 {
+    @include mobile {
+      font-weight: 700;
+      font-size: 10vw;
+    }
+    font-size: 3vw;
+    color: $main-color;
+    font-weight: 500;
+  }
+
+  p {
+    @include mobile {
+      width: 90%;
+      font-weight: 400;
+      font-size: 5vw;
+      line-height: 8vw;
+    }
+    font-size: 1.7vw;
+    font-weight: 300;
+    line-height: 2.5vw;
+  }
 }
 
-.practice-wrapper .practice-front{
-    width: 100%;
-    padding-left: 7%;
-
-}
-
-.practice-wrapper .practice-main{
-    // border: 1px solid red;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70vh;
-    @include mobile{
-        height: 80vh;
-        flex-direction: column;
-    }
-}
-
-.practice-main .practice-text{
-    width: 40%;
-    height: 60%;
-    // border: 1px solid red;
-    @include mobile{
-        width: 100%;
-    }
-    h1{
-        @include mobile{
-            font-weight: 700;
-            font-size: 10vw;
-        }
-        font-size: 3vw;
-        color: $main-color;
-        font-weight: 500;
-    }
-
-    p{
-        @include mobile{
-            width: 90%;
-            font-weight: 400;
-            font-size: 5vw;
-            line-height: 8vw;
-        }
-        font-size: 1.7vw;
-        font-weight: 300;
-        line-height: 2.5vw;
-    }
-}
-
-.practice-image{
-    margin-left: 5vw;
-    @include mobile{
-        margin-left: 0vw;
-    }
-.pra-img{
- 
+.practice-image {
+  margin-left: 5vw;
+  @include mobile {
+    margin-left: 0vw;
+  }
+  .pra-img {
     width: 50vw;
     margin-top: 19.2vw;
     object-fit: cover;
-    @include mobile{
-        margin-top: 45.9vw;
-        width: 80vw;
+    @include mobile {
+      margin-top: 45.9vw;
+      width: 80vw;
     }
+  }
+  @include mobile {
+    width: 95%;
+    margin-top: -6%;
+    margin-right: 5%;
+    height: 110%;
+  }
 }
-    @include mobile{
-        width: 95%;
-        margin-top: -6%;
-        margin-right: 5%;
-        height: 110%;
 
-    }
-}
-
-.bottom-block{
-    width: 100%;
+.bottom-block {
+  width: 100%;
+  height: 10vh;
+  background-color: $light-color;
+  @include mobile {
     height: 10vh;
-    background-color: $light-color;
-    @include mobile{
-        height: 10vh;
-    }
+  }
 }
 
-.practice-content{
-    width: 100%;
-    padding: 5% 7%
+.practice-content {
+  width: 100%;
+  padding: 5% 7%;
 }
-.single-practice{
-    // border: 1px solid rgb(0, 0, 0);
-    border-bottom: 0.6px solid #7A431D;
+.single-practice {
+  // border: 1px solid rgb(0, 0, 0);
+  border-bottom: 0.6px solid #7a431d;
+  display: flex;
+  justify-content: space-between;
+  // padding-right: 5%;
+  cursor: pointer;
+  @include mobile {
+    flex-direction: column;
+    justify-content: space-around;
+    // height: 20vh;
+  }
+  .discover {
+    font-size: 1vw;
+    color: $primary-color;
     display: flex;
-    justify-content: space-between;
-    // padding-right: 5%;
-    cursor: pointer;
-    @include mobile{
-        flex-direction: column;
-        justify-content: space-around;
-        // height: 20vh;
+    align-items: center;
+    @include mobile {
+      font-size: 3.5vw;
+      margin-top: 5vw;
+      margin-left: auto;
+
+      // float: right;
+      // border: 1px solid red;
     }
-    .discover{
-        font-size: 1vw;
-        color: $primary-color;
-        display: flex;
-        align-items: center;
-        @include mobile{
-            font-size: 3.5vw;
-           margin-top: 5vw;
-            margin-left: auto;
-            
-            // float: right;
-            // border: 1px solid red;
-        }
-    }
+  }
 }
 
-.single-practice .title-text{
-    
+.single-practice .title-text {
+  // border: 1px solid red;
+  width: 80%;
+  margin-top: -2%;
+  @include mobile {
+    width: 100%;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: $primary-color;
+    margin-top: 5%;
+    @include mobile {
+      font-size: 7vw;
+      margin-top: 15%;
+    }
+  }
+  p {
+    // margin-top: -1%;
+    font-size: 1.17vw;
+    font-weight: 700;
+    line-height: 2vw;
+    width: 70%;
+    color: $primary-color;
+    @include mobile {
+      font-size: 4vw;
+      width: 100%;
+      // margin-top: -5%;
+      line-height: 5vw;
+    }
+  }
+}
+
+.popup-wrapper {
+
+  width: 100%;
+  height: 102vh;
+//   z-index: 1000000;
+  position: absolute;
+  top: 13.3vh;
+  left: 0;
+  background-color: $white-color;
+  background-image: url("/background.svg");
+  @include flex("center", "center");
+  overflow: hidden;
+}
+
+.popup-wrapper .popup-main {
+  width: 90%;
+  height: 100%;
+  // border: 1px solid red;
+}
+
+.popup-wrapper .popup-side-block {
+  height: 100%;
+  width: 15%;
+  background-color: $light-color;
+  // border: 1px solid blue;
+}
+
+.popup-side-block .service-image{
     // border: 1px solid red;
-    width: 80%;
-    margin-top: -2%;
-    @include mobile{
-        width: 100%;
-    }
-    h1{
-        font-weight: 700;
-        font-size: 2.5vw;
-        color: $primary-color;
-        margin-top: 5%;
-        @include mobile{
-            font-size: 7vw;
-            margin-top: 15%;
-        }
-    }
-    p{
-        // margin-top: -1%;
-        font-size: 1.17vw;
-        font-weight: 700;
-        line-height: 2vw;
-        width: 70%;
-        color: $primary-color;
-        @include mobile{
-            font-size: 4vw;
-            width: 100%;
-            // margin-top: -5%;
-            line-height: 5vw;
-        }
-    }
+    width: 80vw;
+    height: 60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 5%;
+    right: 60%;
+    
 }
 
-.popup{
-    width: 90%;
-    height: 60vh;
-    position: fixed;
-    top: 10vh;
-    left: 10vw;
-    background-color: $primary-color;
+.popup-goback {
+//   height: 1vh;
+  float: right;
+  width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    cursor: pointer;
+    // border: 1px solid red;
+  // text-align: right;
+  p {
+    
+    color: $main-color;
+    font-size: 1.2vw;
+    // border: 1px solid red;
+    @include flex("center", "center");
+  }
+}
+.popup-main .popup-text {
+  // border: 1px solid red;
+  padding: 0% 8%;
+}
 
-    img{
-        width: 400px;
-        height: 400px;
-        border: 1px solid red;
-        z-index: 100000;
-    }
+.popup-text .popup-title {
+  @include flex("center", "center");
+  // border: 1px solid blue;
+  width: 50%;
+}
+
+.popup-title img {
+  width: 3.5vw;
+}
+
+.popup-title h1 {
+  text-transform: uppercase;
+  font-size: 2vw;
+  margin-left: 3%;
+  color: $main-color;
+}
+
+.popup-text p {
+  color: $main-color;
+  font-size: 1.2vw;
+  font-weight: 400;
+  width: 80%;
+}
+
+.popup-main .popup-service {
+  @include flex("center", "center");
+  background-color: $primary-color;
+  // border: 1px solid rgb(97, 17, 17);
+  padding-top: 3%;
+  padding-left: 6%;
+}
+.popup-service h1 {
+  width: 15%;
+  font-weight: 300;
+  font-size: 2.3vw;
+  text-align: center;
+  color: $white-color;
+  text-transform: uppercase;
+}
+
+.popup-service .services {
+  color: $white-color;
+  line-height: 1.5vw;
+}
+
+.popup-side-block .close-button {
+  width: 100%;
+  height: 5vh;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.close-button .close-icon {
+  width: 2vw;
+  height: 10vh;
+  color: $white-color;
+  cursor: pointer;
 }
