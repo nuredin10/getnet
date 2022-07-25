@@ -35,7 +35,7 @@ const practiceArea = () => {
             ],
             icon: '/intellectual-icon.svg',
             image: '/IP.jpg',
-            height: '125vh'
+            height: '122vh'
 
         },
         {
@@ -61,7 +61,7 @@ const practiceArea = () => {
             ],
             icon: '/labor-icon.svg',
             image: '/LE.jpg',
-            height: '133vh'
+            height: '120vh'
         },
         {
             title: "Corporate and Finance",
@@ -100,7 +100,7 @@ const practiceArea = () => {
             ],
             icon: '/corporate.svg',
             image: '/CF.jpg',
-            height: '176vh'
+            height: '165vh'
 
 
         },
@@ -120,7 +120,7 @@ const practiceArea = () => {
             ],
             icon: '/charity-icon.svg',
             image: '/CH.jpg',
-            height: '97vh'
+            height: '95vh'
         },
         {
             title: "Alternative Dispute Resolution",
@@ -139,7 +139,7 @@ const practiceArea = () => {
             ],
             icon: '/charity-icon.svg',
             image: '/ADR.jpg',
-            height: '105vh'
+            height: '100vh'
         },
 
     ]
@@ -189,7 +189,7 @@ const practiceArea = () => {
                             </p>
                         </div>
                         <div className='practice-image'>
-                            <img className='pra-img' src={'practice.svg'} ></img>
+                            <img className='pra-img' src={'pra.png'} ></img>
 
                         </div>
                     </div>
@@ -222,6 +222,7 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
 
     return (
         <div className='popup-wrapper' style={{height: selectedContent.height}}>
+            
             <div className='popup-main'>
                 <div className='popup-text'>
                     <div className='popup-title'>
@@ -231,6 +232,11 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
                     <p>{selectedContent.desc}</p>
                 </div>
                 <div className='popup-service'>
+                <div className='three-line'>
+                  <img className='decor' src={'three.svg'} >
+
+                  </img>
+                 </div>
                     <h1>Some of Our Services</h1>
                     <div className='services'>
                         <ul>

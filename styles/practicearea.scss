@@ -8,16 +8,15 @@ p {
   font-family: "mukta";
 }
 
-
 .practice-page .practice-wrapper {
   width: 100%;
   padding-top: 12vh;
   background-image: url("/background.svg");
   background-color: $white-color;
-  
 }
 
 .practice-wrapper .practice-front {
+  // background-color: $light-color;
   width: 100%;
   padding-left: 7%;
 }
@@ -59,9 +58,9 @@ p {
       font-size: 5vw;
       line-height: 8vw;
     }
-    font-size: 1.7vw;
+    font-size: 1.2vw;
     font-weight: 300;
-    line-height: 2.5vw;
+    line-height: 2vw;
   }
 }
 
@@ -71,9 +70,10 @@ p {
     margin-left: 0vw;
   }
   .pra-img {
-    width: 50vw;
-    margin-top: 19.2vw;
+    width: 40vw;
+    margin-top: 18.7vw;
     object-fit: cover;
+ 
     @include mobile {
       margin-top: 45.9vw;
       width: 80vw;
@@ -82,8 +82,8 @@ p {
   @include mobile {
     width: 95%;
     margin-top: -6%;
-    margin-right: 5%;
-    height: 110%;
+    margin-right: -2%;
+    height: 100%;
   }
 }
 
@@ -137,7 +137,7 @@ p {
   }
   h1 {
     font-weight: 700;
-    font-size: 2.5vw;
+    font-size: 1.7vw;
     color: $primary-color;
     margin-top: 5%;
     @include mobile {
@@ -147,7 +147,7 @@ p {
   }
   p {
     // margin-top: -1%;
-    font-size: 1.17vw;
+    font-size: 1.1vw;
     font-weight: 700;
     line-height: 2vw;
     width: 70%;
@@ -160,19 +160,34 @@ p {
     }
   }
 }
-
+.three-line{
+  .decor{
+    position: absolute;
+    top: 0;
+    left: 8vw;
+ 
+    width: 12vw;
+    object-fit: cover;
+    @include mobile{
+      width: 32vw;
+    }
+  }
+}
 .popup-wrapper {
-
   width: 100%;
   height: 102vh;
-//   z-index: 1000000;
+  //   z-index: 1000000;
   position: absolute;
-  top: 13.3vh;
+  top: 12vh;
   left: 0;
   background-color: $white-color;
   background-image: url("/background.svg");
+
   @include flex("center", "center");
   overflow: hidden;
+  @include mobile{
+ 
+  }
 }
 
 .popup-wrapper .popup-main {
@@ -188,30 +203,37 @@ p {
   // border: 1px solid blue;
 }
 
-.popup-side-block .service-image{
-    // border: 1px solid red;
-    width: 80vw;
-    height: 60vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 5%;
-    right: 60%;
-    
+.popup-side-block .service-image {
+  // border: 1px solid red;
+  margin-top: 2vw;
+  width: 40vw;
+  height: 55vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 5%;
+  left: -10vw;
+  // right: 60%;
+@include mobile{
+  top: 40%;
+  left: -40vw;
+  width: 45vw;
+  height: 50vh;
+
+}
 }
 
 .popup-goback {
-//   height: 1vh;
+  //   height: 1vh;
   float: right;
   width: 25%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
-    cursor: pointer;
-    // border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  cursor: pointer;
+  // border: 1px solid red;
   // text-align: right;
   p {
-    
     color: $main-color;
     font-size: 1.2vw;
     // border: 1px solid red;
@@ -220,52 +242,94 @@ p {
 }
 .popup-main .popup-text {
   // border: 1px solid red;
-  padding: 0% 8%;
+  padding: 3% 7%;
+  @include mobile{
+ 
+  }
 }
 
 .popup-text .popup-title {
   @include flex("center", "center");
   // border: 1px solid blue;
   width: 50%;
+  @include mobile{
+   
+    width: 100%;
+  }
 }
 
 .popup-title img {
   width: 3.5vw;
+  @include mobile{
+    width: 8.5vw;
+  }
 }
 
 .popup-title h1 {
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin-left: 3%;
   color: $main-color;
+  @include mobile{
+    font-size: 4.5vw;
+   
+  }
 }
 
 .popup-text p {
   color: $main-color;
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 400;
   width: 80%;
+  @include mobile{
+    font-size: 3vw;
+    width: 100%;
+  }
 }
 
 .popup-main .popup-service {
   @include flex("center", "center");
+  position: relative;
   background-color: $primary-color;
   // border: 1px solid rgb(97, 17, 17);
   padding-top: 3%;
+  padding-bottom: 3%;
   padding-left: 6%;
+  @include mobile{
+    display: grid;
+margin-top: 55vw;
+    
+  }
 }
 .popup-service h1 {
-  width: 15%;
-  font-weight: 300;
-  font-size: 2.3vw;
-  text-align: center;
+  width: 18%;
+  margin-top: 3vw;
+  font-size: 2vw;
+  text-align: left;
+  margin-right: 3vw;
   color: $white-color;
   text-transform: uppercase;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3em;
+  @include mobile{
+    margin-top: 8vw;
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+  }
+
 }
 
 .popup-service .services {
   color: $white-color;
   line-height: 1.5vw;
+  @include mobile{
+    font-size: 3vw;
+    line-height: 5vw;
+  }
 }
 
 .popup-side-block .close-button {
@@ -281,4 +345,8 @@ p {
   height: 10vh;
   color: $white-color;
   cursor: pointer;
+  @include mobile{
+    width: 5vw;
+  
+  }
 }

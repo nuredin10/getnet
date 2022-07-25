@@ -10,7 +10,7 @@
 }
 
 .contact-page-wrapper .contact-main{
-    padding: 0 10%;
+    padding: 3% 7%;
     width: 100%;
     height: auto;
     // border: 1px solid red;
@@ -125,6 +125,6 @@
     margin-top: 7%;
     margin-bottom: 4vw;
     @include mobile{
-        height: 40vh;
+        // height: 40vh;
     }
 }
