@@ -7,20 +7,7 @@ import Head from "next/head";
 function Footer() {
   return (
     <div className="footer-wrapper">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap"
-          rel="stylesheet"
-        ></link>
-      </Head>
+      
       <div className="footer-main">
         <div className="links-wrapper">
           <div className="quick-links border-top">
@@ -68,6 +55,10 @@ function Footer() {
               Connect on LinkedIn 
               <br></br>Located in Bole Mega, Addis Ababa, Ethiopia
             </p>
+            <div className="middle-links border-top">
+          <h3>Social Media Links</h3>
+        
+        </div>
             <div className="footer-social-media">
               <AiFillFacebook className="icon" />
               <AiFillLinkedin className="icon" />
