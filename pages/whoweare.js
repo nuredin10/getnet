@@ -39,7 +39,7 @@ const WhoWeAre = () => {
                     </p>
                 </div>
                 <div className='image-wrapper'>
-                    <img className='who-we-are-image2' src={'logo_new.svg'} ></img>
+                    <img className='who-we-are-image2' src={'logo_new.svg'} alt=''></img>
 
                 </div>
             </div>
@@ -47,13 +47,13 @@ const WhoWeAre = () => {
                 <Link href='/practicearea'>
                     <div className=''>
                         <h1>practice area</h1>
-                        <img className='rightarrow' src={'/rightArrow.svg'}></img>
+                        <img className='rightarrow' src={'/rightArrow.svg'} alt=''></img>
                     </div>
                 </Link>
                 <Link href='principalattroney'>
                     <div className=''>
                         <h1>principal Attorney</h1>
-                        <img className='rightarrow' src={'/rightArrow.svg'}></img>
+                        <img className='rightarrow' src={'/rightArrow.svg'} alt=''></img>
                     </div>
                 </Link>
             </div>

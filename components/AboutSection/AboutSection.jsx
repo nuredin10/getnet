@@ -35,7 +35,7 @@ function AboutSection({ aboutActiveSlide }) {
           </p>
           <div className="image-section">
             <div className="image">
-            <img className='who-we-are-image' src={'logo_new.svg'} ></img>
+            <img className='who-we-are-image' src={'logo_new.svg'} alt='' ></img>
 
             </div>
           </div>
