@@ -181,7 +181,7 @@ const PracticeArea = () => {
                             </p>
                         </div>
                         <div className='practice-image'>
-                            <img className='pra-img' src={'pra.png'} ></img>
+                            <img className='pra-img' src={'pra.png'} alt=''></img>
 
                         </div>
                     </div>
@@ -218,14 +218,14 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
             <div className='popup-main'>
                 <div className='popup-text'>
                     <div className='popup-title'>
-                        <img className='popup-icon' src={selectedContent.icon}></img>
+                        <img className='popup-icon' src={selectedContent.icon} alt=''></img>
                         <h1>{selectedContent.title}</h1>
                     </div>
                     <p>{selectedContent.desc}</p>
                 </div>
                 <div className='popup-service'>
                 <div className='three-line'>
-                  <img className='decor' src={'three.svg'} >
+                  <img className='decor' src={'three.svg'} alt=''>
 
                   </img>
                  </div>
@@ -239,7 +239,7 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
                     </div>
                 </div>
                 <div className='popup-goback' onClick={() => setIsOpen(!isOpen)}>
-                    <img src='/back.svg'></img><p>BACK TO PRACTICE AREA</p>
+                    <img src='/back.svg' alt=''></img><p>BACK TO PRACTICE AREA</p>
                 </div>
             </div>
             <div className='popup-side-block'>

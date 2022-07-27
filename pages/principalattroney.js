@@ -37,7 +37,7 @@ function PrincipalAttroney() {
               <button>Contact Us</button>
             </div>
             <div className='principal-image'>
-            <img className='who-we-are-image1' src={'genet.svg'} ></img>
+            <img className='who-we-are-image1' src={'genet.svg'} alt='' ></img>
             </div>
           </div>
         </div>

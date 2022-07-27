@@ -123,7 +123,7 @@ function Home() {
     gsap.to(".showP1", { duration: 1.5, paddingTop: "0%" })
     gsap.to(".hideP1", { duration: 0.1, paddingTop: "5%" })
 
-  }, [mouseEnter, mouseLeave])
+  }, [])
 
 
 
@@ -278,7 +278,7 @@ function Home() {
               ) : (
                 <div className='arrow-wrapper' onClick={() => setCount(count => 1)}>
                   <h3 >explore</h3>
-                  <img className='arrow' src={'/arrow.svg'} ></img>
+                  <img className='arrow' src={'/arrow.svg'} alt=''></img>
                 </div>
               )
             }

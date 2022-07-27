@@ -18,7 +18,7 @@ function PracticeArea({practiceActiveSlide}) {
       <div className="practice-wrapper">
         <div className="practice">
           <div className="title">
-            <img src={'/intellectual-icon.svg'}></img>
+            <img src={'/intellectual-icon.svg'} alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Intellectual Proprieties</h3>
           </div>
@@ -31,7 +31,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <img src={'/labor-icon.svg'} className="icon"></img>
+            <img src={'/labor-icon.svg'} className="icon" alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Labor & Employment</h3>
           </div>
@@ -44,7 +44,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <img src={'/charity-icon.svg'}></img>
+            <img src={'/charity-icon.svg'} alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Charity</h3>
           </div>
@@ -57,7 +57,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <img src={'corporate.svg'}></img>
+            <img src={'corporate.svg'} alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Corporate and Finance</h3>
           </div>

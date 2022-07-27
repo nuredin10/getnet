@@ -39,16 +39,16 @@ function Header({isDark, isShadow, isBurgerDark}) {
   return (
     <div className={`header ${isDark ? 'dark-header' : 'white-header'} ${isShadow ? 'shadow-header' : ''}`}>
       <nav className="navbar">
-        <Link className="logo-wrapper" href="/">
+        <a className="logo-wrapper" href="/">
           {/* <h4 className="logo">LOGO</h4> */}
           <img src={`${isDark ? 'white-logo.svg' : 'logo_new.svg'}`} alt="logo" className="logo"></img>
-        </Link>
+        </a>
         <ul className={`nav-links ${isActive === true ? "nav-active" : ""}`}>
           <div className="links">
             {headerNav.map((e, i) => (
               <li key={i}>
                 
-                <Link className={`${isDark ? 'white-link' : 'brown-link'}`} href={e.path}>{e.dispay}</Link>
+                <a className={`${isDark ? 'white-link' : 'brown-link'}`} href={e.path}>{e.dispay}</a>
               </li>
             ))}
           </div>
