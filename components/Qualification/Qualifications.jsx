@@ -12,7 +12,7 @@ function Qualifications({ qualActiveSlide }) {
   return (
     <div
       className={`
-        qualifications slide-background1 ${
+        qualifications slide-background ${
           qualActiveSlide ? "qualActiveSlide" : "qualRemoveSlide"
         }`}
     >

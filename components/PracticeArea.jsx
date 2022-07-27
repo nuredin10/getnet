@@ -13,7 +13,7 @@ function PracticeArea({practiceActiveSlide}) {
   
   return (
     <div className={`
-    practice-area slide-background ${practiceActiveSlide ? 'practiceAreaActive-slide' : 'practiceAreaRemove-slide'}`}>
+    practice-area slide-background1 ${practiceActiveSlide ? 'practiceAreaActive-slide' : 'practiceAreaRemove-slide'}`}>
       <h2 className="practice-title">Practice Area</h2>
       <div className="practice-wrapper">
         <div className="practice">
