@@ -197,7 +197,7 @@ function Home() {
     var isScrolling;
 
 
-    window.addEventListener('wheel', function (e) {
+    window.addEventListener('scroll', function (e) {
 
       // Clear our timeout throughout the scroll
       window.clearTimeout(isScrolling);
