@@ -57,6 +57,8 @@ function Home() {
     images5: '/front-image5.JPG',
   }
 
+
+
   const mouseEnter = () => {
     setSlide1("active");
     setH1("smallH1")
@@ -192,36 +194,6 @@ function Home() {
 
   useEffect(() => {
 
-    // window.addEventListener('keydown', (e) => {
-    //   if (e.keyCode == 40) {
-    //     setCount(count => ++count)
-    //     console.log(()=>count)
-    //   }
-    //   else if (e.keyCode == 38) {
-    //     setCount(count => --count)
-    //     console.log(()=>count)
-    //   }
-    // })
-
-    // window.addEventListener("scroll", (e) => {
-
-
-    // setCount(e.wheelDeltaY)
-    // if(e.wheelDeltaY > 0)
-    //   setCount("scrolling down")
-    // else
-    //   setCount("scrolling up")
-    // console.log(e.wheelDeltaY)
-    // if (window.offsetHeight + window.scrollTop >= window.scrollHeight) {  
-    // setCount(count=>count++);
-    // window.scrollTo(0, 0)
-    // } 
-    // console.log("endd")
-    // if (window.scrollY > 100 && window.scrollY < 1500) {
-    //   setCount(count => ++count)
-    //   window.scrollTo(0, 0)
-    // }
-    // }, true)
     var isScrolling;
 
 
@@ -244,7 +216,7 @@ function Home() {
       }, 66);
 
     }, false);
-  }, [])
+  }, [count])
 
   // window.addEventListener("wheel", (e) => {
 
@@ -282,15 +254,7 @@ function Home() {
     <>
       <Head>
         <title>Getnet Law Office</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
+        
       </Head>
       <div className='main-wrapper'>
         <div className='container'>
@@ -355,7 +319,7 @@ function Home() {
                   <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
                     <h3 className={h3}>We cater practical, strategically sound and result oriented <br></br>first rate legal services in Ethiopia.</h3>
                     <p className='smallText'>Local Expertise, International Depth, Business Acumen.</p>
-                    <p className={`${p1} showUp`} >We take Integrity, accountability, accessibility and timely delivery of our quality legal services as our core value of establishment. We value our client's time and always in exceeding their expectations.</p>
+                    {/* <p className={`${p1} showUp`} >We take Integrity, accountability, accessibility and timely delivery of our quality legal services as our core value of establishment. We value our client&apos;'s time and always in exceeding their expectations.</p> */}
                   </div>
 
                 </div>

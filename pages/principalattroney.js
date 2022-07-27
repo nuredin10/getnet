@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
+import Head from 'next/head'
 function PrincipalAttroney() {
   const [isShadow, setIsShadow] = useState(false)
 
@@ -20,6 +21,9 @@ function PrincipalAttroney() {
 
   return (
     <div className='principal-wrapper'>
+      <Head>
+          <title>Getnet Law Office | Principal Attorney</title>
+      </Head>
       <Header isDark={false} isShadow={isShadow}></Header>
       <div className='principal-main'>
         <div className='principal-front'>

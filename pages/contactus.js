@@ -4,8 +4,9 @@ import Footer from "../components/Footer/Footer";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
+import Head from 'next/head'
 
-function contactus() {
+function Contactus() {
   const [isDark, setIsDark] = useState(true);
   const [isBurgerDark, setIsBurgerDark] = useState(true);
 
@@ -26,6 +27,9 @@ function contactus() {
 
   return (
     <div className="contact-page-wrapper">
+      <Head>
+        <title>Getnet Law Office | Contact Us</title>
+      </Head>
       <Header isDark={isDark} isBurgerDark={isBurgerDark}></Header>
       <div className="contact-main">
         <div className="contact-form">
@@ -73,16 +77,16 @@ function contactus() {
         </div>
       </div>
       <div className="map-section">
-        <div class="map1">
-          <div class="location">
-            <div class="map-responsive">
+        <div className="map1">
+          <div className="location">
+            <div className="map-responsive">
               <iframe
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=Makush%20Art%20gallery%20%7C%20Bole%20%7C%20%E1%88%9B%E1%8A%A9%E1%88%BD%20%E1%8A%A0%E1%88%AD%E1%89%B5%20%E1%8C%8B%E1%88%88%E1%88%AA%20%7C%20%E1%89%A6%E1%88%8C&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
+                frameBorder="0"
                 scrolling="no"
-                marginheight="0"
-                marginwidth="0"
+                marginHeight="0"
+                marginWidth="0"
               ></iframe>
             </div>
           </div>
@@ -93,4 +97,4 @@ function contactus() {
   );
 }
 
-export default contactus;
+export default Contactus;

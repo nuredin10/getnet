@@ -3,7 +3,7 @@ import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/Footer/Footer'
 import { IoMdClose } from 'react-icons/io'
-const practiceArea = () => {
+const PracticeArea = () => {
     const [selectedContent, setSelectedContent] = useState({});
     const popUpOnClickHandler = (e, data) => {
         setSelectedContent((selectedContent => e));
@@ -165,16 +165,8 @@ const practiceArea = () => {
     return (
         <div className='practice-page' >
             <Head>
-                <title>Getnet Law Office</title>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
-                    rel="stylesheet"
-                />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap" rel="stylesheet"></link>
+                <title>Getnet Law Office | Practice Area</title>
+                
             </Head>
             <Header isDark={false} isShadow={isShadow}></Header>
             {isOpen ? (
@@ -262,4 +254,4 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
         </div>
     )
 }
-export default practiceArea;
+export default PracticeArea;
