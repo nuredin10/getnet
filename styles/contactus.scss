@@ -10,7 +10,7 @@
 }
 
 .contact-page-wrapper .contact-main{
-    padding: 0 10%;
+    padding: 3% 7%;
     width: 100%;
     height: auto;
     // border: 1px solid red;
@@ -67,12 +67,10 @@
 .contact-form .form .textArea{
     height: 10vh;
 }
-
-
 .contact-form .submit{
     margin-top: 5%;
     width: 13vw;
-    height: 6vh;
+    height: 4vh;
     float: right;
     margin-right: 20%;
     border-radius: 10px;
@@ -96,7 +94,6 @@
         width: 70%;
     }
 }
-
 .contact-main .contact-address .single{
     // border: 1px solid red;
     // margin-top: 5%;
@@ -109,16 +106,25 @@
     a{
         color: $light-color;
     }
+    .social-media{
+        svg{
+            margin-top: 2vh;
+            margin-left: -4vw;
+            color: $light-color;
+            border-radius: 2vw;
+      
+          }
+    }
     
 }
 
 .map-section{
     width: 100%;
-    border: 3px solid red($color: #ff0000);
-    height: 70vh;
-    // background-color: red;
-    margin-top: 7%;
+
+
+    // margin-top: 7%;
+    // margin-bottom: 4vw;
     @include mobile{
-        height: 40vh;
+        // height: 40vh;
     }
 }

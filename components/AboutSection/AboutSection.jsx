@@ -11,8 +11,10 @@ function AboutSection({ aboutActiveSlide }) {
   });
 
   return (
+  
     <div className={`
-    about-section ${aboutActiveSlide ? 'active-slide' : 'remove-slide'}`}>
+    about-section slide-background ${aboutActiveSlide ? 'active-slide'  : 'remove-slide'}`}>
+       
       <div className="about-wrapper">
         <h3>Who We Are</h3>
         <div className="about-main">
@@ -20,24 +22,29 @@ function AboutSection({ aboutActiveSlide }) {
             Getnet Yawkal Law Office is a leading commercial law office in
             Ethiopia providing practical, strategically sound and result
             oriented first rate legal services for local and international
-            clients.
-            <br></br>
+            clients.<br/><br/>
+            
             <span className="highlight">
               We take Integrity, accountability, accessibility and timely
               delivery of our quality legal services as our core value of
               establishment.
             </span>
-            <br></br> We value our client’s time and always strive in exceeding
+            <br/><br/>We value our client’s time and always strive in exceeding
             their expectations.
 
           </p>
           <div className="image-section">
-            <div className="image"></div>
+            <div className="image">
+            <img className='who-we-are-image' src={'logo_new.svg'} alt='' ></img>
+
+            </div>
           </div>
           
         </div>
-        <div className='link'>
-        <a>See more in Our Practice Areas <ChevronRightIcon className="arrow"/></a>
+        <div className="select-link1">
+        <a href="whoweare">
+          See more in Who We Are<ChevronRightIcon className="arrow" />
+        </a>
       </div>
       </div>
     </div>

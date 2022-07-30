@@ -56,7 +56,7 @@ a {
   width: 100%;
   // border: 1px solid blue;
   @include mobile{
-    width: 70vw;
+    width: 60vw;
   }
   cursor: pointer;
   // border: 1px solid red;
@@ -68,26 +68,34 @@ a {
   // background-color: red;
   // border: 1px solid red;
   list-style: none;
-  width: 45vw;
+  width: 40vw;
   margin-left: auto;
+  @include mobile{
+    font-size: 2vw;
+
+  }
   .links {
+ 
     @include flex(space-around, center);
     width: 100%;
+    @include mobile{
+      width: 85%;
+    }
   }
 }
 
 .nav-links a {
-  z-index: 10002000000000000000;
+  z-index: 99999999;
   /* Principal Attorney */
 
-width: 7.31rem;
-height: 1.06rem;
+width: 14.31vw;
+height: 3vw;
 font-family: 'Mukta', sans-serif;
 // font-family: 'Mukta';
 font-style: normal;
 font-weight: 500;
 font-size: 0.78125vw;
-line-height: 2.50rem;
+line-height: 3.50vw;
 text-align: center;
 text-transform: uppercase;
 
@@ -104,7 +112,13 @@ text-transform: uppercase;
 }
 
 .nav-links .dark-link{
+  font-size: .9vw;
   color: $main-color;
+}
+
+.nav-links .brown-link{
+  font-size: .9vw;
+  color: $light-color;
 }
 
 .nav-links .white-link:hover{
@@ -133,7 +147,6 @@ text-transform: uppercase;
 .burger div {
   width: 25px;
   height: 2px;
-  background-color: $main-color;
   margin: 10px;
 }
 
@@ -155,33 +168,35 @@ text-transform: uppercase;
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 11vh;
+    opacity:.92;
     background-color: $main-color;
     // @include flex("", "");
     // flex-direction: row;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     .links {
-      height: 70%;
+      height: 80%;
 
       // border: 1px solid red;
       border-bottom: 2px solid $white-color;
       position: static;
       top: 0;
       flex-direction: column;
-      padding-bottom: 10%;
-      padding-left: 10%;
+      padding-bottom: 5%;
+      padding-left: -1%;
       // @include flex("center","center")
       li {
-        height: 20%;
-        width: 100%;
+        height: 10%;
+        // width: 80%;
         // border: 1px solid red;
-        margin-bottom: -5rem;
+        margin-bottom: -10vw;
         
         a {
           // border: 1  px solid red;
-          font-size: 2rem;
-          font-weight: 500;
+          font-size:8vw;
+          z-index: 9999999;
+          font-weight: 600;
         }
       }
     }
@@ -202,13 +217,22 @@ text-transform: uppercase;
   width: 100%;
   height: 40%;
   display: none;
+
   // border: 1px solid red;
   @include mobile{
     display: block;
   }
+  svg{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    color: $light-color;
+    border-radius: 2vw;
+    width: 8vw;
+
+  }
   .icon{
-    font-size: 3rem;
-    margin: 10%;
+    font-size: 10vw;
+    margin: 1%;
   }
 }
 
@@ -252,10 +276,11 @@ text-transform: uppercase;
 }
 
 .social-media {
-  width: 10vw;
+  width: 8vw;
   height: 100%;
   font-size: 1.5vw;
   margin-right: -5%;
+  margin-left: 10%;
   margin-bottom: 1%;
   @include flex(space-around, center);
   // border: 1px solid red;
@@ -272,6 +297,9 @@ text-transform: uppercase;
 }
 .dark-social-media{
   color: $main-color;
+svg{
+border-radius: 4vw;
+}
 }
 
 

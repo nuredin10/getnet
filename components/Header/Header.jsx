@@ -2,15 +2,16 @@ import React, { useState,useEffect } from "react";
 import {AiFillFacebook} from "react-icons/ai";
 import {AiFillLinkedin} from "react-icons/ai";
 import {AiFillTwitterSquare} from "react-icons/ai";
+import Link from 'next/link'
 
 function Header({isDark, isShadow, isBurgerDark}) {
   const headerNav = [
     {
-      dispay: "who we are",
+      dispay: "Who We Are",
       path: "whoweare",
     },
     {
-      dispay: "practice area",
+      dispay: "Practice Area",
       path: "practicearea",
     },
     {
@@ -18,7 +19,7 @@ function Header({isDark, isShadow, isBurgerDark}) {
       path: "principalattroney",
     },
     {
-      dispay: "contact us",
+      dispay: "Contact Us",
       path: "contactus",
     },
   ];
@@ -47,7 +48,7 @@ function Header({isDark, isShadow, isBurgerDark}) {
             {headerNav.map((e, i) => (
               <li key={i}>
                 
-                <a className={`${isDark ? 'white-link' : 'dark-link'}`} href={e.path}>{e.dispay}</a>
+                <a className={`${isDark ? 'white-link' : 'brown-link'}`} href={e.path}>{e.dispay}</a>
               </li>
             ))}
           </div>

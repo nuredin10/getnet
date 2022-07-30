@@ -7,18 +7,18 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 function PracticeArea({practiceActiveSlide}) {
   useEffect(() => {
-    gsap.to(".active-slide", { duration: 1.5, right: "0%" });
-    gsap.to(".remove-slide", { duration: 1.5, right: "-95%" });
+    gsap.to(".practiceAreaActive-slide", { duration: 1.5, right: "0%" });
+    gsap.to(".practiceAreaRemove-slide", { duration: 1.5, right: "-95%" });
   });
   
   return (
     <div className={`
-    practice-area ${practiceActiveSlide ? 'active-slide' : 'remove-slide'}`}>
+    practice-area slide-background1 ${practiceActiveSlide ? 'practiceAreaActive-slide' : 'practiceAreaRemove-slide'}`}>
       <h2 className="practice-title">Practice Area</h2>
       <div className="practice-wrapper">
         <div className="practice">
           <div className="title">
-            <img src={'/intellectual-icon.svg'}></img>
+            <img src={'/intellectual-icon.svg'} alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Intellectual Proprieties</h3>
           </div>
@@ -31,7 +31,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <img src={'/labor-icon.svg'} className="icon"></img>
+            <img src={'/labor-icon.svg'} className="icon" alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Labor & Employment</h3>
           </div>
@@ -44,7 +44,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <img src={'/charity-icon.svg'}></img>
+            <img src={'/charity-icon.svg'} alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Charity</h3>
           </div>
@@ -57,7 +57,7 @@ function PracticeArea({practiceActiveSlide}) {
         </div>
         <div className="practice">
           <div className="title">
-            <img src={'corporate.svg'}></img>
+            <img src={'corporate.svg'} alt=''></img>
             {/* <AiFillFacebook className="icon" /> */}
             <h3>Corporate and Finance</h3>
           </div>
@@ -69,8 +69,8 @@ function PracticeArea({practiceActiveSlide}) {
           </p>
         </div>
       </div>
-      <div className="link">
-        <a>
+      <div className="select-link">
+        <a href="practicearea">
           See more in Our Practice Areas <ChevronRightIcon className="arrow" />
         </a>
       </div>
