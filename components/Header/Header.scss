@@ -119,6 +119,9 @@ text-transform: uppercase;
 .nav-links .brown-link{
   font-size: .9vw;
   color: $main-color;
+  @include mobile{
+    color: $light-color;
+  }
 }
 
 .nav-links .white-link:hover{
