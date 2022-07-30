@@ -118,7 +118,10 @@ text-transform: uppercase;
 
 .nav-links .brown-link{
   font-size: .9vw;
-  color: $light-color;
+  color: $main-color;
+  @include mobile{
+    color: $light-color;
+  }
 }
 
 .nav-links .white-link:hover{
@@ -140,14 +143,15 @@ text-transform: uppercase;
   // margin-right: -15%;
 }
 
-.white-burger div{
-  background-color: $white-color;
-}
 
 .burger div {
   width: 25px;
   height: 2px;
   margin: 10px;
+}
+
+.white-burger div{
+  background-color: $main-color;
 }
 
 .dark-burger div{
