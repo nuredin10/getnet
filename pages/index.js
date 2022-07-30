@@ -110,12 +110,31 @@ function Home() {
 
 
   useEffect(() => {
+    var ts;
+    window.addEventListener("touchstart", (e) => {
+      ts = e.touches[0].clientY;
+      // console.log(e.touches[0])
+    })
+
+    window.addEventListener("touchend", (e) => {
+      var te = e.changedTouches[0].clientY;
+      if (ts > te + 5) {
+        setCount(count=>++count)
+      } else if (ts < te - 5) {
+        setCount(count=>--count)
+      }
+    })
+
+  }, [])
+
+
+  useEffect(() => {
     gsap.to(".active", { duration: 1.5, y: "-70vh", display: "block" })
     gsap.to(".remove", { duration: 1.5, y: "0vh" })
     gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" })
     gsap.to(".longBlock1", { duration: 1, ease: "power2.out", height: "85%", width: "98%" })
     gsap.to(".longBlock2", { duration: 1, ease: "power2.out", height: "90%", width: "94%" })
-    gsap.to(".longBlock3", { duration: 1, ease: "power2.out", height: "95%", width: "90%" })
+    gsap.to(".longBlock3", { duration: 1, ease: "power2.out", height: "93.5%", width: "90%" })
     gsap.to(".shortBlock", { duration: 1, height: "25%" })
     gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%" })
     gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%" })
@@ -254,7 +273,7 @@ function Home() {
     <>
       <Head>
         <title>Getnet Law Office</title>
-        
+
       </Head>
       <div className='main-wrapper'>
         <div className='container'>
@@ -270,9 +289,9 @@ function Home() {
                   <h3>explore</h3>
                   <Timeline className='timeline'>
                     <Timeline.Item onClick={() => setCount(count => 1)} className='timeline'><p>Who We Are</p></Timeline.Item>
-                    <Timeline.Item onClick={() => setCount(count => 3)} className='timeline'><p>Practice Area</p></Timeline.Item>
-                    <Timeline.Item onClick={() => setCount(count => 5)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
-                    <Timeline.Item onClick={() => setCount(count => 7)} className='timeline'><p>Contact US</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 2)} className='timeline'><p>Practice Area</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 3)} className='timeline'><p>Principal Attorney</p></Timeline.Item>
+                    <Timeline.Item onClick={() => setCount(count => 4)} className='timeline'><p>Contact US</p></Timeline.Item>
                   </Timeline>
                 </div>
               ) : (
