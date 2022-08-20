@@ -1,11 +1,14 @@
 import React, { useState,useEffect } from "react";
-import {AiFillFacebook} from "react-icons/ai";
 import {AiFillLinkedin} from "react-icons/ai";
 import {AiFillTwitterSquare} from "react-icons/ai";
 import Link from 'next/link'
 
 function Header({isDark, isShadow}) {
   const headerNav = [
+    {
+      dispay: "Home",
+      path: '/'
+    },
     {
       dispay: "Who We Are",
       path: "whoweare",
@@ -53,13 +56,11 @@ function Header({isDark, isShadow}) {
             ))}
           </div>
           <div className="social-media-mobile">
-            <AiFillFacebook className="icon" />
             <AiFillLinkedin className="icon" />
             <AiFillTwitterSquare className="icon" />
           </div>
         </ul>
         <div className={`social-media ${isDark ? 'white-social-media' : 'dark-social-media'}`}>
-            <AiFillFacebook className="icon" />
             <AiFillLinkedin className="icon" />
             <AiFillTwitterSquare className="icon" />
         </div>

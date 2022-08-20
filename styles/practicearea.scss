@@ -23,6 +23,7 @@ p {
 
 .practice-wrapper .practice-main {
   // border: 1px solid red;
+  // margin-top: 5vh;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -34,9 +35,18 @@ p {
   }
 }
 
+.practice a{
+  color: $main-color;
+}
+
+.practice a:hover{
+  text-decoration: none;
+  color: $secondary-color;
+}
 .practice-main .practice-text {
   width: 40%;
   height: 60%;
+  margin-top: -5vh;
   // border: 1px solid red;
   @include mobile {
     width: 100%;

@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Head from 'next/head'
@@ -6,23 +6,23 @@ function PrincipalAttroney() {
   const [isShadow, setIsShadow] = useState(false)
 
   const changeNavbar = () => {
-      console.log("scrolling")
-      if (window.scrollY >= 80) {
-          setIsShadow(true);
-      } else {
-          setIsShadow(false);
-      }
+    console.log("scrolling")
+    if (window.scrollY >= 80) {
+      setIsShadow(true);
+    } else {
+      setIsShadow(false);
+    }
   };
 
   useEffect(() => {
-      window.addEventListener("scroll", changeNavbar);
+    window.addEventListener("scroll", changeNavbar);
   }, [])
 
 
   return (
     <div className='principal-wrapper'>
       <Head>
-          <title>Getnet Law Office | Principal Attorney</title>
+        <title>Getnet Law Office | Principal Attorney</title>
       </Head>
       <Header isDark={false} isShadow={isShadow}></Header>
       <div className='principal-main'>
@@ -31,13 +31,13 @@ function PrincipalAttroney() {
             <div className='principal-text'>
               <div className='text'>
                 <h3>Our Principal Attorney
-</h3>
+                </h3>
                 <p>Getnet Yawkal Mebratu</p>
               </div>
-              <button>Contact Us</button>
+              <button><a href='/contactus'>Contact Us</a></button>
             </div>
             <div className='principal-image'>
-            <img className='who-we-are-image1' src={'genet.svg'} alt='' ></img>
+              <img className='who-we-are-image1' src={'genet.svg'} alt='' ></img>
             </div>
           </div>
         </div>
@@ -54,30 +54,30 @@ function PrincipalAttroney() {
             Getnet is a very personable, goal-focused and versatile person accustomed to a fast-paced environment where deadlines are a priority and handling multiple jobs simultaneously is a requirement.</p>
         </div>
         <div className="all-quali ">
-      <div className="golden">
+          <div className="golden">
 
- 
-        <div className='principal-qualification'>
-          <h3>Qualifications</h3>
-          <div>
-            <p>Consultant and Attorney at Law-All Federal Courts Advocacy License</p>
-            <p>Certified Intellectual Property Agent- Ethiopian Intellectual Property Authority (EIPA)</p>
-            <p>LL.B degree, Bahir Dar University Faculty of Law</p>
-            <p>Certificate in IP Law, World Intellectual Property Organization(WIPO)</p>
-            <p>Certificate in IP Law, WIPO, Ethiopian Ministry of Science and Technology and EIPA</p>
-            <p>Certificate in Arbitration Law, International Court of Arbitration</p>
-            <p>Certificate in Court Annexed Mediation, Federal Supreme Court of Ethiopia</p>
-            <p>Certificate in IP Law, WIPO, Japan Patent Office (JPO) and Kenya Industrial Property Institute  (KIPI)</p>
+
+            <div className='principal-qualification'>
+              <h3>Qualifications</h3>
+              <div>
+                <p>Consultant and Attorney at Law-All Federal Courts Advocacy License</p>
+                <p>Certified Intellectual Property Agent- Ethiopian Intellectual Property Authority (EIPA)</p>
+                <p>LL.B degree, Bahir Dar University Faculty of Law</p>
+                <p>Certificate in IP Law, World Intellectual Property Organization(WIPO)</p>
+                <p>Certificate in IP Law, WIPO, Ethiopian Ministry of Science and Technology and EIPA</p>
+                <p>Certificate in Arbitration Law, International Court of Arbitration</p>
+                <p>Certificate in Court Annexed Mediation, Federal Supreme Court of Ethiopia</p>
+                <p>Certificate in IP Law, WIPO, Japan Patent Office (JPO) and Kenya Industrial Property Institute  (KIPI)</p>
+              </div>
+            </div>
+            <div className='principal-membership'>
+              <h3>Membership</h3>
+              <div>
+                <p>Ethiopian Lawyers’ Association</p>
+                <p>Ethiopian Federal Advocates’ Association</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className='principal-membership'>
-          <h3>Membership</h3>
-          <div>
-            <p>Ethiopian Lawyers’ Association</p>
-            <p>Ethiopian Federal Advocates’ Association</p>
-          </div>
-        </div>
-      </div>
         </div>
       </div>
       <Footer></Footer>

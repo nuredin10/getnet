@@ -331,7 +331,7 @@ function Home() {
 
                     {/* <hr></hr> */}
                     <h1 className={h1} >Welcome to
-                      <br></br>Getnet Yawkal Law Office.</h1>
+                      <br></br>Getnet Yawkal Law Office</h1>
                     <p className={p} >Getnet Yawkal Law Office is a leading commercial law office in Ethiopia providing practical, strategically sound and result oriented first rate legal services for local and international clients.  </p>
                   </div>
                   <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
