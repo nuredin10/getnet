@@ -35,11 +35,11 @@ p {
   }
 }
 
-.practice a{
+.practice a {
   color: $main-color;
 }
 
-.practice a:hover{
+.practice a:hover {
   text-decoration: none;
   color: $secondary-color;
 }
@@ -83,7 +83,7 @@ p {
     width: 40vw;
     margin-top: 18.7vw;
     object-fit: cover;
- 
+
     @include mobile {
       margin-top: 45.9vw;
       width: 80vw;
@@ -170,46 +170,45 @@ p {
     }
   }
 }
-.three-line{
-  .decor{
+.three-line {
+  .decor {
     position: absolute;
     top: 0;
     left: 8vw;
- 
+
     width: 12vw;
     object-fit: cover;
-    @include mobile{
+    @include mobile {
       width: 32vw;
     }
   }
 }
 .popup-wrapper {
   width: 100%;
-  height: 102vh;
+  height: auto;
   //   z-index: 1000000;
   position: absolute;
   top: 12vh;
   left: 0;
   background-color: $white-color;
   background-image: url("/background.svg");
-
   @include flex("center", "center");
   overflow: hidden;
-  @include mobile{
- 
+  @include mobile {
   }
 }
 
 .popup-wrapper .popup-main {
-  width: 90%;
+  // border: 1px solid red;
+  width: 100%;
   height: 100%;
   // border: 1px solid red;
 }
 
 .popup-wrapper .popup-side-block {
-  height: 100%;
-  width: 15%;
-  background-color: $light-color;
+  // height: 100%;
+  width: 0%;
+  // background-color: $light-color;
   // border: 1px solid blue;
 }
 
@@ -222,15 +221,14 @@ p {
   background-repeat: no-repeat;
   position: relative;
   top: 5%;
-  left: -10vw;
+  left: -25vw;
   // right: 60%;
-@include mobile{
-  top: 40%;
-  left: -40vw;
-  width: 45vw;
-  height: 50vh;
-
-}
+  @include mobile {
+    top: 40%;
+    left: -40vw;
+    width: 45vw;
+    height: 50vh;
+  }
 }
 
 .popup-goback {
@@ -253,8 +251,7 @@ p {
 .popup-main .popup-text {
   // border: 1px solid red;
   padding: 3% 7%;
-  @include mobile{
- 
+  @include mobile {
   }
 }
 
@@ -262,15 +259,14 @@ p {
   @include flex("center", "center");
   // border: 1px solid blue;
   width: 50%;
-  @include mobile{
-   
+  @include mobile {
     width: 100%;
   }
 }
 
 .popup-title img {
   width: 3.5vw;
-  @include mobile{
+  @include mobile {
     width: 8.5vw;
   }
 }
@@ -280,9 +276,8 @@ p {
   font-size: 1.5vw;
   margin-left: 3%;
   color: $main-color;
-  @include mobile{
+  @include mobile {
     font-size: 4.5vw;
-   
   }
 }
 
@@ -291,7 +286,7 @@ p {
   font-size: 1vw;
   font-weight: 400;
   width: 80%;
-  @include mobile{
+  @include mobile {
     font-size: 3vw;
     width: 100%;
   }
@@ -301,14 +296,14 @@ p {
   @include flex("center", "center");
   position: relative;
   background-color: $primary-color;
-  // border: 1px solid rgb(97, 17, 17);
+  // border: 1px solid rgb(255, 0, 0);
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 6%;
-  @include mobile{
+  width: 100vw;
+  @include mobile {
     display: grid;
-margin-top: 55vw;
-    
+    margin-top: 55vw;
   }
 }
 .popup-service h1 {
@@ -324,27 +319,29 @@ margin-top: 55vw;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 0.3em;
-  @include mobile{
+  @include mobile {
     margin-top: 8vw;
     width: 100%;
     font-size: 4vw;
     text-align: center;
   }
-
 }
 
 .popup-service .services {
   color: $white-color;
   line-height: 1.5vw;
-  @include mobile{
+  @include mobile {
     font-size: 3vw;
     line-height: 5vw;
   }
 }
 
-.popup-side-block .close-button {
-  width: 100%;
-  height: 5vh;
+.close-button {
+  // width: 5vw;
+  // height: 5vh;
+  // background-color: red;
+  position: relative;
+  left: -3vw;
   // border: 1px solid red;
   display: flex;
   justify-content: center;
@@ -353,10 +350,9 @@ margin-top: 55vw;
 .close-button .close-icon {
   width: 2vw;
   height: 10vh;
-  color: $white-color;
+  color: $main-color;
   cursor: pointer;
-  @include mobile{
+  @include mobile {
     width: 5vw;
-  
   }
 }

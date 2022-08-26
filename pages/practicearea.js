@@ -166,7 +166,7 @@ const PracticeArea = () => {
         <div className='practice-page' >
             <Head>
                 <title>Getnet Law Office | Practice Area</title>
-                
+
             </Head>
             <Header isDark={false} isShadow={isShadow}></Header>
             {isOpen ? (
@@ -213,8 +213,8 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
 
 
     return (
-        <div className='popup-wrapper' style={{height: selectedContent.height}}>
-            
+        <div className='popup-wrapper' >
+
             <div className='popup-main'>
                 <div className='popup-text'>
                     <div className='popup-title'>
@@ -224,11 +224,11 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
                     <p>{selectedContent.desc}</p>
                 </div>
                 <div className='popup-service'>
-                <div className='three-line'>
-                  <img className='decor' src={'three.svg'} alt=''>
+                    <div className='three-line'>
+                        <img className='decor' src={'three.svg'} alt=''>
 
-                  </img>
-                 </div>
+                        </img>
+                    </div>
                     <h1>Some of Our Services</h1>
                     <div className='services'>
                         <ul>
@@ -242,10 +242,10 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
                     <img src='/back.svg' alt=''></img><p>BACK TO PRACTICE AREA</p>
                 </div>
             </div>
+            <div className='close-button'>
+                <IoMdClose className='close-icon' onClick={() => setIsOpen(!isOpen)} />
+            </div>
             <div className='popup-side-block'>
-                <div className='close-button'>
-                    <IoMdClose className='close-icon' onClick={() => setIsOpen(!isOpen)} />
-                </div>
                 <div className='service-image' style={{ backgroundImage: "url(" + selectedContent.image + ")" }}></div>
                 {/* <img  src={selectedContent.image}></img> */}
 
