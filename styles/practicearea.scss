@@ -214,7 +214,7 @@ p {
 
 .popup-side-block .service-image {
   // border: 1px solid red;
-  margin-top: 2vw;
+  // margin-top: 2vw;
   width: 40vw;
   height: 55vh;
   background-size: contain;
@@ -224,7 +224,7 @@ p {
   left: -25vw;
   // right: 60%;
   @include mobile {
-    top: 40%;
+    top: 30%;
     left: -40vw;
     width: 45vw;
     height: 50vh;
@@ -345,6 +345,9 @@ p {
   // border: 1px solid red;
   display: flex;
   justify-content: center;
+  @include mobile{
+    left:  -10vw;
+  }
 }
 
 .close-button .close-icon {
