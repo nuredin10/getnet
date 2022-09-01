@@ -242,6 +242,7 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
                     <img src='/back.svg' alt=''></img><p>BACK TO PRACTICE AREA</p>
                 </div>
             </div>
+            
             <div className='close-button'>
                 <IoMdClose className='close-icon' onClick={() => setIsOpen(!isOpen)} />
             </div>
