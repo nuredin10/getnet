@@ -29,10 +29,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Intellectual Proprieties</h3>
             </div>
             <p>
-              Founded by the former Trademark and Industrial Design Examiner of
-              the Ethiopian Intellectual Property Authority “EIPA”, Getnet
-              Yawkal Law office, offers the legal skills and expertise, training
-              and hands-on EIPA ....
+            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.
             </p>
           </a>
         </div>
@@ -44,10 +41,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Labor & Employment</h3>
             </div>
             <p>
-              With the coming of many investors and expatriates in to Ethiopia,
-              and with the issuance of different laws to regulate the employee
-              and employee relationship and immigration issues, the need for
-              best law firms....
+            We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case. ....
             </p>
           </a>
         </div>
@@ -59,10 +53,8 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Charity</h3>
             </div>
             <p>
-              The booming economy, luring incentive packages, infrastructural
-              developments, abandoned and inexpensive labor, the large
-              population number the country has are some of the many factors why
-              investors ....{" "}
+            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to their requests is a basic of our practice.
+            {" "}
             </p>
           </a>
         </div>
@@ -74,10 +66,21 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Corporate and Finance</h3>
             </div>
             <p>
-              The charitable and civil societies law is a multifaceted and
-              specialized one, We understand your challenges and want to help
-              meet your goals. We value your time and give utmost consideration
-              for each case.{" "}
+
+            We maintain a full service corporate and finance capability and strive to add unmatched value to your commercial strategies.{" "}
+            </p>
+          </a>
+        </div>
+        <div className="practice">
+          <a href="/practicearea" >
+            <div className="title">
+              <img src={"/charity-icon.svg"} alt=""></img>
+              {/* <AiFillFacebook className="icon" /> */}
+              <h3>Alternative Dispute Resolution</h3>
+            </div>
+            <p>
+
+            We maintain a full service ADR capability and possesses a grit mindset to address conflict at any stage and go all the way to the end..{" "}
             </p>
           </a>
         </div>

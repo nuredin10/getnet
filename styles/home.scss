@@ -1,21 +1,25 @@
 @use "./scss/" as *;
 
-h1,h2,h3,p,a{
+h1,
+h2,
+h3,
+p,
+a {
   font-family: "mukta";
 }
 
-.main-wrapper{
+.main-wrapper {
   // border: 1px solid red;
   // position: -webkit-sticky;
   height: 100vh;
   top: 0;
 }
-.container{
+.container {
   position: fixed;
   width: 100%;
   height: 100vh;
   background-color: $white-color;
-  background-image: url('/background.svg');
+  background-image: url("/background.svg");
   margin: 0%;
   // overflow-y: hidden;
   // margin-bottom: 1px;
@@ -33,28 +37,26 @@ h1,h2,h3,p,a{
   // border: 1px solid red;
 }
 .front {
-
   // border: 1px solid red;
   width: 83%;
   // height: 63vh;
   margin: auto;
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
-  @include mobile{
+  @include mobile {
     margin: 0;
   }
-  
 }
 
 .images {
   width: 100%;
-  height: 63vh  ;
+  height: 63vh;
   overflow: hidden;
   // background-color: black;
   // border: 1px solid red;
-  // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
-    .img {
+  // box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  .img {
     display: flex;
     justify-content: center;
     width: 83%;
@@ -70,14 +72,14 @@ h1,h2,h3,p,a{
   top: 100%;
   display: none;
 
-  @include mobile{
+  @include mobile {
     margin-left: -14%;
   }
 }
 
 .show {
   position: absolute;
-  @include mobile{
+  @include mobile {
     margin-left: -14%;
   }
 }
@@ -91,43 +93,40 @@ h1,h2,h3,p,a{
   // flex-direction: column;
 }
 
-.titles div{
+.titles div {
   margin: auto;
   // border: 1px solid red;
   height: 40%;
   width: 100%;
   padding: 2vw;
   border-top: 1px solid #746a6c;
-  @include mobile{
+  @include mobile {
     // height: 50%;
     margin-left: -14%;
   }
 }
 
-.titles div:nth-child(2){
+.titles div:nth-child(2) {
   border-bottom: 1px solid #746a6c;
-
 }
 
 .titles h1 {
-  
   color: $light-color;
   // border: 1px solid red;
-  
 }
 
-.titles p{
+.titles p {
   color: $light-color;
 }
 
-.normalH1{
+.normalH1 {
   font-size: 4vw;
   font-weight: 600;
   text-transform: uppercase;
   margin-top: -1.5vw;
   line-height: 5vw;
-  
-  @include mobile{
+
+  @include mobile {
     padding-top: 5%;
     font-size: 10vw;
     width: 100%;
@@ -137,13 +136,13 @@ h1,h2,h3,p,a{
   //   margin-top: 0vw;
   // }
 }
-.smallH1{
+.smallH1 {
   margin-top: -1.5vw;
   transition: 1s ease;
   font-size: 3.5vw;
   font-weight: 600;
   text-transform: uppercase;
-  @include mobile{
+  @include mobile {
     font-size: 5vw;
     margin-top: 0vw;
     line-height: 5vw;
@@ -151,272 +150,253 @@ h1,h2,h3,p,a{
   }
 }
 
-.normalH3{
+.normalH3 {
   color: $light-color;
   font-size: 1.7vw;
   line-height: 2.5vw;
   font-weight: 100;
 
-  @include mobile{
+  @include mobile {
     line-height: 7vw;
     font-size: 5vw;
   }
 }
-.smallH3{
+.smallH3 {
   transition: 1s ease;
   font-size: 1.5vw;
   color: $light-color;
   font-weight: 100;
   line-height: 2.5vw;
-  @include mobile{
-    line-height:4vw;
+  @include mobile {
+    line-height: 4vw;
     font-size: 4vw;
   }
 }
 
-.titles .hideP{
+.titles .hideP {
   position: absolute;
   // color: red;
-  
-  display: none; 
+
+  display: none;
 }
 
-.titles .showP{
-  
+.titles .showP {
   // color: blue;
   margin-top: 1vw;
   font-size: 1vw;
   width: 80%;
   display: flex;
   transition: 3s ease-in-out;
-  @include mobile{
+  @include mobile {
     margin-top: 3vw;
     font-size: 3.6vw;
   }
 }
-.titles .hideP1{
+.titles .hideP1 {
   // padding-top: 5%;
   margin-top: 4vw;
-  
+
   padding-top: 5%;
   display: none;
 }
-.title .showP1{
+.title .showP1 {
   transition: 3s ease-in-out;
   display: block;
   // padding-top: 0%;
   font-size: 1.3vw;
-  @include mobile{
+  @include mobile {
     font-size: 1vw;
-    }
+  }
 }
 
-.titles .showUp{
+.titles .showUp {
   height: 40%;
   // border: 1px solid red;
 }
 
-.titles .smallText{
+.titles .smallText {
   margin-top: 2vw;
-font-size: 1.3vw;
-  @include mobile{
-  margin-top:2vw ;
+  font-size: 1.3vw;
+  @include mobile {
+    margin-top: 2vw;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.blocks{
+.blocks {
   width: 100vw;
   height: 75vh;
   position: absolute;
   bottom: 0;
   // border: 1px solid red;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
-.block{
+.block {
   position: absolute;
   bottom: 0;
   margin: auto;
   color: $white-color;
-  p{
+  p {
     // font-family: "mukta";
     float: left;
     font-size: 0.9vw;
     font-weight: 550;
     margin-top: 1%;
-    writing-mode: vertical-rl; 
+    writing-mode: vertical-rl;
     cursor: pointer;
     // border: 1px solid red;
     // transform: rotate(-90deg);
-    @include mobile{
+    @include mobile {
       display: none;
     }
   }
 }
 
-
-.one{
+.one {
   width: 100%;
   background-color: $main-color;
   height: 35%;
-  @include mobile{
+  @include mobile {
     height: 45%;
   }
 }
 
-
-.two{
+.two {
   width: 96%;
   background-color: $primary-color;
   height: 40%;
   // left: 2%;
-  @include mobile{
+  @include mobile {
     margin-left: -1%;
     height: 50% !important;
   }
 }
-.three{
+.three {
   width: 92%;
   background-color: $light-color;
   height: 55%;
 
   // border: 1px solid red;
-  @include mobile{
+  @include mobile {
     margin-left: -3%;
     height: 65%;
   }
 }
 
-.four{
+.four {
   width: 88%;
   background-color: $secondary-color;
   height: 70%;
   // left: 6%;
-  @include mobile{
+  @include mobile {
     margin-left: -5%;
     height: 80%;
   }
 }
 
-.slide-background{
+.slide-background {
   background: $white-color !important;
-box-shadow: 10px 10px 15px rgba(86, 55, 39, 0.06);
+  box-shadow: 10px 10px 15px rgba(86, 55, 39, 0.06);
 }
-.slide-background1{
+.slide-background1 {
   background: $white-color !important;
-box-shadow: -10px 10px 15px  rgba(86, 55, 39, 0.06);
-
+  box-shadow: -10px 10px 15px rgba(86, 55, 39, 0.06);
 }
-.select-link1{
+.select-link1 {
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
-align-items: center;
-margin-top: 20vw;
-@include mobile{
-  margin-top: 1vw;
-  margin-right: 0%;
-}
-a{
-  font-weight: 600;
-  font-size: 1.2vw;
-  text-transform: uppercase;
-  color: #563727;
-  @include mobile{
-    font-size: 3.2vw;
-  }
-}
-.arrow{
-
-  margin-bottom: -3%;
- 
-  font-size: 2vw;
-  font-weight: 300;
-  @include mobile{
-    // margin-top: 5%;
-    font-size: 7vw;
-    margin-bottom:-5%;
-  } 
-}
-}
-.select-link{
-  display: flex;
-  margin-left: auto;
-  justify-content: flex-end;
-align-items: center;
-margin-top: 2vw;
-@include mobile{
+  align-items: center;
   margin-top: 20vw;
-  margin-right: 0%;
-}
-a{
-  font-weight: 600;
-  font-size: 1.2vw;
-  text-transform: uppercase;
-  color: $light-color;
-  @include mobile{
-    font-size: 3.2vw;
+  @include mobile {
+    margin-top: 1vw;
+    margin-right: 0%;
+  }
+  a {
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    color: #563727;
+    @include mobile {
+      font-size: 3.2vw;
+    }
+  }
+  .arrow {
+    margin-bottom: -3%;
+
+    font-size: 2vw;
+    font-weight: 300;
+    @include mobile {
+      // margin-top: 5%;
+      font-size: 7vw;
+      margin-bottom: -5%;
+    }
   }
 }
-.arrow{
-
-  margin-bottom: -3%;
- 
-  font-size: 2vw;
-  font-weight: 300;
-  @include mobile{
-    // margin-top: 5%;
-    font-size: 7vw;
-    margin-bottom:-4%;
-  } 
-}
-}
-.select-link2{
+.select-link {
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
-align-items: center;
-margin-top: 15vw;
-@include mobile{
-  margin-top: 15vw;
-  margin-right: 0%;
-}
-a{
-  font-weight: 600;
-  font-size: 1.2vw;
-  text-transform: uppercase;
-  color: $light-color;
-  @include mobile{
-    font-size: 3.2vw;
+  align-items: center;
+  margin-top: 2vw;
+  @include mobile {
+    margin-top: 20vw;
+    margin-right: 0%;
+  }
+  a {
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    color: $light-color;
+    @include mobile {
+      font-size: 3.2vw;
+    }
+  }
+  .arrow {
+    margin-bottom: -3%;
+
+    font-size: 2vw;
+    font-weight: 300;
+    @include mobile {
+      // margin-top: 5%;
+      font-size: 7vw;
+      margin-bottom: -4%;
+    }
   }
 }
-.arrow{
+.select-link2 {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15vw;
+  @include mobile {
+    margin-top: 15vw;
+    margin-right: 0%;
+  }
+  a {
+    font-weight: 600;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    color: $light-color;
+    @include mobile {
+      font-size: 3.2vw;
+    }
+  }
+  .arrow {
+    margin-bottom: -3%;
 
-  margin-bottom: -3%;
- 
-  font-size: 2vw;
-  font-weight: 300;
-  @include mobile{
-    // margin-top: 5%;
-    font-size: 7vw;
-    margin-bottom:-4%;
-  } 
+    font-size: 2vw;
+    font-weight: 300;
+    @include mobile {
+      // margin-top: 5%;
+      font-size: 7vw;
+      margin-bottom: -4%;
+    }
+  }
 }
-}
-.about-section{
+.about-section {
   position: absolute;
   z-index: 10000;
   top: 15vh;
@@ -426,133 +406,130 @@ a{
   width: 87%;
   // border: 1px solid red;
   background-color: $white-color;
-  background-image: url('/background.svg');
+  background-image: url("/background.svg");
   // display: none;
   padding: 2% 7%;
 }
 
-.about-section .about-wrapper{
+.about-section .about-wrapper {
   height: 100%;
-padding-top: 2vh;
-  display: flex;    
+  padding-top: 1vh;
+  display: flex;
   flex-direction: column;
-  border: none
+  border: none;
 }
 
-.about-section h3{
+.about-section h3 {
   font-size: 1.17vw;
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 3.5%;
-  @include mobile{
+  margin-left: 0.5%;
+  @include mobile {
     font-size: 5vw;
   }
 
-  @include desktop{
+  @include desktop {
     margin-left: 1.5%;
+  }
+}
+.about-section .about-main {
+  // border: 1px solid red;
+  // height: 55vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5%;
+  @include mobile {
+    flex-direction: column;
+    height: 70vh;
+  }
 }
 
-}
-.about-section .about-main{
-    // border: 1px solid red;
-    // height: 55vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10%;
-    @include mobile{
-      flex-direction: column;
-      height: 70vh;
-    }
-}
-
-.about-main p{
+.about-main p {
   width: 55%;
   font-size: 1.3vw;
   font-weight: 350;
   line-height: 2vw;
   color: $main-color;
   // border: 1px solid red;
-  @include mobile{
+  @include mobile {
     height: 50%;
     font-size: 4.5vw;
     width: 100%;
     line-height: 6vw;
   }
-  .highlight{
+  .highlight {
     color: $light-color;
     font-size: 1.4vw;
     font-weight: 500;
-    @include mobile{
+    @include mobile {
       height: 50%;
       font-size: 4.5vw;
       width: 100%;
       line-height: 6vw;
     }
   }
-
 }
-.about-main .image-section{
-
-  @include mobile{
+.about-main .image-section {
+  @include mobile {
     width: 100%;
     height: 60%;
   }
 }
-.who-we-are-image{
+.who-we-are-image {
   margin-top: 3vw;
   width: 30vw;
 
-  @include mobile{
+  @include mobile {
     margin-top: 30vw;
     width: 65vw;
   }
 }
-.who-we-are-image2{
+.who-we-are-image2 {
   margin-top: 3vw;
   width: 30vw;
 
-  @include mobile{
+  @include mobile {
     margin-top: 50vw;
     width: 75vw;
   }
 }
 
-  .about-section .link{
-    display: flex;
-    // border: 1px solid red;
+.about-section .link {
+  display: flex;
+  // border: 1px solid red;
   // float: right;
   margin-right: 2%;
   justify-content: center;
   align-items: center;
-  @include mobile{
+  @include mobile {
     margin-right: 0%;
   }
   cursor: pointer;
-  a{
+  a {
     margin-left: auto;
     color: $primary-color;
     font-size: 1.2vw;
     font-weight: 700;
     text-transform: uppercase;
-    @include mobile{
+    @include mobile {
       font-size: 4vw;
     }
   }
-  .arrow{
+  .arrow {
     margin-bottom: -4%;
- 
+
     font-size: 2.5vw;
     font-weight: 300;
-    @include mobile{
+    @include mobile {
       // margin-top: 5%;
       font-size: 7vw;
-      margin-bottom:-2.5%;
+      margin-bottom: -2.5%;
     }
   }
-  }
+}
 
-.qualifications{
+.qualifications {
   z-index: 10;
   position: absolute;
   top: 15vh;
@@ -561,72 +538,67 @@ padding-top: 2vh;
   width: 87%;
   background-color: $white-color;
   padding: 3% 5%;
-  background-image: url('/background.svg');
+  background-image: url("/background.svg");
   // padding-top: 3%;
   // padding
-
 }
 
-
-.qualifications .principal{
+.qualifications .principal {
   width: 90%;
   margin-bottom: 3%;
-  @include mobile{
+  @include mobile {
     width: 100%;
     margin-bottom: 10%;
   }
 }
-.qualifications h2{
+.qualifications h2 {
   font-size: 1.3vw;
   text-transform: uppercase;
   display: inline;
   font-weight: 00;
 
-  @include mobile{
+  @include mobile {
     font-size: 4vw;
   }
 }
 
-.principal p{
+.principal p {
   color: $primary-color;
 
-  margin-top: 2vw;  
-  font-family: 'mukta';
-  @include huge{
-    margin-top: 1vw;  
+  margin-top: 2vw;
+  font-family: "mukta";
+  @include huge {
+    margin-top: 1vw;
     font-size: 1vw;
   }
-  @include mobile{
+  @include mobile {
     font-size: 3.5vw;
   }
 }
 
-.qualifications .qual{
+.qualifications .qual {
   width: 50%;
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
-
 }
 
-
-.qual span{
+.qual span {
   color: $primary-color;
   font-size: 1.2vw;
   font-weight: 500;
   text-transform: uppercase;
-  @include mobile{
+  @include mobile {
     font-size: 4.5vw;
   }
 }
 
-
-.qual .texts{
+.qual .texts {
   width: 100%;
   margin-top: 2vw;
   // border: 1px solid red;
   // margin-top: -2%;
-  p{
+  p {
     font-size: 1.2vw;
     margin-bottom: 1vw;
     color: $secondary-color;
@@ -634,7 +606,7 @@ padding-top: 2vh;
     line-height: 2vw;
     cursor: pointer;
 
-    @include mobile{
+    @include mobile {
       font-size: 4vw;
       line-height: 6vw;
       // margin-bottom: 10vw;
@@ -642,27 +614,20 @@ padding-top: 2vh;
   }
 }
 
-.qual .texts p:hover{
+.qual .texts p:hover {
   font-size: 1.5vw;
-    width: 100%;
-    font-weight: 400;
-    color: $main-color;
-    // transition: 1s ease;
-    @include mobile{
-      font-size: 4vw;
-    }
+  width: 100%;
+  font-weight: 400;
+  color: $main-color;
+  // transition: 1s ease;
+  @include mobile {
+    font-size: 4vw;
+  }
 }
-
-
-
-
-
-
-
 
 /******Practice Area*********/
 
-.practice-area{
+.practice-area {
   position: absolute;
   z-index: 1000000;
   top: 15vh;
@@ -670,39 +635,39 @@ padding-top: 2vh;
   right: -95%;
   width: 87%;
   background-color: $white-color;
-  background-image: url('/background.svg');
-  
+  background-image: url("/background.svg");
+
   padding: 2% 7%;
-} 
+}
 
-.practice-area .practice-title{
-    // border: 1px solid blue;
-    font-size: 1.2vw;
-    font-weight: 700;
-    text-transform: uppercase;
-    @include mobile{
-      font-size: 4vw;
-    }
+.practice-area .practice-title {
+  // border: 1px solid blue;
+  font-size: 1.2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include mobile {
+    font-size: 4vw;
   }
+}
 
-.practice-area .practice-wrapper{
+.practice-area .practice-wrapper {
   width: 90%;
   height: 50%;
-  @include huge{
+  @include huge {
     height: 70%;
   }
-  margin-top: 4vw;
+  margin-top: 3vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   // border: 1px solid red
 }
 
-.practice-area .practice{
+.practice-area .practice {
   // border: 1px solid red;
   width: 45%;
-  height: 45%;
-  @include mobile{
+  height: 35%;
+  @include mobile {
     width: 100%;
     // height: 25%;
     // margin-bottom: 5%;
@@ -710,25 +675,24 @@ padding-top: 2vh;
   }
 }
 
-.practice .title{
+.practice .title {
   display: flex;
   width: 100%;
   // border: 1p x solid red;
   // height: 30%;
- 
-  @include mobile{
+
+  @include mobile {
     margin-bottom: 5%;
-    img{
+    img {
       width: 10.5vw;
-    
     }
   }
-  h3{
+  h3 {
     margin-left: 5%;
     font-weight: 350;
     font-size: 1.4vw;
     // height: fit-content;
-    @include mobile{
+    @include mobile {
       // font-weight: 400;
       margin-top: 4%;
       font-size: 4vw;
@@ -736,12 +700,12 @@ padding-top: 2vh;
   }
 }
 
-.practice p{
+.practice p {
   font-size: 1vw;
   line-height: 1.5vw;
   font-weight: 340;
-  margin-top: 2vw;
-  @include mobile{
+  margin-top: 1vw;
+  @include mobile {
     line-height: 20px;
     font-size: 2.8vw;
     margin-top: -2%;
@@ -749,76 +713,72 @@ padding-top: 2vh;
   }
 }
 
-.practice .title .icon{
+.practice .title .icon {
   font-size: 4.5vw;
-  @include mobile{
+  @include mobile {
     margin-top: 4%;
     font-size: 8vw;
   }
 }
 
-.practice-area .link, .qualifications .link{
+.practice-area .link,
+.qualifications .link {
   display: flex;
   // float: right;
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
   margin-top: 8vw;
-  @include mobile{
+  @include mobile {
     margin-top: 10%;
   }
   cursor: pointer;
-  a{
+  a {
     color: $light-color;
     font-size: 1.2vw;
     font-weight: 500;
     text-transform: uppercase;
-    @include mobile{
-      font-size:3.5vw;
+    @include mobile {
+      font-size: 3.5vw;
     }
   }
-  .arrow{
+  .arrow {
     margin-bottom: -4%;
-  
+
     font-size: 2.5vw;
     font-weight: 300;
-    @include mobile{
+    @include mobile {
       font-size: 7vw;
     }
   }
-  
+
   // border: 1px solid red;
 }
-.qualifications .link{
+.qualifications .link {
   justify-content: flex-end;
-  a{
+  a {
     color: $primary-color;
   }
-  @include mobile{
+  @include mobile {
     margin-top: 10%;
   }
-
 }
-
-
 
 /*******CONTACT US**********/
 
-.contact{
+.contact {
   position: absolute;
   z-index: 1000000;
   height: 90vh;
   width: 100%;
   bottom: -90%;
   background-color: $main-color;
-  background-image: url('/background.svg');
+  background-image: url("/background.svg");
   // opacity: 0.9;
   padding: 2% 7%;
-
-
 }
 
-.contact-wrapper{
+.contact-wrapper {
   // border: 1px solid red;
 
   width: 100%;
@@ -827,53 +787,51 @@ padding-top: 2vh;
   justify-content: space-around;
   align-items: center;
 
-  @include mobile{
-   
+  @include mobile {
     flex-direction: column;
   }
 }
 
-.contact-wrapper .title-info{
+.contact-wrapper .title-info {
   // border: 1px solid red;
   width: 40%;
   height: 70%;
-  @include mobile{
+  @include mobile {
     margin-top: 12vw;
     width: 90%;
   }
 }
 
-.contact-wrapper .title-info h1{
+.contact-wrapper .title-info h1 {
   color: $white-color;
   font-size: 7vw;
   margin-top: -2%;
   margin-left: -1%;
   text-transform: capitalize;
-  @include mobile{
+  @include mobile {
     font-size: 15vw;
     margin-top: 3%;
   }
 }
 
-.contact-wrapper .title-info .info{
+.contact-wrapper .title-info .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 10%;
-  p{
+  p {
     color: $white-color;
   }
-  .social-media{
+  .social-media {
     margin-left: -3%;
-    svg{
+    svg {
       margin-top: 2vh;
       margin-left: 1vw;
       color: $light-color;
       border-radius: 2vw;
-
     }
   }
-  a{
+  a {
     margin-left: 1vw;
     cursor: pointer;
     color: $white-color;
@@ -881,63 +839,61 @@ padding-top: 2vh;
   // align-items: center;
 }
 
-.contact-wrapper .map{
+.contact-wrapper .map {
   width: 40%;
   height: 60%;
   // border: 1px solid blue;
-  @include huge{
+  @include huge {
     width: 35%;
     height: 50%;
   }
-  @include mobile{
-height: 90%;
+  @include mobile {
+    height: 90%;
     width: 100%;
   }
 }
 
-.footer{
+.footer {
   width: 100%;
   height: 10vh;
   margin-top: 0vw;
   // border: 1px solid red;
-  @include huge{
+  @include huge {
     margin-top: 5vw;
   }
   display: flex;
   justify-content: space-between;
   align-items: center;
   // padding: 0% 3%;
-  @include mobile{
+  @include mobile {
     height: 30vh;
   }
-  p{
+  p {
     color: $light-color;
     font-size: 1vw;
-    @include mobile{
+    @include mobile {
       font-size: 2vw;
     }
   }
-  .copyright{
-    margin-bottom:-3px;
+  .copyright {
+    margin-bottom: -3px;
     font-size: 0.9vw;
   }
 }
 
-
-
-.rs-timeline-item{
+.rs-timeline-item {
   padding-left: 0px !important;
 }
-.rs-timeline-item-dot{
+.rs-timeline-item-dot {
   color: $light-color !important;
 }
 .rs-timeline-item-tail {
-  background-color: $light-color  !important ;
+  background-color: $light-color !important ;
 }
 .rs-timeline-item-dot:before {
-  background-color: $light-color  !important ;
+  background-color: $light-color !important ;
 }
-.explore{
+.explore {
   width: 13vw;
   height: 62vh;
   // border: 1px solid red;
@@ -946,22 +902,23 @@ height: 90%;
   bottom: 0%;
   right: 6%;
 }
-.explore .scroll-down h3, .arrow-wrapper h3{
- color: $light-color ;
- font-family: 'Mukta';
-font-style: normal;
-font-weight: 400;
-font-size: 0.9vw;
-text-transform: uppercase;
-text-align: center;
-@include mobile{
-font-size: 3vw;
+.explore .scroll-down h3,
+.arrow-wrapper h3 {
+  color: $light-color;
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  text-align: center;
+  @include mobile {
+    font-size: 3vw;
+  }
 }
-}
-.explore-title{
+.explore-title {
   color: $white-color;
 }
-.explore .arrow-wrapper{
+.explore .arrow-wrapper {
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -969,10 +926,10 @@ font-size: 3vw;
   height: 10vw;
   width: 100%;
   margin-top: 20vw;
-    @include mobile{
-      margin-left: -3vw;
-      margin-top: 95vw;
-    }
+  @include mobile {
+    margin-left: -3vw;
+    margin-top: 95vw;
+  }
   // border: 1px solid rgb(255, 251, 0);
 }
 .scroll-down {
@@ -987,19 +944,17 @@ font-size: 3vw;
   // border: 1px solid blue;
   // padding-left: 10%;
   @include huge {
-    margin-left: 65%;
-    
-      }
+    margin-left: 60%;
+  }
   @include mobile {
-display: none;
-
+    display: none;
   }
 }
-.timeline{
+.timeline {
   height: 7vw;
   margin-top: 5%;
   cursor: pointer;
-  p{
+  p {
     transform: rotate(-90deg);
     color: $light-color;
     font-size: 0.8vw;
@@ -1008,7 +963,6 @@ display: none;
 .map1 {
   // height: 35vh;
   .location {
-   
     overflow: hidden;
     .container {
       .location-title {
@@ -1019,7 +973,7 @@ display: none;
       overflow: hidden;
       padding-bottom: 76.25%;
       position: relative;
-      @include mobile{
+      @include mobile {
         padding-bottom: 66.25%;
       }
       iframe {
@@ -1027,9 +981,9 @@ display: none;
         top: 0;
         height: 45%;
         width: 100%;
-      @include mobile{
-        height: 100%;
-      }
+        @include mobile {
+          height: 100%;
+        }
         object-fit: cover;
         position: absolute;
         // @include desktop{
@@ -1039,14 +993,11 @@ display: none;
       }
     }
   }
-
 }
-@include desktop{
+@include desktop {
   .map1 {
     .location {
-      height:80%;
-    
-
+      height: 80%;
     }
   }
 }
