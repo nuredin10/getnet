@@ -131,7 +131,7 @@ h1,h2,h3,a,p{
     }
     a{
         @include mobile{
-            width: 50%;
+            width: 80%;
             // border: 1px solid red;
         }
     }

@@ -60,17 +60,22 @@ function Contactus() {
           </div>
           <div className="single">
             <p>Physical Location</p>
-            <a>Located in Bole Mega, Addis Ababa, Ethiopia</a>
+            <a>Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417</a>
+          </div>
+          <div className="single">
+            <p>P.O.Box</p>
+            <a href="tel:+251911051754">1985 code 1250, Addis Ababa, Ethiopia</a>
           </div>
           <div className="single">
             <p>Mobile</p>
-            <a href="tel:+251911051754">+2519 11 05 17 54</a>
+            <a href="tel:+251911051754">+2519 11 05 17 54</a><br/>
+            <a href="tel: +251118212012 "> +251118212012 </a>
+           
           </div>
           <div className="single">
             <p>Social Media Links</p>
             <div className="social-media">
               <AiFillFacebook className="icon" />
-              <AiFillLinkedin className="icon" />
               <AiFillTwitterSquare className="icon" />
             </div>
           </div>
@@ -82,12 +87,14 @@ function Contactus() {
             <div className="map-responsive">
               <iframe
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Makush%20Art%20gallery%20%7C%20Bole%20%7C%20%E1%88%9B%E1%8A%A9%E1%88%BD%20%E1%8A%A0%E1%88%AD%E1%89%B5%20%E1%8C%8B%E1%88%88%E1%88%AA%20%7C%20%E1%89%A6%E1%88%8C&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.69719849516!2d38.76796191533828!3d8.999985091919472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85d8e2c47c25%3A0x99aaf3ddb64f7560!2sGetnet%20Yawkal%20Law%20Office!5e0!3m2!1sen!2sru!4v1664980115029!5m2!1sen!2sru"
                 frameBorder="0"
                 scrolling="no"
                 marginHeight="0"
                 marginWidth="0"
               ></iframe>
+         
+
             </div>
           </div>
         </div>

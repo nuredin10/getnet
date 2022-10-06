@@ -45,19 +45,7 @@ function PracticeArea({ practiceActiveSlide }) {
             </p>
           </a>
         </div>
-        <div className="practice">
-          <a href="/practicearea" >
-            <div className="title">
-              <img src={"/charity-icon.svg"} alt=""></img>
-              {/* <AiFillFacebook className="icon" /> */}
-              <h3>Charity</h3>
-            </div>
-            <p>
-            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to their requests is a basic of our practice.
-            {" "}
-            </p>
-          </a>
-        </div>
+     
         <div className="practice">
           <a href="/practicearea" >
             <div className="title">
@@ -68,6 +56,19 @@ function PracticeArea({ practiceActiveSlide }) {
             <p>
 
             We maintain a full service corporate and finance capability and strive to add unmatched value to your commercial strategies.{" "}
+            </p>
+          </a>
+        </div>
+        <div className="practice">
+          <a href="/practicearea" >
+            <div className="title">
+              <img src={"/adr.svg"} alt=""></img>
+              {/* <AiFillFacebook className="icon" /> */}
+              <h3>Charity</h3>
+            </div>
+            <p>
+            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to their requests is a basic of our practice.
+            {" "}
             </p>
           </a>
         </div>

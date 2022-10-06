@@ -13,29 +13,29 @@ function Footer() {
           <div className="quick-links border-top">
             <h3>Quick Links</h3>
             <dv className="links">
-              <a>Home</a>
-              <a>Who We Are</a>
-              <a>Practice Area</a>
-              <a>Principal Attorney</a>
-              <a>Contact Us</a>
+              <a href="/">Home</a>
+              <a href="whoweare">Who We Are</a>
+              <a href="practicearea">Practice Area</a>
+              <a href="principalattroney">Principal Attorney</a>
+              <a href="contactus">Contact Us</a>
             </dv>
           </div>
           <div className="footer-principal-attorney border-top">
             <h3>Principal Attorney</h3>
             <dv className="links">
-              <a>Getnet Yawkal Mebratu</a>
-              <a>Qualifications & Membership</a>
+              <a href="principalattroney">Getnet Yawkal Mebratu</a>
+              <a href="principalattroney">Qualifications & Membership</a>
             </dv>
           </div>
         </div>
         <div className="middle-links border-top">
           <h3>Practice Area</h3>
           <div className="links">
-            <a>Intellectual Proprieties </a>
-            <a>Labor & Employment</a>
-            <a>Corporate and Finance </a>
-            <a>Charity </a>
-            <a>Alternative Dispute Resolution </a>
+            <a href="practicearea">Intellectual Proprieties </a>
+            <a href="practicearea">Labor & Employment</a>
+            <a href="practicearea">Corporate and Finance </a>
+            <a href="practicearea">Charity </a>
+            <a href="practicearea">Alternative Dispute Resolution </a>
           </div>
         </div>
         <div className="footer-info-wrapper">

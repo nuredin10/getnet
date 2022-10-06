@@ -117,13 +117,13 @@
         // border: 1px solid red;
         @include mobile{
             display: block;
-            width: 30vw;
+            width: 15vw;
             display: flex;
             margin-left: -1.5vw;
         }
         svg{
             margin-top: 2vh;
-            margin-left: -4vw;
+            // margin-left: -4vw;
             color: $light-color;
             border-radius: 2vw;
             @include mobile{

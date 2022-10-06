@@ -49,6 +49,10 @@ a {
   }
 }
 
+#textbox h1 {
+  animation: headShake 0.5s linear 1s infinite alternate;
+}
+
 .images {
   width: 100%;
   height: 63vh;
@@ -308,14 +312,20 @@ a {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 20vw;
+  margin-top: 18vw;
+  @include huge {
+    margin-top: 15vw;
+  }
   @include mobile {
-    margin-top: 1vw;
+    margin-top: 48vw;
     margin-right: 0%;
+  }
+  @include mobile {
+    margin-top: 0vw;
   }
   a {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-transform: uppercase;
     color: #563727;
     @include mobile {
@@ -323,7 +333,7 @@ a {
     }
   }
   .arrow {
-    margin-bottom: -3%;
+    margin-bottom: -5%;
 
     font-size: 2vw;
     font-weight: 300;
@@ -339,14 +349,17 @@ a {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 2vw;
+  margin-top: 4vw;
+  @include huge {
+    margin-top: 10vw;
+  }
   @include mobile {
-    margin-top: 20vw;
+    margin-top: 10vw;
     margin-right: 0%;
   }
   a {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-transform: uppercase;
     color: $light-color;
     @include mobile {
@@ -370,14 +383,14 @@ a {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 15vw;
+  margin-top: 10vw;
   @include mobile {
-    margin-top: 15vw;
+    margin-top: 23vw;
     margin-right: 0%;
   }
   a {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 1vw;
     text-transform: uppercase;
     color: $light-color;
     @include mobile {
@@ -385,7 +398,7 @@ a {
     }
   }
   .arrow {
-    margin-bottom: -3%;
+    margin-bottom: -4%;
 
     font-size: 2vw;
     font-weight: 300;
@@ -429,7 +442,7 @@ a {
   }
 
   @include desktop {
-    margin-left: 1.5%;
+    // margin-left: 1.5%;
   }
 }
 .about-section .about-main {
@@ -440,31 +453,33 @@ a {
   align-items: center;
   padding-top: 5%;
   @include mobile {
+    padding-top: 0%;
     flex-direction: column;
-    height: 70vh;
+    // height: 70vh;
   }
 }
 
 .about-main p {
   width: 55%;
-  font-size: 1.3vw;
+margin-right: 8vw;
+  font-size: 1vw;
   font-weight: 350;
   line-height: 2vw;
   color: $main-color;
   // border: 1px solid red;
   @include mobile {
     height: 50%;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     width: 100%;
     line-height: 6vw;
   }
   .highlight {
-    color: $light-color;
-    font-size: 1.4vw;
+    color: #7a431d;
+    font-size: 1vw;
     font-weight: 500;
     @include mobile {
       height: 50%;
-      font-size: 4.5vw;
+      font-size: 3.5vw;
       width: 100%;
       line-height: 6vw;
     }
@@ -473,7 +488,7 @@ a {
 .about-main .image-section {
   @include mobile {
     width: 100%;
-    height: 60%;
+    // height: 60%;
   }
 }
 .who-we-are-image {
@@ -481,7 +496,7 @@ a {
   width: 30vw;
 
   @include mobile {
-    margin-top: 30vw;
+    margin-top: 20vw;
     width: 65vw;
   }
 }
@@ -563,8 +578,7 @@ a {
 }
 
 .principal p {
-  color: $primary-color;
-
+  color: $secondary-color;
   margin-top: 2vw;
   font-family: "mukta";
   @include huge {
@@ -595,19 +609,20 @@ a {
 
 .qual .texts {
   width: 100%;
-  margin-top: 2vw;
+  margin-top: 1vw;
   // border: 1px solid red;
   // margin-top: -2%;
   p {
-    font-size: 1.2vw;
-    margin-bottom: 1vw;
+    font-size: 1vw;
+
     color: $secondary-color;
     font-weight: 500;
     line-height: 2vw;
     cursor: pointer;
 
     @include mobile {
-      font-size: 4vw;
+      margin-bottom: 1vw;
+      font-size: 3.5vw;
       line-height: 6vw;
       // margin-bottom: 10vw;
     }
@@ -615,7 +630,7 @@ a {
 }
 
 .qual .texts p:hover {
-  font-size: 1.5vw;
+  font-size: 1vw;
   width: 100%;
   font-weight: 400;
   color: $main-color;
@@ -654,9 +669,9 @@ a {
   width: 90%;
   height: 50%;
   @include huge {
-    height: 70%;
+    height: 55%;
   }
-  margin-top: 3vw;
+  margin-top: 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -673,29 +688,36 @@ a {
     // margin-bottom: 5%;
     height: auto;
   }
+  @include huge{
+    margin-top: 1vw;
+  }
 }
 
 .practice .title {
   display: flex;
+  align-items: center;
   width: 100%;
   // border: 1p x solid red;
   // height: 30%;
-
+  img {
+    width: 3vw;
+  }
   @include mobile {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     img {
-      width: 10.5vw;
+      width: 8.5vw;
     }
   }
   h3 {
     margin-left: 5%;
     font-weight: 350;
-    font-size: 1.4vw;
+    font-size: 1.1vw;
+    text-transform: uppercase;
     // height: fit-content;
     @include mobile {
       // font-weight: 400;
-      margin-top: 4%;
-      font-size: 4vw;
+      // margin-top: 4%;
+      font-size: 3.5vw;
     }
   }
 }
@@ -705,10 +727,11 @@ a {
   line-height: 1.5vw;
   font-weight: 340;
   margin-top: 1vw;
+ 
   @include mobile {
-    line-height: 20px;
-    font-size: 2.8vw;
-    margin-top: -2%;
+    line-height: 15px;
+    font-size: 3.5vw;
+    margin-top: -2.5%;
     // border: 1px solid red;
   }
 }
@@ -818,7 +841,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 15%;
   p {
     color: $white-color;
   }
@@ -939,12 +962,13 @@ a {
   width: 100%;
   height: 100%;
   width: 15vh;
-  margin-left: 45%;
+  margin-left: 47%;
   // background-color: #7A431D;
   // border: 1px solid blue;
   // padding-left: 10%;
   @include huge {
-    margin-left: 60%;
+    margin-top: -3rem;
+    margin-left: 50%;
   }
   @include mobile {
     display: none;
@@ -971,7 +995,7 @@ a {
     }
     .map-responsive {
       overflow: hidden;
-      padding-bottom: 76.25%;
+      padding-bottom: 136.25%;
       position: relative;
       @include mobile {
         padding-bottom: 66.25%;

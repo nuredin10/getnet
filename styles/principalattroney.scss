@@ -124,7 +124,7 @@
   margin-bottom: -0.3vw;
   @include mobile {
     margin-top: 13vw;
-    margin-bottom: -5.3vw;
+    margin-bottom: -5.5vw;
     width: 88vw;
   }
 }
@@ -173,8 +173,7 @@
   // height: 100vh;
   padding: 3% 0.5%;
   @include mobile {
-    margin-top: 10%;
-    padding: 15% 7%;
+    padding: 10% 7%;
   }
 }
 

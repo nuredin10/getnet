@@ -27,7 +27,7 @@ function Qualifications({ qualActiveSlide }) {
         </p>
       </div>
       <div className="qual">
-        <h2>Principal Attorney </h2> <span>- qualifications</span>
+        <h2>Qualifications </h2>
         <div className="texts">
           <p>
           Consultant and Attorney at Law-All Federal Courts Advocacy License
