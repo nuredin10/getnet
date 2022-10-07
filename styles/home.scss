@@ -383,7 +383,7 @@ a {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 10vw;
+  margin-top: 8vw;
   @include mobile {
     margin-top: 23vw;
     margin-right: 0%;
@@ -461,7 +461,7 @@ a {
 
 .about-main p {
   width: 55%;
-margin-right: 8vw;
+  margin-right: 8vw;
   font-size: 1vw;
   font-weight: 350;
   line-height: 2vw;
@@ -688,7 +688,7 @@ margin-right: 8vw;
     // margin-bottom: 5%;
     height: auto;
   }
-  @include huge{
+  @include huge {
     margin-top: 1vw;
   }
 }
@@ -727,7 +727,7 @@ margin-right: 8vw;
   line-height: 1.5vw;
   font-weight: 340;
   margin-top: 1vw;
- 
+
   @include mobile {
     line-height: 15px;
     font-size: 3.5vw;

@@ -22,14 +22,14 @@ function AboutSection({ aboutActiveSlide }) {
             Getnet Yawkal Law Office is a leading commercial law office in
             Ethiopia providing practical, strategically sound and result
             oriented first rate legal services for local and international
-            clients.<br/><br/>
+            clients.<br/>
             
             <span className="highlight">
               We take Integrity, accountability, accessibility and timely
               delivery of our quality legal services as our core value of
               establishment.
             </span>
-            <br/><br/>We value our client’s time and always strive in exceeding
+            <br/>We value our client’s time and always strive in exceeding
             their expectations.
 
           </p>
