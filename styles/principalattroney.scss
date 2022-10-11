@@ -61,11 +61,10 @@
   }
   // border: 1px springgreen solid;
 }
-.moto{
-    width: 75%; 
-    font-weight: 600;
-    font-size: 13vw;
-
+.moto {
+  width: 75%;
+  font-weight: 600;
+  font-size: 13vw;
 }
 .principal-text button {
   width: 35%;
@@ -207,6 +206,13 @@
 .principal-qualification,
 .principal-membership {
   padding: 1% 5%;
+  .pra-img {
+    width: 12vw;
+    margin-bottom: 2rem;
+    @include mobile {
+      width: 32vw;
+    }
+  }
 }
 .all-quali {
   padding: 1% 1%;

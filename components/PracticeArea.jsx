@@ -77,7 +77,7 @@ function PracticeArea({ practiceActiveSlide }) {
             <div className="title">
               <img src={"/charity-icon.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
-              <h3>Alternative Dispute Resolution</h3>
+              <h3>Alternative Dispute Resolution (ADR) </h3>
             </div>
             <p>
 

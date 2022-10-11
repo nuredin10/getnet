@@ -349,7 +349,7 @@ a {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 4vw;
+  margin-top: 8vw;
   @include huge {
     margin-top: 10vw;
   }
@@ -717,7 +717,7 @@ a {
     @include mobile {
       // font-weight: 400;
       // margin-top: 4%;
-      font-size: 3.5vw;
+      font-size: 3vw;
     }
   }
 }
@@ -994,8 +994,8 @@ a {
       }
     }
     .map-responsive {
-      overflow: hidden;
-      padding-bottom: 136.25%;
+      overflow: hidden !important;
+      padding-bottom: 94.25%;
       position: relative;
       @include mobile {
         padding-bottom: 66.25%;

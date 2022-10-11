@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 import { AiFillFacebook } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillTwitterSquare } from "react-icons/ai";
-import Head from 'next/head'
+import Head from "next/head";
 
 function Contactus() {
   const [isDark, setIsDark] = useState(true);
@@ -60,22 +60,29 @@ function Contactus() {
           </div>
           <div className="single">
             <p>Physical Location</p>
-            <a>Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417</a>
+            <a>
+              Located in Bole, Airport Road, Mega Building, 4th Floor, Room No.
+              417
+            </a>
           </div>
           <div className="single">
             <p>P.O.Box</p>
-            <a href="tel:+251911051754">1985 code 1250, Addis Ababa, Ethiopia</a>
+            <a href="tel:+251911051754">
+              1985 code 1250, Addis Ababa, Ethiopia
+            </a>
           </div>
           <div className="single">
             <p>Mobile</p>
-            <a href="tel:+251911051754">+2519 11 05 17 54</a><br/>
+            <a href="tel:+251911051754">+2519 11 05 17 54</a>
+            <br />
+            <p>Office</p>
             <a href="tel: +251118212012 "> +251118212012 </a>
-           
           </div>
           <div className="single">
             <p>Social Media Links</p>
             <div className="social-media">
-              <AiFillFacebook className="icon" />
+              {/* <AiFillFacebook className="icon" /> */}
+              <AiFillLinkedin className="icon" />
               <AiFillTwitterSquare className="icon" />
             </div>
           </div>
@@ -93,8 +100,6 @@ function Contactus() {
                 marginHeight="0"
                 marginWidth="0"
               ></iframe>
-         
-
             </div>
           </div>
         </div>

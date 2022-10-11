@@ -26,11 +26,11 @@ function ContactUs({ contactActiveSlide }) {
               <a href="tel:+251911051754">+251911051754 / +251118212012</a>
             </p>
             <p>
-       Located in Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417    <br></br>P.O.Box 1985 code 1250, Addis Ababa, Ethiopia<br></br>
+      Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417    <br></br>P.O.Box 1985 code 1250, Addis Ababa, Ethiopia<br></br>
             </p>
             <div className="social-media">
-              <AiFillFacebook className="icon" />
-         
+              {/* <AiFillFacebook className="icon" /> */}
+              <AiFillLinkedin className="icon" />
               <AiFillTwitterSquare className="icon" />
             </div>
           </div>

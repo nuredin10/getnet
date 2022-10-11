@@ -30,7 +30,9 @@ function AboutSection({ aboutActiveSlide }) {
               establishment.
             </span>
             <br/>We value our client’s time and always strive in exceeding
-            their expectations.
+            their expectations.<br /><br />
+                        We depend on our nimbleness to understand your case and provide a profound and tailor made solution to it, but we also maintain close associations with select local counsel to be called upon when needed. <br /><br />
+                        With extensive expertise in intellectual property, employment and labor, corporate and finance,  tax, charity and Alternative Dispute Resolution laws of Ethiopia, Getnet Yawkal Law Office offers a strong, sound, and cost effective legal guidance in resolving your cases professionally and looks forward to being your strategic partner and principal legal advisor in Ethiopia.
 
           </p>
           <div className="image-section">
