@@ -25,7 +25,7 @@ const PracticeArea = () => {
       desc3:
         "We give a great value to creation of the mind and understand your business and IP needs. ",
       desc4:
-        "We use a very cost effective and client focused service and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. ",
+        "We use a very cost effective and client focused service, and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. ",
       desc5:
         "Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.",
 

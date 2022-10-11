@@ -39,18 +39,11 @@ p {
   color: $main-color;
 }
 
-.moto{
-  color: #7a431d;
-  font-size: 1.5vw;
-}
-
-
 .practice a:hover {
   text-decoration: none;
   color: $secondary-color;
 }
 .practice-main .practice-text {
- 
   margin-top: -5vh;
   // border: 1px solid red;
   @include mobile {
@@ -65,7 +58,6 @@ p {
     font-size: 3vw;
     color: $main-color;
     font-weight: 500;
-
   }
 
   p {
@@ -159,7 +151,6 @@ p {
 
     @include mobile {
       font-size: 7vw;
-  
     }
   }
   p {
@@ -177,16 +168,16 @@ p {
     }
   }
 }
-.title-wrapper{
+.title-wrapper {
   display: flex;
 
   align-items: center;
-  gap:1vw;
+  gap: 1vw;
   @include mobile {
-    gap:2vw;
+    gap: 2vw;
   }
 }
-.title-icon{
+.title-icon {
   width: 3vw;
   @include mobile {
     width: 12vw;
@@ -318,9 +309,12 @@ p {
     font-size: 3.5vw;
     width: 100%;
   }
-  .moto{
-    color: $light-color;
-    font-size: 1.2vw;
+  .moto {
+    color: #7a431d;
+    font-weight: 400;
+    font-size: 1vw;
+    text-align: center;
+
     @include mobile {
       margin-top: 3vw;
       font-size: 4vw;
@@ -382,8 +376,8 @@ p {
   // border: 1px solid red;
   display: flex;
   justify-content: center;
-  @include mobile{
-    left:  -10vw;
+  @include mobile {
+    left: -10vw;
   }
 }
 

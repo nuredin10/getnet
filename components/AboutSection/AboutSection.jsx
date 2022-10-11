@@ -22,14 +22,14 @@ function AboutSection({ aboutActiveSlide }) {
             Getnet Yawkal Law Office is a leading commercial law office in
             Ethiopia providing practical, strategically sound and result
             oriented first rate legal services for local and international
-            clients.<br/>
+            clients.<br /><br />
             
             <span className="highlight">
               We take Integrity, accountability, accessibility and timely
               delivery of our quality legal services as our core value of
               establishment.
             </span>
-            <br/>We value our client’s time and always strive in exceeding
+            <br /><br />We value our client’s time and always strive in exceeding
             their expectations.<br /><br />
                         We depend on our nimbleness to understand your case and provide a profound and tailor made solution to it, but we also maintain close associations with select local counsel to be called upon when needed. <br /><br />
                         With extensive expertise in intellectual property, employment and labor, corporate and finance,  tax, charity and Alternative Dispute Resolution laws of Ethiopia, Getnet Yawkal Law Office offers a strong, sound, and cost effective legal guidance in resolving your cases professionally and looks forward to being your strategic partner and principal legal advisor in Ethiopia.
