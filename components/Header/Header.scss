@@ -4,20 +4,19 @@
   position: fixed;
   top: 0%;
   width: 100%;
-  
+
   // overflow-x: hidden;
   // border: 1px solid red
   z-index: 100000000;
   // box-shadow: 0 12px 12px -12px rgb(255, 0, 0);
 }
 
-.white-header{
+.white-header {
   background-color: $white-color;
   transition: 0.3s ease-in;
-
 }
 
-.dark-header{
+.dark-header {
   background-color: $main-color;
   transition: 0.3s ease-in;
 }
@@ -41,7 +40,7 @@ nav {
   margin-top: 2%;
   // background-image: url('../../asset/logo.svg');
   // border: 1px solid red;
-  @include mobile{
+  @include mobile {
     width: 90%;
   }
 }
@@ -54,8 +53,22 @@ a {
   text-transform: uppercase;
   letter-spacing: 5px;
   width: 100%;
+  animation: jitter 1s infinite;
+  position: relative;
+  // animation: headShake 0.5s linear 1s infinite alternate;
   // border: 1px solid blue;
-  @include mobile{
+  @keyframes jitter {
+    from {
+      left: -2px;
+      top: 0px;
+    }
+    to {
+      left: 2px;
+      top: 0px;
+    }
+  }
+
+  @include mobile {
     width: 60vw;
   }
   cursor: pointer;
@@ -64,21 +77,18 @@ a {
 }
 
 .nav-links {
-  
   // background-color: red;
   // border: 1px solid red;
   list-style: none;
   width: 50vw;
   margin-left: auto;
-  @include mobile{
+  @include mobile {
     font-size: 2vw;
-
   }
   .links {
- 
     @include flex(space-around, center);
     width: 100%;
-    @include mobile{
+    @include mobile {
       width: 85%;
     }
   }
@@ -88,48 +98,44 @@ a {
   z-index: 99999999;
   /* Principal Attorney */
 
-width: 14.31vw;
-height: 3vw;
-font-family: 'Mukta', sans-serif;
-// font-family: 'Mukta';
-font-style: normal;
-font-weight: 500;
-font-size: 0.78125vw;
-line-height: 3.50vw;
-text-align: center;
-text-transform: uppercase;
+  width: 14.31vw;
+  height: 3vw;
+  font-family: "Mukta", sans-serif;
+  // font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.78125vw;
+  line-height: 3.5vw;
+  text-align: center;
+  text-transform: uppercase;
 
-
-
-  
-  @include mobile{
+  @include mobile {
     color: #c5c5c5;
   }
 }
 
-.nav-links .white-link{
+.nav-links .white-link {
   color: $white-color;
 }
 
-.nav-links .dark-link{
-  font-size: .9vw;
+.nav-links .dark-link {
+  font-size: 0.9vw;
   color: $main-color;
 }
 
-.nav-links .brown-link{
-  font-size: .9vw;
+.nav-links .brown-link {
+  font-size: 0.9vw;
   color: $main-color;
-  @include mobile{
+  @include mobile {
     color: $light-color;
   }
 }
 
-.nav-links .white-link:hover{
+.nav-links .white-link:hover {
   color: #ffffff;
   transition: 0.3s ease;
   text-decoration: none;
 }
-
 
 .nav-links .dark-link:hover {
   color: #000000;
@@ -143,18 +149,17 @@ text-transform: uppercase;
   // margin-right: -15%;
 }
 
-
 .burger div {
   width: 25px;
   height: 2px;
   margin: 10px;
 }
 
-.white-burger div{
+.white-burger div {
   background-color: $main-color;
 }
 
-.dark-burger div{
+.dark-burger div {
   background-color: $white-color;
 }
 
@@ -173,7 +178,7 @@ text-transform: uppercase;
     right: 0px;
     height: 92vh;
     top: 11vh;
-    opacity:.92;
+    opacity: 0.92;
     background-color: $main-color;
     // @include flex("", "");
     // flex-direction: row;
@@ -195,47 +200,45 @@ text-transform: uppercase;
         // width: 80%;
         // border: 1px solid red;
         margin-bottom: -10vw;
-        
+
         a {
           // border: 1  px solid red;
           letter-spacing: 0.7vw;
-          font-size:5.5vw;
+          font-size: 5.5vw;
           z-index: 9999999;
           font-weight: 600;
         }
       }
     }
   }
-  
+
   .burger {
     display: block;
   }
 }
 
-.links{
-  a{
+.links {
+  a {
     cursor: pointer;
-
   }
 }
-.social-media-mobile{
+.social-media-mobile {
   width: 100%;
   height: 40%;
   display: none;
 
   // border: 1px solid red;
-  @include mobile{
+  @include mobile {
     display: block;
   }
-  svg{
+  svg {
     margin-top: 2vh;
     margin-left: 1vw;
     color: $light-color;
     border-radius: 2vw;
     width: 8vw;
-
   }
-  .icon{
+  .icon {
     font-size: 10vw;
     margin: 1%;
   }
@@ -296,16 +299,12 @@ text-transform: uppercase;
   }
 }
 
-
-.white-social-media{
+.white-social-media {
   color: $white-color;
 }
-.dark-social-media{
+.dark-social-media {
   color: $main-color;
-svg{
-border-radius: 4vw;
+  svg {
+    border-radius: 4vw;
+  }
 }
-}
-
-
-

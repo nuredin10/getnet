@@ -16,7 +16,7 @@ const PracticeArea = () => {
   const practiceContent = [
     {
       title: "Intellectual Properties",
-      text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
+      text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia...",
       desc: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
       desc1:
         "Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority “EIPA”, Getnet Yawkal Law office, offers the legal skills and expertise, training and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your Intellectual Properties in Ethiopia.",
@@ -49,11 +49,14 @@ const PracticeArea = () => {
     },
     {
       title: "Labor & Employment",
-      text: "We understand your challenges related to employment and immigration issues and gives utmost consideration for each of your cases",
+      text: "We understand your challenges related to employment and immigration issues and gives utmost consideration for each of your cases...",
       desc: "With the coming of many investors and expatriates in to Ethiopia, and with the issuance of different laws to regulate the employee and employee relationship and immigration issues, the need for best law firms equipped with top rated lawyers in the labor and employment sector; having the right information, technical knowledge and eloquence at their finger tips has become an imminent demand. ",
-      desc2: "Getnet Yawkal Law office with extensive experience on labor and employment, and immigration issues, has assisted clients with sound legal advises, superb utterance and negotiation skills and by successfully deafening their interest before court of laws.  ",
-      desc3: "We aspire to remain hot commodity in the employment sector and for that we commit out selves in helping you find the best possible way outs by drafting quality legal documents, rendering prudent legal advises, assisting you in negotiation processes and representing you before competent authorities. ",
-      desc5: "We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case.  ",
+      desc2:
+        "Getnet Yawkal Law office with extensive experience on labor and employment, and immigration issues, has assisted clients with sound legal advises, superb utterance and negotiation skills and by successfully deafening their interest before court of laws.  ",
+      desc3:
+        "We aspire to remain hot commodity in the employment sector and for that we commit out selves in helping you find the best possible way outs by drafting quality legal documents, rendering prudent legal advises, assisting you in negotiation processes and representing you before competent authorities. ",
+      desc5:
+        "We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case.  ",
       services: [
         "Drafting employment contracts ",
         "Drafting collective agreements",
@@ -77,7 +80,7 @@ const PracticeArea = () => {
     },
     {
       title: "Corporate & Finance",
-      text: "We maintain a full service corporate & finance capability and strive to add unmatched value to your commercial strategies",
+      text: "We maintain a full service corporate & finance capability and strive to add unmatched value to your commercial strategies...",
       desc1:
         "The booming economy, luring incentive packages, infrastructural developments, abandoned and inexpensive labor, the large population number the country has are some of the many factors why investors are choosing Ethiopia as their ideal destination for investment. ",
       desc2:
@@ -127,7 +130,7 @@ const PracticeArea = () => {
     },
     {
       title: "Charity",
-      text: "We are here to assist you in every step of your journey and keep your interests safe",
+      text: "We are here to assist you in every step of your journey and keep your interests safe...",
       desc: "The charitable and civil societies law is a multifaceted and specialized one, We understand your challenges and want to help meet your goals. We value your time and give utmost consideration for each case. Whether you want to setup a charitable organization, process its registration, deal with employees or tackle tax related issues we will be there to assist you in every step of your journey.",
       desc1:
         "Getnet Yawkal Law Office helps international charitable organizations by rendering sound and updated legal advises and resolving their issues in a way that keeps their interest safe and puts them in the best possible position out-there.",
@@ -150,7 +153,7 @@ const PracticeArea = () => {
     {
       title: "Alternative Dispute Resolution  (ADR)",
       text: "We maintain a full service ADR capability and possesses a grit mindset to address conflict at any stage and go all the way to the end.",
-      desc: "Getnet Yawkal law Office assists clients by providing sound and refined legal advise on Ethiopian arbitration laws including but not limited to new treaties signed and old goodie  laws that substantial affect the process of litigation and enforcement of awards. ",
+      desc: "Getnet Yawkal law Office assists clients by providing sound and refined legal advise on Ethiopian arbitration laws including but not limited to new treaties signed and old goodie  laws that substantial affect the process of litigation and enforcement of awards... ",
       desc1:
         "We prepare and vet commercial documents in line with the relevant laws related with dispute settlement and represent clients to safeguard their interest before arbitration tribunals. We are also known assist clients by providing expert report on domestic laws.",
       desc2:
@@ -225,9 +228,12 @@ const PracticeArea = () => {
                 onClick={() => popUpOnClickHandler(e)}
               >
                 <div className="title-text">
-                  <div className="title-wrapper">  <img className="title-icon" src={e.icon} alt=""></img>  <h1>{e.title}</h1></div>
-              
-                 
+                  <div className="title-wrapper">
+                    {" "}
+                    <img className="title-icon" src={e.icon} alt=""></img>{" "}
+                    <h1>{e.title}</h1>
+                  </div>
+
                   <p>{e.text}</p>
                 </div>
                 <h3 className="discover">DISCOVER MORE</h3>
@@ -282,10 +288,10 @@ const PopUp = ({ selectedContent, setIsOpen, isOpen }) => {
         <IoMdClose className="close-icon" onClick={() => setIsOpen(!isOpen)} />
       </div>
       <div className="popup-side-block">
-        <div
+        {/* <div
           className="service-image"
           style={{ backgroundImage: "url(" + selectedContent.image + ")" }}
-        ></div>
+        ></div> */}
         {/* <img  src={selectedContent.image}></img> */}
 
         {/* <button onClick={() => setIsOpen(!isOpen)}>Cancel</button> */}

@@ -29,7 +29,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Intellectual Proprieties</h3>
             </div>
             <p>
-            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.
+            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice...
             </p>
           </a>
         </div>
@@ -41,7 +41,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Labor & Employment</h3>
             </div>
             <p>
-            We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case. ....
+            We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case...
             </p>
           </a>
         </div>
@@ -51,11 +51,11 @@ function PracticeArea({ practiceActiveSlide }) {
             <div className="title">
               <img src={"corporate.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
-              <h3>Corporate and Finance</h3>
+              <h3>Corporate & Finance</h3>
             </div>
             <p>
 
-            We maintain a full service corporate and finance capability and strive to add unmatched value to your commercial strategies.{" "}
+            We maintain a full service corporate and finance capability and strive to add unmatched value to your commercial strategies...{" "}
             </p>
           </a>
         </div>
@@ -67,7 +67,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Charity</h3>
             </div>
             <p>
-            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to their requests is a basic of our practice.
+            Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to their requests is a basic of our practice...
             {" "}
             </p>
           </a>
@@ -81,7 +81,7 @@ function PracticeArea({ practiceActiveSlide }) {
             </div>
             <p>
 
-            We maintain a full service ADR capability and possesses a grit mindset to address conflict at any stage and go all the way to the end..{" "}
+            We maintain a full service ADR capability and possesses a grit mindset to address conflict at any stage and go all the way to the end...{" "}
             </p>
           </a>
         </div>

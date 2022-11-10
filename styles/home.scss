@@ -222,6 +222,7 @@ a {
   margin-top: 2vw;
   font-size: 1.3vw;
   @include mobile {
+    font-size: 3vw;
     margin-top: 2vw;
   }
 }
@@ -314,7 +315,7 @@ a {
   align-items: center;
   margin-top: 1vw;
   @include huge {
-    margin-top: 11vw;
+    margin-top: 9vw;
   }
   @include mobile {
     margin-top: 48vw;
@@ -349,12 +350,12 @@ a {
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 8vw;
+  margin-top: 20vw;
   @include huge {
     margin-top: 10vw;
   }
   @include mobile {
-    margin-top: 10vw;
+    margin-top: 53vw;
     margin-right: 0%;
   }
   a {
@@ -385,7 +386,7 @@ a {
   align-items: center;
   margin-top: 7vw;
   @include mobile {
-    margin-top: 23vw;
+    margin-top: 3vw;
     margin-right: 0%;
   }
   a {
@@ -433,10 +434,10 @@ a {
 }
 
 .about-section h3 {
-  font-size: 1.17vw;
+  font-size: 1.2vw;
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 0.5%;
+
   @include mobile {
     font-size: 5vw;
   }
@@ -451,17 +452,18 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 3%;
   @include mobile {
-    padding-top: 0%;
+    padding-top: 3%;
     flex-direction: column;
+    justify-content: space-between;
     // height: 70vh;
   }
 }
 
 .about-main p {
-  width: 55%;
-  margin-right: 8vw;
+  width: 60%;
+  // margin-right: 8vw;
   font-size: 1vw;
   font-weight: 350;
   line-height: 2vw;
@@ -496,14 +498,14 @@ a {
   width: 30vw;
 
   @include mobile {
-    margin-top: 20vw;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
     width: 65vw;
   }
 }
 .who-we-are-image2 {
   margin-top: 3vw;
   width: 30vw;
-
   @include mobile {
     margin-top: 50vw;
     width: 75vw;
@@ -552,14 +554,14 @@ a {
   height: 90vh;
   width: 87%;
   background-color: $white-color;
-  padding: 3% 5%;
+  padding: 2% 7%;
   background-image: url("/background.svg");
   // padding-top: 3%;
   // padding
 }
 
 .qualifications .principal {
-  width: 90%;
+  width: 60%;
   margin-bottom: 3%;
   @include mobile {
     width: 100%;
@@ -671,17 +673,20 @@ a {
   @include huge {
     height: 55%;
   }
-  margin-top: 2vw;
+  // margin-top: 2vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   // border: 1px solid red
+  @include mobile {
+    display: grid;
+  }
 }
 
 .practice-area .practice {
   // border: 1px solid red;
   width: 45%;
-  height: 35%;
+
   @include mobile {
     width: 100%;
     // height: 25%;
@@ -731,7 +736,7 @@ a {
   @include mobile {
     line-height: 15px;
     font-size: 3.5vw;
-    margin-top: -2.5%;
+    margin-top: -3%;
     // border: 1px solid red;
   }
 }

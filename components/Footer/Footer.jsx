@@ -78,7 +78,7 @@ function Footer() {
       </div>
       <div className="footer-credit">
         <p>
-          All Rights Reserved.&copy; 
+          All Rights Reserved &copy; 
           2022{" "}
         </p>
         <p>Web Design & Development by Versavvy Media PLC</p>
