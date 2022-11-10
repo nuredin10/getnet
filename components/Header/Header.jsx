@@ -42,7 +42,7 @@ function Header({isDark, isShadow}) {
   return (
     <div className={`header ${isDark ? 'dark-header' : 'white-header'} ${isShadow ? 'shadow-header' : ''}`}>
       <nav className="navbar">
-        <a className="logo-wrapper" href="/">
+        <a className="logo-wrapper" id="textbox" href="/">
           {/* <h4 className="logo">LOGO</h4> */}
           <img src={`${isDark ? 'white-logo.svg' : 'logo_new.svg'}`} alt="logo" className="logo"></img>
         </a>
