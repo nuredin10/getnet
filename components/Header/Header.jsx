@@ -56,13 +56,25 @@ function Header({isDark, isShadow}) {
             ))}
           </div>
           <div className="social-media-mobile">
-            <AiFillLinkedin className="icon" />
-            <AiFillTwitterSquare className="icon" />
+          <a href="https://www.linkedin.com/in/getnet-yawkal-mebratu-ba155268/">
+
+<AiFillLinkedin  className="icon" />
+</a>
+<a href="https://twitter.com/Ethilawfirm?t=-TotZd6xca8vkuVS17i9hQ&s=03">
+
+<AiFillTwitterSquare className="icon" />
+</a>
           </div>
         </ul>
         <div className={`social-media ${isDark ? 'white-social-media' : 'dark-social-media'}`}>
-            <AiFillLinkedin className="icon" />
+          <a href="https://www.linkedin.com/in/getnet-yawkal-mebratu-ba155268/">
+
+            <AiFillLinkedin  className="icon" />
+          </a>
+          <a href="https://twitter.com/Ethilawfirm?t=-TotZd6xca8vkuVS17i9hQ&s=03">
+
             <AiFillTwitterSquare className="icon" />
+          </a>
         </div>
         <div className={`burger ${toggle ? "toggle" : ""} ${isDark ? "dark-burger" : "white-burger"}`} onClick={navSlide}>
           <div className="line1"></div>

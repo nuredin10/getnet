@@ -241,6 +241,7 @@ a {
   .icon {
     font-size: 10vw;
     margin: 1%;
+    
   }
 }
 
@@ -296,6 +297,10 @@ a {
   cursor: pointer;
   @include mobile {
     display: none;
+  }
+  a{
+    color: $light-color;
+    margin-top: 1rem;
   }
 }
 

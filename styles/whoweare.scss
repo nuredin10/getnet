@@ -54,11 +54,13 @@ p {
 .about-main1 .text h1 {
   font-style: "mukta";
   font-weight: 700;
-  font-size: 2.3vw;
-  text-transform: capitalize;
+  margin-top: 4vw;
+  font-size: 2vw;
+  text-transform: uppercase;
   color: $secondary-color;
 
   @include mobile {
+    margin-top: 0vw;
     font-size: 6vw;
   }
 }
@@ -72,9 +74,14 @@ p {
   color: $main-color;
   margin-top: 2vw;
   .highlight {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     font-weight: 500;
     color: $secondary-color;
+    @include mobile {
+      margin-top: 8vw;
+      line-height: 5vw;
+      font-size: 3.5vw;
+    }
   }
   @include mobile {
     margin-top: 8vw;

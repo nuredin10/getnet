@@ -38,10 +38,7 @@ function Qualifications({ qualActiveSlide }) {
             while maintaining quality and professionalism to provide first-rate
             legal services in Ethiopia, and his record is one of great
             responsibility, dedication, and solid achievements. <br />
-            <br />
-            Getnet is a very personable, goal-focused and versatile person
-            accustomed to a fast-paced environment where deadlines are a
-            priority and handling multiple jobs simultaneously is a requirement.
+       
         </p>
       </div>
       {/* <div className="qual">

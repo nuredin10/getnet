@@ -355,7 +355,7 @@ a {
     margin-top: 10vw;
   }
   @include mobile {
-    margin-top: 53vw;
+    margin-top: 35vw;
     margin-right: 0%;
   }
   a {
@@ -450,7 +450,7 @@ a {
   // border: 1px solid red;
   // height: 55vh;
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
   align-items: center;
   padding-top: 3%;
   @include mobile {
@@ -462,18 +462,18 @@ a {
 }
 
 .about-main p {
-  width: 60%;
+  width: 55%;
   // margin-right: 8vw;
   font-size: 1vw;
   font-weight: 350;
-  line-height: 2vw;
+  line-height: 1.3vw;
   color: $main-color;
   // border: 1px solid red;
   @include mobile {
     height: 50%;
     font-size: 3.5vw;
     width: 100%;
-    line-height: 6vw;
+    line-height: 5vw;
   }
   .highlight {
     color: #7a431d;
@@ -483,7 +483,7 @@ a {
       height: 50%;
       font-size: 3.5vw;
       width: 100%;
-      line-height: 6vw;
+      line-height: 5vw;
     }
   }
 }
@@ -691,6 +691,7 @@ a {
     width: 100%;
     // height: 25%;
     // margin-bottom: 5%;
+    margin-top: 0vw;
     height: auto;
   }
   @include huge {
@@ -708,9 +709,9 @@ a {
     width: 3vw;
   }
   @include mobile {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     img {
-      width: 8.5vw;
+      width: 8vw;
     }
   }
   h3 {
@@ -737,6 +738,10 @@ a {
     line-height: 15px;
     font-size: 3.5vw;
     margin-top: -3%;
+    // text-overflow: ellipsis;
+    //  overflow:hidden;
+    //   white-space:nowrap;
+    //    width: 500px;
     // border: 1px solid red;
   }
 }
@@ -826,6 +831,7 @@ a {
   height: 70%;
   @include mobile {
     margin-top: 12vw;
+    margin-bottom: 12vw;
     width: 90%;
   }
 }
@@ -847,6 +853,54 @@ a {
   flex-direction: column;
   justify-content: center;
   margin-top: 15%;
+  .social-media-mobile1 {
+    width: 100%;
+    height: 40%;
+    display: none;
+
+    // border: 1px solid red;
+    @include mobile {
+      display: block;
+    }
+    svg {
+      margin-top: 2vh;
+
+      color: $white-color;
+      border-radius: 3vw;
+      width: 6vw;
+    }
+    .icon {
+      font-size: 10vw;
+    }
+  }
+  .social-media1 {
+    width: 3vw;
+    height: 100%;
+    font-size: 1.5vw;
+
+    margin-bottom: 1%;
+    @include flex(space-around, center);
+    // border: 1px solid red;
+
+    cursor: pointer;
+    @include mobile {
+      display: none;
+    }
+    a {
+      color: white;
+      margin-top: 1rem;
+    }
+  }
+
+  .white-social-media {
+    color: $white-color;
+  }
+  .dark-social-media {
+    color: $main-color;
+    svg {
+      border-radius: 4vw;
+    }
+  }
   p {
     color: $white-color;
   }
@@ -855,13 +909,14 @@ a {
     svg {
       margin-top: 2vh;
       margin-left: 1vw;
-      color: $light-color;
+      color: white;
       border-radius: 2vw;
     }
   }
   a {
     margin-left: 1vw;
     cursor: pointer;
+
     color: $white-color;
   }
   // align-items: center;
@@ -870,6 +925,7 @@ a {
 .contact-wrapper .map {
   width: 40%;
   height: 60%;
+  // margin-top: 3rem;
   // border: 1px solid blue;
   @include huge {
     width: 35%;

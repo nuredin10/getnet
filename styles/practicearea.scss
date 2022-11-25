@@ -85,7 +85,7 @@ p {
 
     @include mobile {
       margin-top: 45.9vw;
-      width: 70vw;
+      width: 80vw;
     }
   }
   @include mobile {
@@ -271,6 +271,7 @@ p {
   // border: 1px solid red;
   padding: 3% 7%;
   @include mobile {
+    padding: 15% 7%;
   }
 }
 
@@ -296,7 +297,7 @@ p {
   margin-left: 3%;
   color: $main-color;
   @include mobile {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 }
 
@@ -334,7 +335,6 @@ p {
   width: 100vw;
   @include mobile {
     display: grid;
-    margin-top: 55vw;
   }
 }
 .popup-service h1 {
@@ -377,7 +377,7 @@ p {
   display: flex;
   justify-content: center;
   @include mobile {
-    left: -10vw;
+    left: -15vw;
   }
 }
 
@@ -387,6 +387,6 @@ p {
   color: $main-color;
   cursor: pointer;
   @include mobile {
-    width: 5vw;
+    width: 8vw;
   }
 }

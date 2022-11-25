@@ -41,7 +41,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Labor & Employment</h3>
             </div>
             <p>
-            We understand your challenges related to employment and immigration issues and want to help meet your goals. We value Clients’ time and give utmost consideration for each case...
+            We understand your challenges related to employment and immigration issues, and want to help meet your goals. We value Clients’ time and give utmost consideration for each case...
             </p>
           </a>
         </div>
@@ -55,7 +55,7 @@ function PracticeArea({ practiceActiveSlide }) {
             </div>
             <p>
 
-            We maintain a full service corporate and finance capability and strive to add unmatched value to your commercial strategies...{" "}
+            We maintain a full service corporate and finance capability, and strive to add unmatched value to your commercial strategies...{" "}
             </p>
           </a>
         </div>

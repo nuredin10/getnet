@@ -23,15 +23,38 @@ function ContactUs({ contactActiveSlide }) {
             </p>
             <p>
               <label>Mobile:</label>
-              <a href="tel:+251911051754">+251911051754 / +251118212012</a>
+              <a href="tel:+251911051754">+251911051754 </a>
             </p>
             <p>
-      Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417    <br></br>P.O.Box 1985 code 1250, Addis Ababa, Ethiopia<br></br>
+              <label>Office:</label>
+              <a href="tel:+251118212012"> +251118212012</a>
             </p>
-            <div className="social-media">
+            <p>
+      Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417    
+            </p>
+            <p>
+   P.O.Box 1985 code 1250, Addis Ababa, Ethiopia<br></br>
+            </p>
+            <div className="social-media-mobile1">
+          <a href="https://www.linkedin.com/in/getnet-yawkal-mebratu-ba155268/">
+
+<AiFillLinkedin  className="icon" />
+</a>
+<a href="https://twitter.com/Ethilawfirm?t=-TotZd6xca8vkuVS17i9hQ&s=03">
+
+<AiFillTwitterSquare className="icon" />
+</a>
+          </div>
+            <div className="social-media1">
               {/* <AiFillFacebook className="icon" /> */}
-              <AiFillLinkedin className="icon" />
-              <AiFillTwitterSquare className="icon" />
+              <a href="https://www.linkedin.com/in/getnet-yawkal-mebratu-ba155268/">
+
+<AiFillLinkedin  className="icon" />
+</a>
+<a href="https://twitter.com/Ethilawfirm?t=-TotZd6xca8vkuVS17i9hQ&s=03">
+
+<AiFillTwitterSquare className="icon" />
+</a>
             </div>
           </div>
         </div>

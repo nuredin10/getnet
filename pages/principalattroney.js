@@ -55,7 +55,7 @@ function PrincipalAttroney() {
             Getnet earned his LL.B degree from Bahir Dar University Faculty of
             Law in 2008. After his graduation Getnet has worked for various
             governmental and non-governmental organizations such as the
-            Ethiopian Intellectual Property Authority, Tadesse Kiros Law Office
+            Ethiopian Intellectual Property Authority(EIPA), Tadesse Kiros Law Office
             (TKLO), Mesfin Tafesse & Associates (MTA) and taught law courses at
             different University and University Colleges in Ethiopia.
             <br />
