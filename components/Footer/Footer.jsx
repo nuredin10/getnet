@@ -70,8 +70,14 @@ function Footer() {
         </div>
             <div className="footer-social-media">
               {/* <AiFillFacebook className="icon" /> */}
-              <AiFillLinkedin className="icon" />
-              <AiFillTwitterSquare className="icon" />
+              <a href="https://www.linkedin.com/in/getnet-yawkal-mebratu-ba155268/">
+
+<AiFillLinkedin  className="icon" />
+</a>
+<a href="https://twitter.com/Ethilawfirm?t=-TotZd6xca8vkuVS17i9hQ&s=03">
+
+<AiFillTwitterSquare className="icon" />
+</a>
             </div>
           </div>
         </div>
