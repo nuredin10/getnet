@@ -16,32 +16,32 @@ const PracticeArea = () => {
   const practiceContent = [
     {
       title: "Intellectual Properties",
-      text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia...",
+      text: "Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia…",
       desc: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
       desc1:
-        "Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority “EIPA”, Getnet Yawkal Law office, offers the legal skills and expertise, training and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your Intellectual Properties in Ethiopia.",
+        "Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority (EIPA), Getnet Yawkal Law Office, offers the legal skills and expertise, training, and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your intellectual property in Ethiopia.",
       desc2:
         "Though-out the years we engaged ourselves in the IP industry we have become a reliable strategic partners for local clients as well as well-known international IP firms and foreign based businesses who wishes to register and enforce intellectual properties rights in Ethiopia.",
       desc3:
         "We give a great value to creation of the mind and understand your business and IP needs. ",
       desc4:
-        "We use a very cost effective and client focused service, and proposes fixed fees for our exceptional services that we only charge when we add real value to your IP needs. ",
+        "We give great value to the creation of the mind and understand your business and IP needs. We use a very cost-effective and client-focused service and propose fixed fees for our exceptional services, which we only charge when we add real value to your IP needs.  ",
       desc5:
-        "Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to clients’ request is a bedrock of our IP practice.",
+        "Providing tailor-made solutions that exceed clients’ expectations intertwined with a swift reply to clients’ request is the bedrock of our IP practice.",
 
       services: [
         "Trademark availability search",
-        "Brand development advise",
-        "Filling trademark, patent, industrial design and utility model applications including claiming priority rights",
-        "Amending applications and registrations",
-        "In licensing, out licensing and cross licensing of rights",
-        "Negotiating, vetting or drafting license assignment or franchise agreements",
-        "Representing before the EIPA tribunal and/or competent federal courts",
+        "Brand development advice",
+        "Filing trademark, patent, industrial design, and utility model applications, including claiming priority rights",
+        "Amending applications and/or registrations",
+        "Filing and processing licensing and/or assignment of rights",
+        "Negotiating, vetting, or drafting license assignment or franchise agreements",
+        "Representing clients before the EIPA tribunal and/or competent federal courts",
         "Handling prosecution, maintenance, and enforcement of active registrations.",
         "Handling cancellation and/or invalidation cases",
         "Handling infringement cases",
         "Reply to office actions or oppositions",
-        "Conduct due diligence of the IP portfolio of a targeted company dealing merger or acquisition",
+        "Conduct due diligence on the IP portfolio of a targeted company dealing with mergers or acquisitions",
       ],
       icon: "/intellectual-icon.svg",
       //   image: "/IP.jpg",
@@ -49,28 +49,28 @@ const PracticeArea = () => {
     },
     {
       title: "Labor & Employment",
-      text: "We understand your challenges related to employment and immigration issues, and gives utmost consideration for each of your cases...",
-      desc: "With the coming of many investors and expatriates in to Ethiopia, and with the issuance of different laws to regulate the employee and employee relationship and immigration issues, the need for best law firms equipped with top rated lawyers in the labor and employment sector; having the right information, technical knowledge and eloquence at their finger tips has become an imminent demand. ",
+      text: "We understand your challenges related to employment and immigration issues and give utmost consideration to each of your cases...",
+      desc: "With the influx of many investors and expatriates into Ethiopia, as well as the passage of various laws governing employee-employer relationships and immigration issues, the demand for top-rated labor and employment lawyers armed with the necessary information, technical knowledge, and eloquence has become an urgent need.",
       desc2:
-        "Getnet Yawkal Law office with extensive experience on labor and employment, and immigration issues, has assisted clients with sound legal advises, superb utterance and negotiation skills and by successfully defending their interest before court of laws.  ",
+        "Getnet Yawkal Law Office, with extensive experience on labor and employment, and immigration issues, has assisted clients with sound legal advice, superb communication and negotiation skills, and by successfully defending their interests before courts of law. ",
       desc3:
-        "We aspire to remain hot commodity in the employment sector and for that we commit out selves in helping you find the best possible way outs by drafting quality legal documents, rendering prudent legal advises, assisting you in negotiation processes and representing you before competent authorities. ",
+        "We aspire to remain a hot commodity in the employment sector, and for that, we commit ourselves to helping you find the best possible way out by drafting quality legal documents, rendering prudent legal advice, assisting you in negotiation processes, and representing you before competent authorities.",
       desc5:
-        "We understand your challenges related to employment and immigration issues, and want to help meet your goals. We value Clients’ time and give utmost consideration for each case.  ",
+        "We understand your challenges related to employment and immigration issues and want to help you meet your goals. We value our clients time and give utmost consideration to each case.",
       services: [
         "Drafting employment contracts ",
         "Drafting collective agreements",
-        "Drafting  independent contractor agreements",
-        "Drafting  employment benefit plans",
-        "Drafting Human resource manuals or work rules",
-        "Drafting  settlement and release agreements",
+        "Drafting independent contractor agreements",
+        "Drafting employment benefit plans",
+        "Drafting human resource manuals or work rules",
+        "Drafting settlement and release agreements",
         "Negotiating",
         "Representation/ Litigating",
         "Processing resident permit",
         "Processing work permits",
         "Advising on foreign salary remittance laws",
         "Advising on employment related tax laws ",
-        "Preparing legal advises, opinions and memos on employment and/or immigration issues",
+        "Preparing legal advice, opinions, and memos on employment and/or immigration issues",
         "Legalizing police clearance certificates for expatriates",
         "Preparing legal and regulatory compliance checklists",
       ],
@@ -80,44 +80,43 @@ const PracticeArea = () => {
     },
     {
       title: "Corporate & Finance",
-      text: "We maintain a full service corporate & finance capability, and strive to add unmatched value to your commercial strategies...",
+      text: "We provide blue-ribbon corporate and financial legal services and strive to add unmatched value to your business strategies...",
       desc1:
-        "The booming economy, luring incentive packages, infrastructural developments, abandoned and inexpensive labor force, the large population number the country has are some of the many factors why investors are choosing Ethiopia as their ideal destination for investment. ",
+        "The booming economy, enticing incentive packages, infrastructural developments, an abandoned and inexpensive labor force, and the country's large population are just a few of the many reasons why investors are choosing Ethiopia as their ideal investment destination.",
       desc2:
         "For years Getnet Yawkal Law Office has helped foreign investors and international law firms by rendering sound legal advises, preparing due diligence reports, processing merger & acquisition of target companies, facilitating licensing and registrations, and preparing various legal documents in accordance with clients’ business strategies. ",
+
       desc3:
-        "Our knowledgeable and resource-full resources in commercial, competition, tax, finance and foreign exchange laws of Ethiopia, has helped our clients to update them selves from time to time and coup up with dynamic changes the corporate and finance sector has introduced over the years. ",
-      desc3:
-        "Our knowledgeable and resource-full resources in commercial, competition, tax, finance and foreign exchange laws of Ethiopia, has helped our clients to update them selves from time to time and coup up with dynamic changes the corporate and finance sector has introduced over the years. ",
+        "Our knowledgeable and resourceful resources in commercial, competition, tax, finance, and foreign exchange laws of Ethiopia have helped our clients to update themselves from time to time and keep up with the dynamic changes the corporate and finance sectors have introduced over the years.",
       desc4:
-        "With extensive experience in rendering sound legal advises, drafting quality legal documents and representing clients interest, we strive in helping you with a proper legal guidance, with the target of putting you in the most advantageous position possible.",
+        "With extensive experience in rendering sound legal advice, drafting quality legal documents, and representing clients’ interests, we strive to provide you with a proper legal guidance with the goal of putting you in the most advantageous position possible.",
       desc5:
-        "We maintain a full service corporate and finance capability, and strive to add unmatched value to your commercial strategies.",
+        "We offer excellent corporate and financial legal services and endeavor to add unparalleled value to your business strategies.",
       services: [
-        "Drafting  institutional documents i.e. Memorandum and Article of Association",
+        "Drafting  institutional documents, i.e., Memorandum and Articles of Association",
         "Incorporating subsidiary companies",
         "Registering commercial representative/ liaison offices",
         "Registering holding companies",
-        "Registering branch offices of foreign business organization",
-        "Registering branch offices of foreign chamber of commerce",
+        "Registering branch offices of foreign business organization incorporated abroad",
+        "Registering branch offices of foreign chambers of commerce",
         "Drafting and reviewing share purchase agreements",
-        "Drafting and registering franchise agreement",
-        "Drafting and reviewing promise of sale agreements",
+        "Drafting and registering a franchise agreement",
+        "Drafting and reviewing “promise of sale” agreements",
         "Registering project offices",
         "Drafting and reviewing technology transfer agreements (TTA)",
         "Drafting and reviewing security documents",
 
         "Drafting and reviewing loan agreements",
-        "Drafting and reviewing Investment Shareholders Agreements",
+        "Drafting and reviewing investment and shareholders’ agreements",
         "Preparing due diligence reports",
-        "Processing Merger & Acquisition of a target company and selling or acquisition of shares & takeovers",
-        "Advising and assisting with the issuance of investment permits, commercial registration certificates and business licenses",
+        "Processing a target company's merger and acquisition, as well as the sale or acquisition of shares and takeovers",
+        "Assisting with the issuance of investment permits, commercial registration certificates, and business licenses",
         "Advising on retention and utilization of export earnings and inward remittances",
         "Advising on local and foreign currency holding laws",
         "Advising on foreign salary remittance laws",
 
-        "Advising in foreign exchange laws",
-        "Advising in legal and regulatory framework of financial institutions",
+        "Advising on foreign exchange laws",
+        "Advising on the legal and regulatory framework of financial institutions",
         "Advising on double taxation and investment treaties",
         "Preparing legal and regulatory compliance checklists",
         "Authenticating and filing legal documents sourced from abroad",
@@ -131,18 +130,22 @@ const PracticeArea = () => {
     {
       title: "Charity",
       text: "We are here to assist you in every step of your journey and keep your interests safe...",
-      desc: "The charitable and civil societies law is a multifaceted and specialized one. We understand your challenges and want to help meet your goals. We value your time and give utmost consideration for each case. Whether you want to setup a charitable organization, process its registration, deal with employees or tackle tax related issues we will be there to assist you in every step of your journey.",
+      desc: "The charities and civil societies law is specialized, multi-faceted legislation that requires expertise.. Whether you want to setup a charitable organization, process its registration, deal with employees, or tackle tax-related issues, Getnet Yawkal Law Office will be there to assist you in every step of your journey.",
       desc1:
-        "Getnet Yawkal Law Office helps international charitable organizations by rendering sound and updated legal advises and resolving their issues in a way that keeps their interest safe and puts them in the best possible position out-there.",
+        "We help international charitable organizations by rendering sound and updated legal advice and resolving their issues in a way that keeps their interests safe and puts them in the best possible position out there.",
+        desc2:
+        "We understand your challenges and want to help you meet your goals. ",
+        desc3:
+        "We value your time and give utmost consideration to each case.",
       desc5:
-        "Providing tailor made solutions that exceeds clients’ expectations intertwined with making a  swift reply to their requests is a basic of our practice.",
+        "Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our practice.",
       services: [
         "Assisting in incorporating charitable organizations",
-        "Advising on legal and regulatory framework",
-        "Drafting & reviewing agreements",
-        "Advising and issuing legal opinions and memorandums",
+        "Advising on the legal and regulatory framework",
+        "Drafting  and reviewing agreements",
+        "Advising and issuing legal opinions and legal memoranda",
         "Assisting in the preparation of general assembly and board minutes",
-        "Preparing legal & regulatory compliance checklists",
+        "Preparing legal  and regulatory compliance checklists",
         "Advising on legal issues",
         "Representation/ Litigating",
       ],
@@ -152,23 +155,23 @@ const PracticeArea = () => {
     },
     {
       title: "Alternative Dispute Resolution  (ADR)",
-      text: "We maintain a full service ADR capability and possesses a grit mindset to address conflict at any stage and go all the way to the end...",
-      desc: "Getnet Yawkal law Office in assisting clients by providing expert reports on domestic laws sound and refined legal advise on Ethiopian arbitration laws including but not limited to new treaties signed and old goodie  laws that substantial affect the process of litigation and enforcement of awards... ",
+      text: "We maintain a full-service ADR capability and have the tenacity to address conflict at any stage and see it through…",
+      desc: "Getnet Yawkal Law Office assists clients by providing expert reports on domestic laws and sound and refined legal advice on Ethiopian arbitration laws, including but not limited to, new treaties signed and other existing laws that substantially affect the process of litigation and enforcement of awards.  ",
       desc1:
-        "We prepare and vet commercial documents in line with the relevant laws related with dispute settlement and represent clients to safeguard their interest before arbitration tribunals. We are also known assist clients by providing expert report on domestic laws.",
+        "We prepare and vet commercial documents in line with the relevant laws related to dispute settlement and represent clients to safeguard their interests before arbitration tribunals. We are also known to assist clients by providing expert reports on domestic laws.",
       desc2:
-        "We aspire to remain hot commodity in the ADR industry and for that we commit out selves in helping you find the best possible way outs by drafting quality legal documents, rendering prudent legal advises, assisting you in negotiation processes and representing you before arbitration tribunals. ",
+        "We aspire to remain a hot commodity in the ADR industry, and for that, we commit ourselves to helping you find the best possible way out by drafting quality legal documents, rendering prudent legal advice, assisting you in negotiation processes, and representing you before arbitration tribunals. ",
       desc5:
-        "We maintain a full service ADR capability and possesses a grit mindset to address conflict at any stage, and go all the way to the end. ",
+        "We maintain a full-service ADR capability and possess a grit mindset to address conflict at any stage and go all the way to the end.",
       services: [
-        "Drafting and vetting Documents",
+        "Drafting and vetting documents",
         "Negotiating",
-        "Preparing legal advise, legal opinion and legal memorandum",
+        "Preparing legal advise, a legal opinion, and a legal memorandum",
         "Preparing expert reports on domestic laws",
-        "Execution of arbitral awards",
-        "Filing or defence of application for interim measures before courts",
-        "Performing early case assessment ",
-        "Reviewing claims",
+        "Execution of arbitrator awards",
+        "Filing of an application for interim measures before the courts",
+        "Perform an early case assessment  ",
+        "Review claims",
         "Representation",
       ],
       icon: "/charity-icon.svg",

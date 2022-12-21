@@ -17,27 +17,14 @@ function Qualifications({ qualActiveSlide }) {
         }`}
     >
       <div className="principal">
-        <h2>Principal Attorney</h2>
+        <h2>Getnet Yawkal Mebratu</h2>
         <p>
-        Getnet earned his LL.B degree from Bahir Dar University Faculty of
-            Law in 2008. After his graduation Getnet has worked for various
-            governmental and non-governmental organizations such as the
-            Ethiopian Intellectual Property Authority, Tadesse Kiros Law Office
-            (TKLO), Mesfin Tafesse & Associates (MTA) and taught law courses at
-            different University and University Colleges in Ethiopia.
+        Getnet earned his LL.B degree from Bahir Dar University Faculty of Law in 2008. After his graduation, Getnet has worked for various governmental and non-governmental organizations, such as the Ethiopian Intellectual Property Authority (EIPA), Tadesse Kiros Law Office (TKLO), Mesfin Tafesse & Associates (MTA) and taught law courses at different university and university colleges in Ethiopia.
             <br />
-            <br /> Getnet is one of the top rated lawyers currently practicing
-            in Ethiopia. As a Professional Lawyer, he has dealt with an array of
-            very complicated cases often involving very high profile
-            international and national clients, which paved the way for him to
-            establish himself as a key contact to develop, prepare and review
-            legal documents in accordance with clients’ commercial strategies.{" "}
+            <br /> Getnet is one of the top-rated lawyers currently practicing in Ethiopia. As a professional lawyer, he has dealt with an array of very complicated cases, often involving very high profile international and national clients, which paved the way for him to establish himself as a key contact to develop, prepare, and review legal documents in accordance with clients’ commercial strategies.{" "}
             <br />
             <br />
-            Throughout his career, Getnet has consistently exemplified integrity
-            while maintaining quality and professionalism to provide first-rate
-            legal services in Ethiopia, and his record is one of great
-            responsibility, dedication, and solid achievements. <br />
+            Throughout his career, Getnet has consistently exemplified integrity while maintaining quality and professionalism to provide first-rate legal services in Ethiopia, and his record is one of great responsibility, dedication, and solid achievements. <br />
        
         </p>
       </div>

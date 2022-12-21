@@ -53,17 +53,17 @@ function PrincipalAttroney() {
         <div className="big-text-wrapper">
           <p>
             Getnet earned his LL.B degree from Bahir Dar University Faculty of
-            Law in 2008. After his graduation Getnet has worked for various
-            governmental and non-governmental organizations such as the
-            Ethiopian Intellectual Property Authority(EIPA), Tadesse Kiros Law Office
-            (TKLO), Mesfin Tafesse & Associates (MTA) and taught law courses at
-            different University and University Colleges in Ethiopia.
+            Law in 2008. After his graduation, Getnet has worked for various
+            governmental and non-governmental organizations, such as the
+            Ethiopian Intellectual Property Authority (EIPA), Tadesse Kiros Law
+            Office (TKLO), Mesfin Tafesse & Associates (MTA) and taught law
+            courses at different university and university colleges in Ethiopia.
             <br />
-            <br /> Getnet is one of the top rated lawyers currently practicing
-            in Ethiopia. As a Professional Lawyer, he has dealt with an array of
-            very complicated cases often involving very high profile
+            <br /> Getnet is one of the top-rated lawyers currently practicing
+            in Ethiopia. As a professional lawyer, he has dealt with an array of
+            very complicated cases, often involving very high profile
             international and national clients, which paved the way for him to
-            establish himself as a key contact to develop, prepare and review
+            establish himself as a key contact to develop, prepare, and review
             legal documents in accordance with clients’ commercial strategies.{" "}
             <br />
             <br />
@@ -72,9 +72,10 @@ function PrincipalAttroney() {
             legal services in Ethiopia, and his record is one of great
             responsibility, dedication, and solid achievements. <br />
             <br />
-            Getnet is a very personable, goal-focused and versatile person
-            accustomed to a fast-paced environment where deadlines are a
-            priority and handling multiple jobs simultaneously is a requirement.
+            Getnet is a very personable, process-and goal-oriented, and
+            versatile person accustomed to a fast-paced environment where
+            deadlines are a priority and handling multiple tasks simultaneously
+            is a requirement.
           </p>
         </div>
         <div className="all-quali ">
@@ -108,7 +109,7 @@ function PrincipalAttroney() {
                   Arbitration
                 </p>
                 <p>
-                  Certificate in Court Annexed Mediation, Federal Supreme Court
+                  Certificate in Court-Annexed Mediation, Federal Supreme Court
                   of Ethiopia
                 </p>
               </div>
