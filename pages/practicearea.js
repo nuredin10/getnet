@@ -17,7 +17,7 @@ const PracticeArea = () => {
     {
       title: "Intellectual Properties",
       text: "Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia...",
-      desc: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
+      desc: "Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia. Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
       desc1:
         "Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority (EIPA), Getnet Yawkal Law Office, offers the legal skills and expertise, training, and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your intellectual property in Ethiopia.",
       desc2:
@@ -50,7 +50,7 @@ const PracticeArea = () => {
     {
       title: "Labor & Employment",
       text: "We understand your challenges related to employment and immigration issues and give utmost consideration to each of your cases...",
-      desc: "With the influx of many investors and expatriates into Ethiopia, as well as the passage of various laws governing employee-employer relationships and immigration issues, the demand for top-rated labor and employment lawyers armed with the necessary information, technical knowledge, and eloquence has become an urgent need.",
+      desc: " We understand your challenges related to employment and immigration issues and give utmost consideration to each of your cases. With the influx of many investors and expatriates into Ethiopia, as well as the passage of various laws governing employee-employer relationships and immigration issues, the demand for top-rated labor and employment lawyers armed with the necessary information, technical knowledge, and eloquence has become an urgent need.",
       desc2:
         "Getnet Yawkal Law Office, with extensive experience on labor and employment, and immigration issues, has assisted clients with sound legal advice, superb communication and negotiation skills, and by successfully defending their interests before courts of law. ",
       desc3:
@@ -82,7 +82,7 @@ const PracticeArea = () => {
       title: "Corporate & Finance",
       text: "We provide blue-ribbon corporate and financial legal services and strive to add unmatched value to your business strategies...",
       desc1:
-        "The booming economy, enticing incentive packages, infrastructural developments, an abandoned and inexpensive labor force, and the country's large population are just a few of the many reasons why investors are choosing Ethiopia as their ideal investment destination.",
+        "We provide blue-ribbon corporate and financial legal services and strive to add unmatched value to your business strategies. The booming economy, enticing incentive packages, infrastructural developments, an abandoned and inexpensive labor force, and the country's large population are just a few of the many reasons why investors are choosing Ethiopia as their ideal investment destination.",
       desc2:
         "For years Getnet Yawkal Law Office has helped foreign investors and international law firms by rendering sound legal advises, preparing due diligence reports, processing merger & acquisition of target companies, facilitating licensing and registrations, and preparing various legal documents in accordance with clients’ business strategies. ",
 
@@ -129,14 +129,13 @@ const PracticeArea = () => {
     },
     {
       title: "Charity",
-      text: "We are here to assist you in every step of your journey and keep your interests safe...",
+      text: "The charities and civil societies law is specialized, multi-faceted legislation that requires expertise...",
       desc: "The charities and civil societies law is specialized, multi-faceted legislation that requires expertise.. Whether you want to setup a charitable organization, process its registration, deal with employees, or tackle tax-related issues, Getnet Yawkal Law Office will be there to assist you in every step of your journey.",
       desc1:
         "We help international charitable organizations by rendering sound and updated legal advice and resolving their issues in a way that keeps their interests safe and puts them in the best possible position out there.",
-        desc2:
+      desc2:
         "We understand your challenges and want to help you meet your goals. ",
-        desc3:
-        "We value your time and give utmost consideration to each case.",
+      desc3: "We value your time and give utmost consideration to each case.",
       desc5:
         "Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our practice.",
       services: [
