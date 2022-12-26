@@ -44,7 +44,7 @@ function Header({isDark, isShadow}) {
       <nav className="navbar">
         <a className="logo-wrapper" id="textbox" href="/">
           {/* <h4 className="logo">LOGO</h4> */}
-          <img src={`${isDark ? 'white-logo.svg' : 'logo_new.svg'}`} alt="logo" className="logo"></img>
+          <img src={`${isDark ? 'white-logo.svg' : 'logoshadow.svg'}`} alt="logo" className="logo"></img>
         </a>
         <ul className={`nav-links ${isActive === true ? "nav-active" : ""}`}>
           <div className="links">

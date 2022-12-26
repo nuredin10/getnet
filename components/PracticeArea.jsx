@@ -29,7 +29,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Intellectual Proprieties</h3>
             </div>
             <p>
-            Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia...
+            Providing tailor-made solutions that exceed clients’ expectations intertwined with a swift reply to clients’ request is the bedrock of our IP practice...
             </p>
           </a>
         </div>
@@ -41,7 +41,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Labor & Employment</h3>
             </div>
             <p>
-            We understand your challenges related to employment and immigration issues and give utmost consideration to each of your cases...
+            We understand your challenges related to employment and immigration issues and want to help you meet your goals. We value our clients time and give utmost consideration to each case...
             </p>
           </a>
         </div>
@@ -55,7 +55,7 @@ function PracticeArea({ practiceActiveSlide }) {
             </div>
             <p>
 
-            We provide blue-ribbon corporate and financial legal services and strive to add unmatched value to your business strategies...{" "}
+            We offer excellent corporate and financial legal services and endeavor to add unparalleled value to your business strategies...{" "}
             </p>
           </a>
         </div>
@@ -67,7 +67,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Charity</h3>
             </div>
             <p>
-            The charities and civil societies law is specialized, multi-faceted legislation that requires expertise...
+            Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our practice...
             {" "}
             </p>
           </a>
@@ -81,7 +81,7 @@ function PracticeArea({ practiceActiveSlide }) {
             </div>
             <p>
 
-            We maintain a full-service ADR capability and have the tenacity to address conflict at any stage and see it through...{" "}
+            We maintain a full-service ADR capability and possess a grit mindset to address conflict at any stage and go all the way to the end...{" "}
             </p>
           </a>
         </div>

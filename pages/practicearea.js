@@ -16,7 +16,7 @@ const PracticeArea = () => {
   const practiceContent = [
     {
       title: "Intellectual Properties",
-      text: "Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia…",
+      text: "Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia...",
       desc: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
       desc1:
         "Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority (EIPA), Getnet Yawkal Law Office, offers the legal skills and expertise, training, and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your intellectual property in Ethiopia.",
