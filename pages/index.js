@@ -387,8 +387,7 @@ function Home() {
                     </h1>
                     <p className={p}>
                       Getnet Yawkal Law Office is a leading commercial law
-                      office in Ethiopia providing practical, strategically
-                      sound and result oriented first rate legal services for
+                      office in Ethiopia, providing practical, strategical and process and result-oriented legal services
                       local and international clients.{" "}
                     </p>
                   </div>
@@ -397,7 +396,7 @@ function Home() {
                       We provide top-notch legal services in Ethiopia. <br></br>{" "}
                     </h3>
                     <p className="smallText">
-                      Local Expertise, International Depth, Business Acumen
+                    Local Expertise. International Depth. Business Acumen.
                     </p>
                     {/* <p className={`${p1} showUp`} >We take Integrity, accountability, accessibility and timely delivery of our quality legal services as our core value of establishment. We value our client&apos;'s time and always in exceeding their expectations.</p> */}
                   </div>

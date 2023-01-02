@@ -1,149 +1,170 @@
-@use '../scss/' as *;
+@use "../scss/" as *;
 
-
-.contact-page-wrapper{
-    width: 100%;
-    // border: 1px solid red;
-    background-color: $main-color;
-    background-image: url("/background.svg");
-    margin-top: 12vh;
+.contact-page-wrapper {
+  width: 100%;
+  // border: 1px solid red;
+  background-color: $main-color;
+  background-image: url("/background.svg");
+  margin-top: 12vh;
 }
 
-.contact-page-wrapper .contact-main{
-    padding: 3% 7%;
-    width: 100%;
-    height: auto;
-    // border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    @include mobile{
-        flex-direction: column;
+.contact-page-wrapper .contact-main {
+  padding: 3% 7%;
+  width: 100%;
+  height: auto;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.contact-main .contact-form {
+  // border: 1px solid red;
+  width: 70%;
+  h1 {
+    color: $white-color;
+    font-size: 4vw;
+    @include mobile {
+      font-size: 7vw;
     }
+  }
+  .intstruction {
+    color: $white-color;
+    font-size: 0.8vw;
+    margin-top: -3%;
+    @include mobile {
+      font-size: 3vw;
+    }
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
-.contact-main .contact-form{
-    // border: 1px solid red;
+.contact-form .form p {
+  color: $white-color;
+  font-size: 1.1vw;
+  @include mobile {
+    font-size: 4vw;
+  }
+}
+
+.contact-form .form {
+  margin-top: 5%;
+}
+.contact-form .form input {
+  border: none;
+  border-bottom: 1px solid #7e7979;
+  background-color: $main-color;
+  width: 80%;
+  height: 4vh;
+  // border: 1px solid red;
+  outline: none;
+  color: $white-color;
+  font-size: 1vw;
+  @include mobile {
+    width: 100%;
+    font-size: 3.5vw;
+  }
+}
+.contact-form .form .textArea {
+  height: 10vh;
+}
+.contact-form .submit {
+  margin-top: 5%;
+  width: 13vw;
+  height: 4vh;
+  float: right;
+  margin-right: 20%;
+  border-radius: 10px;
+  border: none;
+  color: $main-color;
+  font-size: 1.3vw;
+  cursor: pointer;
+  @include mobile {
+    width: 40vw;
+    margin-right: 0%;
+    height: 5vh;
+    font-size: 4.5vw;
+  }
+}
+
+.contact-main .contact-address {
+  // border: 1px solid red;
+  width: 20%;
+  height: 40%;
+  margin-top: 15%;
+  @include mobile {
     width: 70%;
-    h1{
-        color: $white-color;
-        font-size: 4vw;
-        @include mobile{
-            font-size: 7vw;
-        }
-    }
-    .intstruction{
-        color: $white-color;
-        font-size: 0.8vw;
-        margin-top: -3%;
-        @include mobile{
-            font-size: 3vw;
-        }
-    }
-    @include mobile{
-        width: 100%;
-    }
+  }
 }
-
-.contact-form .form p{
+.contact-main .contact-address .single {
+  // border: 1px solid red;
+  // margin-top: 5%;
+  margin-bottom: 10%;
+  border-top: 2px solid $white-color;
+  p {
+    margin-top: 3%;
     color: $white-color;
-    font-size: 1.1vw;
-    @include mobile{
-        font-size: 4vw;
-    }
-}
-
-.contact-form .form{
-    margin-top: 5%;
-}
-.contact-form .form input{
-    border: none;
-    border-bottom: 1px solid #7e7979;
-    background-color: $main-color;
-    width: 80%;
-    height: 4vh;
+  }
+  a {
+    color: $light-color;
+  }
+  .social-media {
     // border: 1px solid red;
-    outline: none;
-    color: $white-color;
-    font-size: 1vw;
-    @include mobile{
-        width: 100%;
-        font-size: 3.5vw;
+    @include mobile {
+      display: block;
+      width: 15vw;
+      display: flex;
+      margin-left: -1.5vw;
     }
+    svg {
+      margin-top: 2vh;
+      // margin-left: -4vw;
+      color: $light-color;
+      border-radius: 2vw;
+      @include mobile {
+        // margin-left: -2vw;
+        font-size: 5vw;
+      }
+    }
+  }
 }
-.contact-form .form .textArea{
-    height: 10vh;
-}
-.contact-form .submit{
-    margin-top: 5%;
-    width: 13vw;
-    height: 4vh;
-    float: right;
-    margin-right: 20%;
-    border-radius: 10px;
-    border: none;
-    color: $main-color;
-    font-size: 1.3vw;
-    cursor: pointer;
-    @include mobile{
-        width: 40vw;
-        margin-right: 0%;
-        height: 5vh;
-        font-size: 4.5vw;
-    }
-}
-
-.contact-main .contact-address{
-    // border: 1px solid red;
-    width: 20%;
-    height: 40%;
-    margin-top: 15%;
-    @include mobile{
-        width: 70%;
-    }
-}
-.contact-main .contact-address .single{
-    // border: 1px solid red;
-    // margin-top: 5%;
-    margin-bottom: 10%;
-    border-top: 2px solid $white-color;
-    p{
-        margin-top: 3%;
-        color: $white-color;
-    }
-    a{
-        color: $light-color;
-    }
-    .social-media{
-        // border: 1px solid red;
-        @include mobile{
-            display: block;
-            width: 15vw;
-            display: flex;
-            margin-left: -1.5vw;
-        }
-        svg{
-            margin-top: 2vh;
-            // margin-left: -4vw;
-            color: $light-color;
-            border-radius: 2vw;
-            @include mobile{
-                // margin-left: -2vw;
-                font-size: 5vw;
-            }
-          }
-    }
-    
-}
-
-.map-section{
+.map-responsive1 {
+  overflow: hidden !important;
+  padding-bottom: 64.25%;
+  margin-bottom: -25vw;
+  position: relative;
+  @include mobile {
+    padding-bottom: 66.25%;
+  }
+  iframe {
+    left: 0;
+    top: 0;
+    height: 55%;
     width: 100%;
-
-    height: 70vh;
-    // margin-top: 7%;
-    // margin-bottom: 4vw;
-    @include mobile{
-        // margin-top: 10%;
-        height: 40vh;
-        // height: 40vh;
+    @include mobile {
+      height: 100%;
     }
+    object-fit: cover;
+    position: absolute;
+    // @include desktop{
+    //   height: 60%;
+
+    // }
+  }
 }
+// .map-section {
+//   width: 100%;
+//   height: 70vh;
+
+//   // margin-top: 7%;
+//   // margin-bottom: 4vw;
+//   @include mobile {
+//     // margin-top: 10%;
+//     height: 40vh;
+//     // height: 40vh;
+//   }
+// }

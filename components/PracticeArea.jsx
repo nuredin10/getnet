@@ -26,7 +26,7 @@ function PracticeArea({ practiceActiveSlide }) {
             <div className="title">
               <img src={"/intellectual-icon.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
-              <h3>Intellectual Proprieties</h3>
+              <h3>Intellectual Property</h3>
             </div>
             <p>
             Providing tailor-made solutions that exceed clients’ expectations intertwined with a swift reply to clients’ request is the bedrock of our IP practice...

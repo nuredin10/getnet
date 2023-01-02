@@ -46,7 +46,7 @@ function PrincipalAttroney() {
           </div>
         </div>
         <div className="principal-bottom-block">
-          <p>Local Expertise, International Depth, Business Acumen</p>
+          <p>LOCAL EXPERTISE. INTERNATIONAL DEPTH. BUSINESS ACUMEN</p>
         </div>
       </div>
       <div className="principal-text-wrapper">
@@ -59,8 +59,9 @@ function PrincipalAttroney() {
             Office (TKLO), Mesfin Tafesse & Associates (MTA) and taught law
             courses at different university and university colleges in Ethiopia.
             <br />
-            <br /> Getnet is one of the top-rated lawyers currently practicing
-            in Ethiopia. As a professional lawyer, he has dealt with an array of
+            <br />
+            Getnet is one of the top-rated lawyers currently practicing in
+            Ethiopia. As a professional lawyer, he has dealt with an array of
             very complicated cases, often involving very high profile
             international and national clients, which paved the way for him to
             establish himself as a key contact to develop, prepare, and review
@@ -94,7 +95,7 @@ function PrincipalAttroney() {
                 <p>LL.B degree, Bahir Dar University Faculty of Law</p>
                 <p>
                   Certificate in IP Law, World Intellectual Property
-                  Organization(WIPO)
+                  Organization (WIPO)
                 </p>
                 <p>
                   Certificate in IP Law, WIPO, Japan Patent Office (JPO) and
@@ -122,8 +123,14 @@ function PrincipalAttroney() {
                   src={"Ethiopian-Lawyers-Association.jpg"}
                   alt=""
                 ></img>
+
+<img
+                  className="pra-img"
+                  src={"f1.jpg"}
+                  alt=""
+                ></img>
                 {/* <p>Ethiopian Lawyers’ Association</p> */}
-                <p>Ethiopian Federal Advocates’ Association</p>
+                {/* <p>Ethiopian Federal Advocates’ Association</p> */}
               </div>
             </div>
           </div>

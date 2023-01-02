@@ -205,12 +205,20 @@
 }
 .principal-qualification,
 .principal-membership {
+  // display: grid;
+  // place-content: center;
   padding: 1% 5%;
   .pra-img {
-    width: 12vw;
+    width: 20vw;
+    height: 12vw;
+    object-fit: cover;
+    margin-right: 2vw;
     margin-bottom: 2rem;
     @include mobile {
-      width: 32vw;
+      width: 60vw;
+      height: 42vw;
+      object-fit: cover;
+      margin-right: 2vw;
     }
   }
 }

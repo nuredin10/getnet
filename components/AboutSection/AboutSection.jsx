@@ -19,7 +19,7 @@ function AboutSection({ aboutActiveSlide }) {
         <h3>Who We Are</h3>
         <div className="about-main">
           <p>
-          Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategic, and process-and  result-oriented legal services to local and international clients.<br /><br />
+          Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategic, and process-and  result-oriented legal services to local and international clients. <br /><br />
             
             <span className="highlight">
             We take integrity, accountability, accessibility, and timely delivery of our quality legal services as the core values of our establishment. 

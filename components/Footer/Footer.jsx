@@ -31,7 +31,7 @@ function Footer() {
         <div className="middle-links border-top">
           <h3>Practice Area</h3>
           <div className="links">
-            <a href="practicearea">Intellectual Proprieties </a>
+            <a href="practicearea">Intellectual Property </a>
             <a href="practicearea">Labor & Employment</a>
             <a href="practicearea">Corporate & Finance </a>
             <a href="practicearea">Charity </a>
@@ -84,8 +84,7 @@ function Footer() {
       </div>
       <div className="footer-credit">
         <p>
-          All Rights Reserved &copy; 
-          2022{" "}
+        All Rights Reserved @ 2023 Getnet Yawkal Law Office{" "}
         </p>
         <p>Web Design & Development by Versavvy Media PLC</p>
       </div>
