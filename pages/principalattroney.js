@@ -21,7 +21,7 @@ function PrincipalAttroney() {
   return (
     <div className="principal-wrapper">
       <Head>
-        <title>Getnet Law Office | Principal Attorney</title>
+        <title>Getnet Yawkal Law Office | Principal Attorney</title>
       </Head>
       <Header isDark={false} isShadow={isShadow}></Header>
       <div className="principal-main">

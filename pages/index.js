@@ -257,7 +257,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Getnet Law Office</title>
+        <title>Getnet Yawkal Law Office</title>
       </Head>
       <div className="main-wrapper">
         {/* <h1>{count}</h1> */}

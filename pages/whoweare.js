@@ -23,7 +23,7 @@ const WhoWeAre = () => {
   return (
     <div className="about-wrapper">
       <Head>
-        <title>Getnet Law Office | Who We Are</title>
+        <title>Getnet Yawkal Law Office| Who We Are</title>
       </Head>
       <Header isDark={false} isShadow={isShadow}></Header>
       <div className="about-main1">

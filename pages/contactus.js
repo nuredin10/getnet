@@ -28,7 +28,7 @@ function Contactus() {
   return (
     <div className="contact-page-wrapper">
       <Head>
-        <title>Getnet Law Office | Contact Us</title>
+        <title>Getnet Yawkal Law Office | Contact Us</title>
       </Head>
       <Header isDark={isDark} isBurgerDark={isBurgerDark}></Header>
       <div className="contact-main">
