@@ -84,7 +84,7 @@ function Footer() {
       </div>
       <div className="footer-credit">
         <p>
-        All Rights Reserved @ 2023 Getnet Yawkal Law Office{" "}
+        All Rights Reserved &copy; 2023 Getnet Yawkal Law Office{" "}
         </p>
         <p>Web Design & Development by Versavvy Media PLC</p>
       </div>

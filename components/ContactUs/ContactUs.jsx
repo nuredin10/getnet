@@ -70,7 +70,7 @@ function ContactUs({ contactActiveSlide }) {
         </div>
       </div>
       <div className="footer">
-        <p>All Rights Reserved @ 2023 Getnet Yawkal Law Office </p>
+        <p>All Rights Reserved &copy; 2023 Getnet Yawkal Law Office </p>
         <p>Web Design & Development by Versavvy Media PLC</p>
       </div>
     </div>
