@@ -47,7 +47,7 @@ const WhoWeAre = () => {
           </p>
         </div>
         <div className="image-wrapper">
-          <img className="who-we-are-image2" src={"logo_new.svg"} alt=""></img>
+          <img className="who-we-are-image2" src={"logoshadow.svg"} alt=""></img>
         </div>
       </div>
       <div className="next-page-links">

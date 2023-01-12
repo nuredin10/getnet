@@ -387,8 +387,8 @@ function Home() {
                     </h1>
                     <p className={p}>
                       Getnet Yawkal Law Office is a leading commercial law
-                      office in Ethiopia, providing practical, strategical and process and result-oriented legal services
-                      local and international clients.{" "}
+                      office in Ethiopia, providing practical, strategical and process- and result-oriented legal services
+                     to local and international clients.{" "}
                     </p>
                   </div>
                   <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
