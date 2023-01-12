@@ -29,7 +29,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Intellectual Property</h3>
             </div>
             <p>
-            Providing tailor-made solutions that exceed clients’ expectations intertwined with a swift reply to clients’ request is the bedrock of our IP practice...
+            Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia...
             </p>
           </a>
         </div>
@@ -41,7 +41,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Labor & Employment</h3>
             </div>
             <p>
-            We understand your challenges related to employment and immigration issues and want to help you meet your goals. We value our clients time and give utmost consideration to each case...
+            We understand your challenges related to employment and immigration issues and give utmost consideration to each of your cases...
             </p>
           </a>
         </div>
@@ -67,7 +67,7 @@ function PracticeArea({ practiceActiveSlide }) {
               <h3>Charity</h3>
             </div>
             <p>
-            Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our practice...
+            Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our legal practice...
             {" "}
             </p>
           </a>

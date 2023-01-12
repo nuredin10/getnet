@@ -15,9 +15,9 @@ const PracticeArea = () => {
 
   const practiceContent = [
     {
-      title: "Intellectual Proprty",
-      text: "Getnet Yawkal Law Office provides top-notch intellectual property services covering the entire spectrum of IP rights in Ethiopia...",
-      desc: " Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia",
+      title: "Intellectual Property",
+      text: "Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia...",
+      desc: " Getnet Yawkal Law Office provides blue-ribbon Intellectual Property services covering the entire spectrum of IP rights in Ethiopia.",
       desc1:
         "Founded by the former Trademark and Industrial Design Examiner of the Ethiopian Intellectual Property Authority (EIPA), Getnet Yawkal Law Office, offers the legal skills and expertise, training, and hands-on EIPA experience of its principal attorney to assist you in registering and protecting your intellectual property in Ethiopia.",
       desc2:
@@ -35,9 +35,9 @@ const PracticeArea = () => {
         "Filing trademark, patent, industrial design, and utility model applications, including claiming priority rights",
         "Amending applications and/or registrations",
         "Filing and processing licensing and/or assignment of rights",
-        "Negotiating, vetting, or drafting license assignment or franchise agreements",
+        "Negotiating, vetting, or drafting license, assignment or franchise agreements",
         "Representing clients before the EIPA tribunal and/or competent federal courts",
-        "Handling prosecution, maintenance, and enforcement of active registrations.",
+        "Handling prosecution, maintenance, and enforcement of active registrations",
         "Handling cancellation and/or invalidation cases",
         "Handling infringement cases",
         "Reply to office actions or oppositions",
@@ -80,7 +80,7 @@ const PracticeArea = () => {
     },
     {
       title: "Corporate & Finance",
-      text: "We provide blue-ribbon corporate and financial legal services and strive to add unmatched value to your business strategies...",
+      text: "We offer excellent corporate and financial legal services and endeavor to add unparalleled value to your business strategies...",
       desc1:
         "The booming economy, enticing incentive packages, infrastructural developments, an abandoned and inexpensive labor force, and the country's large population are just a few of the many reasons why investors are choosing Ethiopia as their ideal investment destination.",
       desc2:
@@ -130,7 +130,7 @@ const PracticeArea = () => {
     },
     {
       title: "Charity",
-      text: "We understand your challenges and want to help you meet your goals...",
+      text: "Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our legal practice...",
       desc: "The charities and civil societies law is specialized, multi-faceted legislation that requires expertise. Whether you want to setup a charitable organization, process its registration, deal with employees, or tackle tax-related issues, Getnet Yawkal Law Office will be there to assist you in every step of your journey.",
       desc1:
         "We help international charitable organizations by rendering sound and updated legal advice and resolving their issues in a way that keeps their interests safe and puts them in the best possible position out there.",
@@ -138,7 +138,7 @@ const PracticeArea = () => {
         "We understand your challenges and want to help you meet your goals. ",
       desc3: "We value your time and give utmost consideration to each case.",
       desc5:
-        "Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our practice.",
+        "Providing tailor-made solutions that exceed clients’ expectations, intertwined with a swift reply to their requests, is the foundation of our legal  practice.",
       services: [
         "Assisting in incorporating charitable organizations",
         "Advising on the legal and regulatory framework",
@@ -155,7 +155,7 @@ const PracticeArea = () => {
     },
     {
       title: "Alternative Dispute Resolution  (ADR)",
-      text: "We maintain a full-service ADR capability and have the tenacity to address conflict at any stage and see it through...",
+      text: "We maintain a full-service ADR capability and possess a grit mindset to address conflict at any stage and go all the way to the end...",
       desc: "Getnet Yawkal Law Office assists clients by providing expert reports on domestic laws and sound and refined legal advice on Ethiopian arbitration laws, including but not limited to, new treaties signed and other existing laws that substantially affect the process of litigation and enforcement of awards.  ",
       desc1:
         "We prepare and vet commercial documents in line with the relevant laws related to dispute settlement and represent clients to safeguard their interests before arbitration tribunals. We are also known to assist clients by providing expert reports on domestic laws.",
