@@ -258,7 +258,22 @@ function Home() {
     <>
       <Head>
         <title>Getnet Yawkal Law Office</title>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta name="description" content=" Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategical and process- and result-oriented legal services to local and international clients."
+        ></meta>
+        <meta property="og:title" content="Getnet Yawkal Law Office" />
+        <meta property="og:site_name" content="Getnet Yawkal" />
+
+        <meta property="og:url" content="https://getnetyawkal.com/" />
+        <meta property="og:site_name" content="Getnet Yawkal" />
+        <meta
+          name="keywords"
+          content="Getnet Yawkal,Top law firm in Ethiopia,The best law firm in Ethiopia,leading commercial law office in Ethiopia,leading commercial law firm in Ethiopia,leading commercial law firm in Addis Ababa,leading corporate law firm in Ethiopia,Leading commercial attorneys in Ethiopia,Legal advisor in Ethiopia,Legal Consultation in Ethiopia,Consultant in Ethiopia,Legal advice in Ethiopia,Best legal assistance in Ethiopia,Contract drafting in Ethiopia,Document review in Ethiopia,Commercial law assistance in Ethiopia,Legal assistance in Ethiopia,Legal services in Ethiopia,The best attorney in Ethiopia,lawyer in Ethiopia,Legal practice in Ethiopia,law firm in Ethiopia,law practice in Ethiopia,The law in Ethiopia"
+        />
+        <meta property="og:site_name" content="Getnet Yawkal" />
       </Head>
+
       <div className="main-wrapper">
         {/* <h1>{count}</h1> */}
         <div className="container">
@@ -387,8 +402,9 @@ function Home() {
                     </h1>
                     <p className={p}>
                       Getnet Yawkal Law Office is a leading commercial law
-                      office in Ethiopia, providing practical, strategical and process- and result-oriented legal services
-                     to local and international clients.{" "}
+                      office in Ethiopia, providing practical, strategical and
+                      process- and result-oriented legal services to local and
+                      international clients.{" "}
                     </p>
                   </div>
                   <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
@@ -396,7 +412,7 @@ function Home() {
                       We provide top-notch legal services in Ethiopia. <br></br>{" "}
                     </h3>
                     <p className="smallText">
-                    Local Expertise. International Depth. Business Acumen.
+                      Local Expertise. International Depth. Business Acumen.
                     </p>
                     {/* <p className={`${p1} showUp`} >We take Integrity, accountability, accessibility and timely delivery of our quality legal services as our core value of establishment. We value our client&apos;'s time and always in exceeding their expectations.</p> */}
                   </div>

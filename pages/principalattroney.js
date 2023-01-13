@@ -22,6 +22,22 @@ function PrincipalAttroney() {
     <div className="principal-wrapper">
       <Head>
         <title>Getnet Yawkal Law Office | Principal Attorney</title>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          name="description"
+          content=" Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategical and process- and result-oriented legal services to local and international clients."
+        ></meta>
+        <meta property="og:title" content="Getnet Yawkal Law Office" />
+        <meta property="og:site_name" content="Getnet Yawkal" />
+
+        <meta property="og:url" content="https://getnetyawkal.com/" />
+        <meta property="og:site_name" content="Getnet Yawkal" />
+        <meta
+          name="keywords"
+          content="Advising on legal issues in Ethiopia,Legal aid in Ethiopia,Litigation in Ethiopia,Ethiopian Courts,Enforcement in Ethiopia,Representation in Ethiopia,Negotiating in Ethiopia,Commercial lawyer near me,Lawyer near me,Attorney at law in Ethiopia,Legal aid online,Solicitor in Ethiopia,Solicitor office in Ethiopia,Barrister in Ethiopia,Barrister office in Ethiopia,Legal counsel in Ethiopia,Counsel in Addis Ababa,Counsel in Ethiopia,Legal help in Ethiopia,Civil attorney in Ethiopia,Federal attorney in Ethiopia "
+        />
+        <meta property="og:site_name" content="Getnet Yawkal" />
       </Head>
       <Header isDark={false} isShadow={isShadow}></Header>
       <div className="principal-main">
@@ -124,11 +140,7 @@ function PrincipalAttroney() {
                   alt=""
                 ></img>
 
-<img
-                  className="pra-img"
-                  src={"f1.jpg"}
-                  alt=""
-                ></img>
+                <img className="pra-img" src={"f1.jpg"} alt=""></img>
                 {/* <p>Ethiopian Lawyers’ Association</p> */}
                 {/* <p>Ethiopian Federal Advocates’ Association</p> */}
               </div>
