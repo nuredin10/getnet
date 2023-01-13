@@ -212,7 +212,7 @@ const PracticeArea = () => {
         <meta property="og:site_name" content="Getnet Yawkal" />
 
         <meta property="og:url" content="https://getnetyawkal.com/" />
-        <meta property="og:site_name" content="Getnet Yawkal" />
+        <meta property="og:site_name" content="Getnet Yawkal Law Office" />
         <meta
           name="keywords"
           content="Legal firm in Ethiopia,Websites of law firms in Ethiopia,Affordable lawyers in Ethiopia,Affordable legal services in Ethiopia,Attorney legal service in Ethiopia,Find a lawyer in Ethiopia,Find a lawyer in Addis Ababa,International law firm in Ethiopia,Ethiopian Investment Commission,Investment incentives in Ethiopia,Ethiopian,Investment Legal Regime,National Bank of  Ethiopia,Business law in Ethiopia,The best business lawyers in Ethiopia,Top business lawyers in Ethiopia,Business attorney in Ethiopia,contract lawyer in Ethiopia,Legal Due Diligence in Ethiopia,Due-diligence preparation in Ethiopia
