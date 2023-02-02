@@ -31,11 +31,11 @@ function Footer() {
         <div className="middle-links border-top">
           <h3>Practice Area</h3>
           <div className="links">
-            <a href="practicearea">Intellectual Property </a>
-            <a href="practicearea">Labor & Employment</a>
-            <a href="practicearea">Corporate & Finance </a>
-            <a href="practicearea">Charity </a>
-            <a href="practicearea">Alternative Dispute Resolution (ADR)</a>
+            <a href="IP">Intellectual Property </a>
+            <a href="labor">Labor & Employment</a>
+            <a href="corporate">Corporate & Finance </a>
+            <a href="charity">Charity </a>
+            <a href="ADR">Alternative Dispute Resolution (ADR)</a>
           </div>
         </div>
         <div className="footer-info-wrapper">

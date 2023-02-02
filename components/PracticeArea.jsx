@@ -22,7 +22,7 @@ function PracticeArea({ practiceActiveSlide }) {
       <h2 className="practice-title">Practice Area</h2>
       <div className="practice-wrapper">
         <div className="practice">
-          <a href="/practicearea" >
+          <a href="/IP" >
             <div className="title">
               <img src={"/intellectual-icon.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
@@ -34,7 +34,7 @@ function PracticeArea({ practiceActiveSlide }) {
           </a>
         </div>
         <div className="practice">
-          <a href="/practicearea" >
+          <a href="/labor" >
             <div className="title">
               <img src={"/labor-icon.svg"} className="icon" alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
@@ -47,7 +47,7 @@ function PracticeArea({ practiceActiveSlide }) {
         </div>
      
         <div className="practice">
-          <a href="/practicearea" >
+          <a href="/corporate" >
             <div className="title">
               <img src={"corporate.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
@@ -60,7 +60,7 @@ function PracticeArea({ practiceActiveSlide }) {
           </a>
         </div>
         <div className="practice">
-          <a href="/practicearea" >
+          <a href="/charity" >
             <div className="title">
               <img src={"/adr.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
@@ -73,7 +73,7 @@ function PracticeArea({ practiceActiveSlide }) {
           </a>
         </div>
         <div className="practice">
-          <a href="/practicearea" >
+          <a href="/ADR" >
             <div className="title">
               <img src={"/charity-icon.svg"} alt=""></img>
               {/* <AiFillFacebook className="icon" /> */}
