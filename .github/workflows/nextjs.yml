@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-        
+
       - name: Cache npm dependencies
         uses: actions/cache@v2
         id: cache-node-modules
@@ -29,16 +29,12 @@ jobs:
           git reset --
       - name: Build Project
         run: npm run build-static
-        
+
       - name: 📂 Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          # server: ${{ secrets.CPANEL_HOST }}
-          # local-dir: 'out/'
-          # username: ${{ secrets.CPANEL_USERNAME }}
-          # password: ${{ secrets.CPANEL_PASSWORD }}
-         
-         server: 'ftp.getnetyawkal.com'
-          local-dir: 'out/'
-          username: 'Admin@getnetyawkal.com'
-          password: 'YBI1N3;rp;pe'
+          server: ${{ secrets.CPANEL_HOST }}iegk-(#LhVNE
+          FTP Username: info@getnetyawkal.com
+          FTP server: ftp.getnetyawkal.co
+          username: ${{ secrets.CPANEL_USERNAME }}
+          password: ${{ secrets.CPANEL_PASSWORD }}

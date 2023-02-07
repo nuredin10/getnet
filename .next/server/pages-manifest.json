@@ -2,16 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/ADR": "pages/ADR.html",
-  "/IP": "pages/IP.html",
-  "/api/hello": "pages/api/hello.js",
-  "/charity": "pages/charity.html",
-  "/contactus": "pages/contactus.html",
-  "/corporate": "pages/corporate.html",
-  "/": "pages/index.html",
-  "/labor": "pages/labor.html",
-  "/practicearea": "pages/practicearea.html",
-  "/principalattroney": "pages/principalattroney.html",
-  "/whoweare": "pages/whoweare.html",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }
