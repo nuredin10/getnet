@@ -37,3 +37,5 @@ jobs:
           # local-dir: .next/
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
+          local-dir: 'out/'
+          
