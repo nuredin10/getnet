@@ -48,10 +48,10 @@ function Home() {
   const [slideUp, setSlideUp] = useState(false);
 
   const images = {
-    image1: "/front-image1.JPG",
-    images2: "/front-image2.JPG",
-    images3: "/front-image3.JPG",
-    images4: "/front-image4.JPG",
+    image1: "/front-image1.jpg",
+    images2: "/front-image2.jpg",
+    images3: "/front-image3.jpg",
+    images4: "/front-image4.jpg",
     images5: "/front-image5.JPG",
   };
 
