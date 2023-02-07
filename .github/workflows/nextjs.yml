@@ -34,7 +34,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.CPANEL_HOST }}iegk-(#LhVNE
-          FTP Username: info@getnetyawkal.com
-          FTP server: ftp.getnetyawkal.co
+          # FTP Username: info@getnetyawkal.com
+          # FTP server: ftp.getnetyawkal.co
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
