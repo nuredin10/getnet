@@ -28,7 +28,7 @@ jobs:
           npm install
           git reset --
       - name: Build Project
-        run: npm run build
+        run: npm run build-static
         
       - name: 📂 Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
