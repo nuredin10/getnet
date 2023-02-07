@@ -225,32 +225,7 @@ function Home() {
     );
   }, [count]);
 
-  // window.addEventListener("wheel", (e) => {
 
-  //   // console.log(e.wheelDeltaY)
-  //   if (window.scrollY > 1000) {
-  //     setCount(count => ++count)
-  //     window.scrollTo(0, 0)
-  //   }
-  // }, true)
-
-  // window.addEventListener("wheel", event => console.info(event.offsetX));
-
-  // const [isScrolling, setIsScrolling] = useState(false);
-
-  // const onScroll = () => {
-  //   const timeout = null;
-  //   clearTimeout(timeout);
-
-  //   if (!isScrolling) {
-  //     setIsScrolling(true);
-  //     setCount(cout=>++count);
-  //   }
-
-  //   timeout = setTimeout(() => {
-  //     setIsScrolling(false)
-  //   }, 200);
-  // };
   const [isWhiteColor, setIsWhiteColor] = useState(true);
   const [verticalTimeline, setVerticalTimeline] = useState(false);
   const [headerDark, setHeaderDark] = useState(false);
