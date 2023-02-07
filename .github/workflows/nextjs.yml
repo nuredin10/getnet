@@ -33,9 +33,12 @@ jobs:
       - name: 📂 Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ${{ secrets.CPANEL_HOST }}
-          # local-dir: .next/
-          username: ${{ secrets.CPANEL_USERNAME }}
-          password: ${{ secrets.CPANEL_PASSWORD }}
+          # server: ${{ secrets.CPANEL_HOST }}
+          # local-dir: 'out/'
+          # username: ${{ secrets.CPANEL_USERNAME }}
+          # password: ${{ secrets.CPANEL_PASSWORD }}
+         
+         server: 'ftp.getnetyawkal.com'
           local-dir: 'out/'
-          
+          username: 'Admin@getnetyawkal.com'
+          password: 'YBI1N3;rp;pe'
