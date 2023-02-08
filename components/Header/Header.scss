@@ -53,18 +53,18 @@ a {
   text-transform: uppercase;
   letter-spacing: 5px;
   width: 100%;
-  animation: jitter 1s infinite;
+  animation: jitter 2s infinite;
   position: relative;
   // animation: headShake 0.5s linear 1s infinite alternate;
   // border: 1px solid blue;
   @keyframes jitter {
     from {
-      left: -2px;
-      top: 0px;
+     bottom: -2px;
+     left: 0px;
     }
     to {
-      left: 2px;
-      top: 0px;
+      left: 0px;
+     bottom: 2px;
     }
   }
 
