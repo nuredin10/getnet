@@ -182,7 +182,7 @@ const PracticeArea = () => {
           </div>
         </div>
       </div>
-      <Footer></Footer>
+
     </div>
   );
 };
