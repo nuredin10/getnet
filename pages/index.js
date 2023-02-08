@@ -51,8 +51,8 @@ function Home() {
     image1: "/front-image1.jpg",
     images2: "/front-image2.jpg",
     images3: "/front-image3.jpg",
-    images4: "/front-image4.jpg",
-    images5: "/front-image5.JPG",
+    images4: "/front-image4.JPG",
+
   };
 
   const mouseEnter = () => {
@@ -361,7 +361,7 @@ function Home() {
                   ></div>
                   <div
                     className={`${slide4} hide img`}
-                    style={{ backgroundImage: "url(" + images.images5 + ")" }}
+                    style={{ backgroundImage: "url(" + images.images1 + ")" }}
                   ></div>
                 </div>
                 <div className="titles">
