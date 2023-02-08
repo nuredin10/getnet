@@ -77,7 +77,6 @@ function Contactus() {
               <input type="text" name="Address"></input>
               <p>Write Message</p>
               <input className="textArea" type="TextArea" name="Message">
-                {" "}
               </input>
             </div>
             <input className="submit" type="submit" text="Submit"></input>
