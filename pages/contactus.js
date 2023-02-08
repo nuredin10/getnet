@@ -62,19 +62,26 @@ function Contactus() {
           <p className="intstruction">
             Fill out the form below inorder to reach out to us
           </p>
-          <div className="form">
-            <p>First Name</p>
-            <input type="text"></input>
-            <p>Phone Number</p>
-            <input type="text"></input>
-            <p>Email Address</p>
-            <input type="text"></input>
-            <p>City/Address</p>
-            <input type="text"></input>
-            <p>Write Message</p>
-            <input className="textArea" type="TextArea"></input>
-          </div>
-          <input className="submit" type="submit" text="Submit"></input>
+          <form
+            action="https://formsubmit.co/getnety@getnetyawkal.com"
+            method="POST"
+          >
+            <div className="form">
+              <p>First Name</p>
+              <input type="text" name="Name"></input>
+              <p>Phone Number</p>
+              <input type="text" name="Phone Number"></input>
+              <p>Email Address</p>
+              <input type="text" name="Email"></input>
+              <p>City/Address</p>
+              <input type="text" name="Address"></input>
+              <p>Write Message</p>
+              <input className="textArea" type="TextArea" name="Message">
+                {" "}
+              </input>
+            </div>
+            <input className="submit" type="submit" text="Submit"></input>
+          </form>
         </div>
         <div className="contact-address">
           <div className="single">
