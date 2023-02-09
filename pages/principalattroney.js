@@ -62,7 +62,7 @@ function PrincipalAttroney() {
           </div>
         </div>
         <div className="principal-bottom-block">
-          <p>LOCAL EXPERTISE. INTERNATIONAL DEPTH. BUSINESS ACUMEN</p>
+          <p>LOCAL EXPERTISE. INTERNATIONAL DEPTH. BUSINESS ACUMEN.</p>
         </div>
       </div>
       <div className="principal-text-wrapper">

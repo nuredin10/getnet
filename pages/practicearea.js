@@ -201,7 +201,7 @@ const PracticeArea = () => {
   return (
     <div className="practice-page">
       <Head>
-        <title>Getnet Law Office | Practice Area</title>
+        <title>Getnet Yawkal Law Office | Practice Area</title>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta

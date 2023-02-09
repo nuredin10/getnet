@@ -232,7 +232,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Getnet Yawkal Law Office</title>
+        <title>Getnet Yawkal Law Office </title>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta name="description" content=" Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategical and process- and result-oriented legal services to local and international clients."
