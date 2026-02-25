@@ -1,241 +1,241 @@
-import React, { useState, useEffect } from "react";
-import { gsap } from "gsap";
-import Header from "../components/Header/Header";
-import Head from "next/head";
-import AboutSection from "../components/AboutSection/AboutSection";
+import React, { useState, useEffect } from "react"
+import { gsap } from "gsap"
+import Header from "../components/Header/Header"
+import Head from "next/head"
+import AboutSection from "../components/AboutSection/AboutSection"
 // import { width } from '@mui/system';
 // import About from './About/About';
-import Qualifications from "../components/Qualification/Qualifications";
-import { func } from "prop-types";
-import PracticeArea from "../components/PracticeArea";
-import ContactUs from "../components/ContactUs/ContactUs";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import Qualifications from "../components/Qualification/Qualifications"
+import { func } from "prop-types"
+import PracticeArea from "../components/PracticeArea"
+import ContactUs from "../components/ContactUs/ContactUs"
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward"
 // import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { SettingsAccessibilityOutlined } from "@mui/icons-material";
+import { SettingsAccessibilityOutlined } from "@mui/icons-material"
 // import "react-vertical-timeline-component/style.min.css";
 // import 'rsuite/dist/styles/rsuite-default.css';
 // import 'rsuite/dist/styles/rsuite-default.css';
-import "rsuite/dist/rsuite.min.css";
+import "rsuite/dist/rsuite.min.css"
 
-import { Timeline } from "rsuite";
+import { Timeline } from "rsuite"
 
 function Home() {
-  var scrollCounter = 0;
+  var scrollCounter = 0
 
-  const [slide1, setSlide1] = useState("");
-  const [slide2, setSlide2] = useState("");
-  const [slide3, setSlide3] = useState("");
-  const [slide4, setSlide4] = useState("");
-  const [h1, setH1] = useState("normalH1");
-  const [p, setP] = useState("hideP");
-  const [h3, setH3] = useState("normalH3");
-  const [p1, setP1] = useState("hideP");
-  const [h12, setH12] = useState("normalH1");
-  const [p2, setP2] = useState("hideP");
-  const [block, setBlock] = useState("");
-  const [block1, setBlock1] = useState("");
-  const [block2, setBlock2] = useState("");
-  const [block3, setBlock3] = useState("");
+  const [slide1, setSlide1] = useState("")
+  const [slide2, setSlide2] = useState("")
+  const [slide3, setSlide3] = useState("")
+  const [slide4, setSlide4] = useState("")
+  const [h1, setH1] = useState("normalH1")
+  const [p, setP] = useState("hideP")
+  const [h3, setH3] = useState("normalH3")
+  const [p1, setP1] = useState("hideP")
+  const [h12, setH12] = useState("normalH1")
+  const [p2, setP2] = useState("hideP")
+  const [block, setBlock] = useState("")
+  const [block1, setBlock1] = useState("")
+  const [block2, setBlock2] = useState("")
+  const [block3, setBlock3] = useState("")
 
-  const [aboutActiveSlide, setAboutActiveSlide] = useState(false);
-  const [qualActiveSlide, setqualActiveSlide] = useState(false);
-  const [practiceActiveSlide, setPracticeActiveSlide] = useState(false);
-  const [contactActiveSlide, setContactActiveSlide] = useState(false);
+  const [aboutActiveSlide, setAboutActiveSlide] = useState(false)
+  const [qualActiveSlide, setqualActiveSlide] = useState(false)
+  const [practiceActiveSlide, setPracticeActiveSlide] = useState(false)
+  const [contactActiveSlide, setContactActiveSlide] = useState(false)
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
-  const [homeVisible, setHomeVisible] = useState(true);
-  const [slideUp, setSlideUp] = useState(false);
+  const [homeVisible, setHomeVisible] = useState(true)
+  const [slideUp, setSlideUp] = useState(false)
 
   const images = {
     image1: "/front-image1.jpg",
     images2: "/front-image2.jpg",
     images3: "/front-image3.jpg",
     images4: "/front-image4.JPG",
-
-  };
+  }
 
   const mouseEnter = () => {
-    setSlide1("active");
-    setH1("smallH1");
-    setP("showP");
-    setBlock("longBlock");
-  };
+    setSlide1("active")
+    setH1("smallH1")
+    setP("showP")
+    setBlock("longBlock")
+  }
   const mouseLeave = () => {
-    setSlide1("remove");
-    setH1("normalH1");
-    setP("hideP");
-    setBlock("shortBlock");
-  };
+    setSlide1("remove")
+    setH1("normalH1")
+    setP("hideP")
+    setBlock("shortBlock")
+  }
   const mouseEnter1 = () => {
-    setSlide2("active");
-    setH3("smallH3");
-    setP1("showP1");
-    setBlock1("longBlock1");
-  };
+    setSlide2("active")
+    setH3("smallH3")
+    setP1("showP1")
+    setBlock1("longBlock1")
+  }
   const mouseLeave1 = () => {
-    setSlide2("remove");
-    setH3("normalH3");
-    setP1("hideP1");
-    setBlock1("shortBlock1");
-  };
+    setSlide2("remove")
+    setH3("normalH3")
+    setP1("hideP1")
+    setBlock1("shortBlock1")
+  }
 
   const mouseEnter2 = () => {
-    setSlide3("active");
-    setH12("smallH1");
-    setP2("showP");
-    setBlock2("longBlock2");
-  };
+    setSlide3("active")
+    setH12("smallH1")
+    setP2("showP")
+    setBlock2("longBlock2")
+  }
 
   const mouseLeave2 = () => {
-    setSlide3("remove");
-    setH12("normalH1");
-    setP2("hideP");
-    setBlock2("shortBlock2");
-  };
+    setSlide3("remove")
+    setH12("normalH1")
+    setP2("hideP")
+    setBlock2("shortBlock2")
+  }
 
   const mouseEnter3 = () => {
-    setSlide4("active");
-    setBlock3("longBlock3");
-  };
+    setSlide4("active")
+    setBlock3("longBlock3")
+  }
 
   const mouseLeave3 = () => {
-    setSlide4("remove");
-    setBlock3("shortBlock3");
-  };
+    setSlide4("remove")
+    setBlock3("shortBlock3")
+  }
 
   useEffect(() => {
-    var ts;
+    var ts
     window.addEventListener("touchstart", (e) => {
-      ts = e.touches[0].clientY;
+      ts = e.touches[0].clientY
       // console.log(e.touches[0])
-    });
+    })
 
     window.addEventListener("touchend", (e) => {
-      var te = e.changedTouches[0].clientY;
+      var te = e.changedTouches[0].clientY
       if (ts > te + 5) {
-        setCount((count) => ++count);
+        setCount((c) => c + 1)
       } else if (ts < te - 5) {
-        setCount((count) => --count);
+        setCount((c) => c - 1)
       }
-    });
-  }, []);
+    })
+  }, [])
 
   useEffect(() => {
-    gsap.to(".active", { duration: 1.5, y: "-70vh", display: "block" });
-    gsap.to(".remove", { duration: 1.5, y: "0vh" });
-    gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" });
+    gsap.to(".active", { duration: 1.5, y: "-70vh", display: "block" })
+    gsap.to(".remove", { duration: 1.5, y: "0vh" })
+    gsap.to(".longBlock", { duration: 1, ease: "power2.out", height: "80%" })
     gsap.to(".longBlock1", {
       duration: 1,
       ease: "power2.out",
       height: "85%",
       width: "98%",
-    });
+    })
     gsap.to(".longBlock2", {
       duration: 1,
       ease: "power2.out",
       height: "90%",
       width: "94%",
-    });
+    })
     gsap.to(".longBlock3", {
       duration: 1,
       ease: "power2.out",
       height: "93.5%",
       width: "90%",
-    });
-    gsap.to(".shortBlock", { duration: 1, height: "25%" });
-    gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%" });
-    gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%" });
-    gsap.to(".shortBlock3", { duration: 1, height: "70%", width: "88%" });
-    gsap.to(".showP1", { duration: 1.5, paddingTop: "0%" });
-    gsap.to(".hideP1", { duration: 0.1, paddingTop: "5%" });
-  }, [mouseEnter, mouseLeave]);
+    })
+    gsap.to(".shortBlock", { duration: 1, height: "25%" })
+    gsap.to(".shortBlock1", { duration: 1, height: "40%", width: "96%" })
+    gsap.to(".shortBlock2", { duration: 1, height: "55%", width: "92%" })
+    gsap.to(".shortBlock3", { duration: 1, height: "70%", width: "88%" })
+    gsap.to(".showP1", { duration: 1.5, paddingTop: "0%" })
+    gsap.to(".hideP1", { duration: 0.1, paddingTop: "5%" })
+  }, [mouseEnter, mouseLeave])
 
   useEffect(() => {
     if (count === 1) {
-      setAboutActiveSlide(true);
-      setqualActiveSlide(false);
-      setPracticeActiveSlide(false);
-      setContactActiveSlide(false);
-      setHeaderDark(false);
+      setAboutActiveSlide(true)
+      setqualActiveSlide(false)
+      setPracticeActiveSlide(false)
+      setContactActiveSlide(false)
+      setHeaderDark(false)
     } else if (count === 2) {
-      setAboutActiveSlide(false);
-      setPracticeActiveSlide(true);
-      setqualActiveSlide(false);
-      setContactActiveSlide(false);
-      setHeaderDark(false);
+      setAboutActiveSlide(false)
+      setPracticeActiveSlide(true)
+      setqualActiveSlide(false)
+      setContactActiveSlide(false)
+      setHeaderDark(false)
     } else if (count === 3) {
-      setAboutActiveSlide(false);
-      setPracticeActiveSlide(false);
-      setqualActiveSlide(true);
-      setContactActiveSlide(false);
-      setHeaderDark(false);
+      setAboutActiveSlide(false)
+      setPracticeActiveSlide(false)
+      setqualActiveSlide(true)
+      setContactActiveSlide(false)
+      setHeaderDark(false)
     } else if (count === 4) {
-      setAboutActiveSlide(false);
-      setqualActiveSlide(false);
-      setPracticeActiveSlide(false);
-      setContactActiveSlide(true);
-      setHeaderDark(true);
+      setAboutActiveSlide(false)
+      setqualActiveSlide(false)
+      setPracticeActiveSlide(false)
+      setContactActiveSlide(true)
+      setHeaderDark(true)
     }
 
     if (count === 0) {
-      setAboutActiveSlide(false);
-      setqualActiveSlide(false);
-      setPracticeActiveSlide(false);
-      setContactActiveSlide(false);
+      setAboutActiveSlide(false)
+      setqualActiveSlide(false)
+      setPracticeActiveSlide(false)
+      setContactActiveSlide(false)
     }
 
     if (count != 0) {
-      setVerticalTimeline(true);
-      setHomeVisible(false);
-      setBlock("longBlock");
-      setBlock1("longBlock1");
-      setBlock2("longBlock2");
-      setBlock3("longBlock3");
+      setVerticalTimeline(true)
+      setHomeVisible(false)
+      setBlock("longBlock")
+      setBlock1("longBlock1")
+      setBlock2("longBlock2")
+      setBlock3("longBlock3")
     } else {
-      setHomeVisible(true);
-      setVerticalTimeline(false);
-      setBlock("shortBlock");
-      setBlock1("shortBlock1");
-      setBlock2("shortBlock2");
-      setBlock3("shortBlock3");
+      setHomeVisible(true)
+      setVerticalTimeline(false)
+      setBlock("shortBlock")
+      setBlock1("shortBlock1")
+      setBlock2("shortBlock2")
+      setBlock3("shortBlock3")
     }
-  }, [count]);
+  }, [count])
 
   useEffect(() => {
-    var isScrolling;
+    var isScrolling
 
     window.addEventListener(
       "wheel",
       function (e) {
         // Clear our timeout throughout the scroll
-        window.clearTimeout(isScrolling);
-        window.innerHeight = 0;
+        window.clearTimeout(isScrolling)
+        window.innerHeight = 0
         // Set a timeout to run after scrolling ends
         isScrolling = setTimeout(function () {
-          console.log(window.innerHeight);
+          console.log(window.innerHeight)
           if (e.wheelDeltaY > 0) {
-            if (count != 0) setCount(--count);
+            if (count != 0) setCount(count - 1)
           } else {
-            if (count != 4) setCount(++count);
+            if (count != 4) setCount(count + 1)
           }
-        }, 66);
+        }, 66)
       },
-      false
-    );
-  }, [count]);
+      false,
+    )
+  }, [count])
 
-
-  const [isWhiteColor, setIsWhiteColor] = useState(true);
-  const [verticalTimeline, setVerticalTimeline] = useState(false);
-  const [headerDark, setHeaderDark] = useState(false);
+  const [isWhiteColor, setIsWhiteColor] = useState(true)
+  const [verticalTimeline, setVerticalTimeline] = useState(false)
+  const [headerDark, setHeaderDark] = useState(false)
   return (
     <>
       <Head>
         <title>Getnet Yawkal Law Office </title>
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta name="description" content=" Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategical and process- and result-oriented legal services to local and international clients."
+        <meta
+          name="description"
+          content=" Getnet Yawkal Law Office is a leading commercial law office in Ethiopia, providing practical, strategical and process- and result-oriented legal services to local and international clients."
         ></meta>
         <meta property="og:title" content="Getnet Yawkal Law Office" />
         <meta property="og:site_name" content="Getnet Yawkal" />
@@ -292,7 +292,7 @@ function Home() {
                 onClick={() => setCount((count) => 1)}
               >
                 <h3>explore</h3>
-                <img className="arrow" src={"/arrow.svg"}></img>
+                <img className="arrow" src={"/arrow.svg"} alt="arrow"></img>
               </div>
             )}
           </div>
@@ -384,7 +384,8 @@ function Home() {
                   </div>
                   <div onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
                     <h3 className={h3}>
-                      We provide top-notch legal services in Ethiopia. <br></br>{" "}
+                      We provide top-notch legal services in Ethiopia.{" "}
+                      <br></br>{" "}
                     </h3>
                     <p className="smallText">
                       Local Expertise. International Depth. Business Acumen.
@@ -404,7 +405,7 @@ function Home() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

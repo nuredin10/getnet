@@ -62,7 +62,7 @@ function Footer() {
             <p>
               {/* Connect on LinkedIn  */}
             Located in Bole, Airport Road, Mega Building, 5th Floor, Room No.
-              517
+              510
             </p>
             <div className="middle-links border-top">
           <h3>Social Media Links</h3>

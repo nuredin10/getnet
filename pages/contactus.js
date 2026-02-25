@@ -94,7 +94,7 @@ function Contactus() {
             <p>Physical Location</p>
             <a>
               Located in Bole, Airport Road, Mega Building, 5th Floor, Room No.
-              417
+              510
             </a>
           </div>
           <div className="single">
