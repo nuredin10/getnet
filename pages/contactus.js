@@ -92,7 +92,7 @@ function Contactus() {
           <div className="single">
             <p>Physical Location</p>
             <a>
-              Located in Bole, Airport Road, Mega Building, 4th Floor, Room No.
+              Located in Bole, Airport Road, Mega Building, 5th Floor, Room No.
               417
             </a>
           </div>
