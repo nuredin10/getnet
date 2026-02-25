@@ -61,8 +61,8 @@ function Footer() {
             </a></p>
             <p>
               {/* Connect on LinkedIn  */}
-            Located in Bole, Airport Road, Mega Building, 4th Floor, Room No.
-              417
+            Located in Bole, Airport Road, Mega Building, 5th Floor, Room No.
+              517
             </p>
             <div className="middle-links border-top">
           <h3>Social Media Links</h3>
