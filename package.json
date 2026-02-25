@@ -30,6 +30,6 @@
     "web-vitals": "^2.1.4"
   },
   "engines": {
-    "node": "28.x"
+    "node": "24.x"
   }
 }
