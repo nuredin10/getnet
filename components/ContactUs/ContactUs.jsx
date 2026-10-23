@@ -30,7 +30,7 @@ function ContactUs({ contactActiveSlide }) {
               <a href="tel:+251118212012"> +251118212012</a>
             </p>
             <p>
-      Located in Bole, Airport Road, Mega Building, 4th Floor, Room No. 417    
+      Located in Bole, Airport Road, Mega Building, 5th Floor, Room No. 510    
             </p>
             <p>
    P.O.Box 1985 code 1250, Addis Ababa, Ethiopia<br></br>
